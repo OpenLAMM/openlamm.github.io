@@ -35,13 +35,14 @@
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-
+  <link rel="stylesheet" href="static/css/style.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  
 </head>
 
 <body>
@@ -272,7 +273,8 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Leaderboard</h2>
-        <div class="content has-text-justified">
+        <!--<div class="content has-text-justified">
+        
           <p>
             Large language models have become a potential pathway toward achieving artificial general intelligence.
             Recent works on multi-modal large language models have demonstrated their effectiveness in handling visual
@@ -286,8 +288,226 @@
             domains, tasks, and modalities faster. 3) We provide a primary but potential MLLM training framework
             optimized for modalities' extension. We also provide baseline models, comprehensive experimental
             observations, and analysis to accelerate future research.
-          </p>
+          </p>-->
+          <div id="container">   
+
+    
+            <table class="lamm">
+            <caption><b>Comparison of Multimodal Large Language Models on 2D computer vision tasks</b></caption>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Dataset</th>
+                        <th>Metric</th>
+                        <th>SOTA</th>
+                        <th>LLaVA</th>
+                        <th>MiniGPT4</th>
+                        <th>mPLUG-owl</th>
+                        <th>LAMM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Classification</td>
+                        <td>CIFAR10</td>
+                        <td>Acc ↑</td>
+                        <td>99.5</td>
+                        <td><b><u>60.83</u></b></td>
+                        <td>46.22</td>
+                        <td>42.5</td>
+                        <td>34.5</td>
+                    </tr>
+                    <tr>
+                        <td>Detection</td>
+                        <td>VOC2012</td>
+                        <td>mAP ↑</td>
+                        <td>97.2</td>
+                        <td>1.42</td>
+                        <td>0.92</td>
+                        <td>0.158</td>
+                        <td><b><u>4.82</u></b></td>
+                    </tr>
+                    <tr>
+                        <td>VQA</td>
+                        <td>SQAimage<br>AI2D</td>
+                        <td>Acc ↑</td>
+                        <td>92.53<br>N/A</td>
+                        <td>40.5<br>18.13</td>
+                        <td>43.43<br>Failed</td>
+                        <td>36.39<br>19.31</td>
+                        <td><b><u>47.15<br>19.5</u></b></td>
+                    </tr><tr>
+                        <td>Image Caption</td>
+                        <td>flickr30k</td>
+                        <td>BLEU4 ↑</td>
+                        <td>30.1</td>
+                        <td><b><u>6.65</u></b></td>
+                        <td>5.1</td>
+                        <td>2.74</td>
+                        <td>0.70</td>
+                    </tr>
+                    <tr>
+                        <td>F-g clasification</td>
+                        <td>UCMerced</td>
+                        <td>Acc ↑</td>
+                        <td>100</td>
+                        <td><b>47</b></td>
+                        <td>33.6</td>
+                        <td>32.5</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>Counting</td>
+                        <td>FSC147</td>
+                        <td>MAE ↓</td>
+                        <td>10.79</td>
+                        <td>56.2</td>
+                        <td>Failed</td>
+                        <td>60.67</td>
+                        <td><b><u>53.97</u></b></td>
+                    </tr>
+                    <tr>
+                        <td>OCR</td>
+                        <td>SVT</td>
+                        <td>Word Acc ↑</td>
+                        <td>97.9</td>
+                        <td><b><u>37.78</u></b></td>
+                        <td>16.97</td>
+                        <td>30.39</td>
+                        <td>4.2</td>
+                    </tr>
+                    <tr>
+                        <td>Facial Classification</td>
+                        <td>CelebA(Smile)<br>CelebA(Hair)</td>
+                        <td>Acc ↑</td>
+                        <td>N/A<br>N/A</td>
+                        <td>Failed<br><b><u>46.42</u></b></td>
+                        <td><b><u>66.36</u></b><br>43.47</td>
+                        <td>Failed<br>40.93</td>
+                        <td>51.3<br>30.48</td>
+                    </tr>
+                    <tr>
+                        <td>Keypoints Detection</td>
+                        <td>LSP</td>
+                        <td>PCK ↑</td>
+                        <td>99.5</td>
+                        <td>Failed</td>
+                        <td>Failed</td>
+                        <td>Failed</td>
+                        <td>Failed</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+        <div id="container">   
+
+            
+            <table class="lamm">
+            <caption><b>Results of LAMM model on selected 2D vision tasks</b></caption>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Dataset</th>
+                        <th>LAMM(Zero-Shot)</th>
+                        <th>LAMM(Finetune)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Classification (Acc)</td>
+                        <td>CIFAR10</td>
+                        <td>34.5</td>
+                        <td>91.2</td>
+                    </tr>
+                    <tr>
+                        <td>Object Detection (Acc)</td>
+                        <td>VOC2012</td>
+                        <td>4.82</td>
+                        <td>13.48</td>
+                    </tr>
+                    <tr>
+                        <td>VQA (mAP@0.5)</td>
+                        <td>SQAimage</td>
+                        <td>47.15</td>
+                        <td>74.27</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="container">   
+
+            
+            <table class="lamm">
+            <caption><b>Results of 3D tasks by LAMM</b></caption>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Dataset</th>
+                        <th>SOTA</th>
+                        <th>LAMM(Zero-Shot)</th>
+                        <th>LAMM(Finetune)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3D Object Detection <b>(mAP@0.5)</b></td>
+                        <td>ScanNet</td>
+                        <td>63.2</td>
+                        <td>9.3</td>
+                        <td>11.89</td>
+                    </tr>
+                    <tr>
+                        <td>Visual Grounding <b>(mAP@0.5)</b></td>
+                        <td>ScanRefer</td>
+                        <td>54.59</td>
+                        <td>Failed</td>
+                        <td>3.38</td>
+                    </tr>
+                    <tr>
+                        <td>3D VQA <b>(Acc of multiple choice prolblem)</b></td>
+                        <td>ScanQA</td>
+                        <td>N/A</td>
+                        <td>26.54</td>
+                        <td>99.89</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>       
+        <div id="container">   
+
+            
+            <table class="lamm">
+            <caption><b>Comparison of results of Binary Locating Metric and GPT Metric of existing MLLMs</b></caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>LLaVA</th>
+                        <th>MiniGPT4</th>
+                        <th>mPLUG-owl</th>
+                        <th>LAMM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Binary-Loc Metric</td>
+                        <td>14.73</td>
+                        <td>13.12</td>
+                        <td>4.42</td>
+                        <td><b><u>31.2</u></b></td>
+                    </tr>
+                    <tr>
+                        <td>GPT Metric</td>
+                        <td>11</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td><b><u>89</u></b></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div> 
+
+        
       </div>
     </div>
   </div>
