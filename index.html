@@ -293,26 +293,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Leaderboard</h2>
-        <!--<div class="content has-text-justified">
-        
-          <p>
-            Large language models have become a potential pathway toward achieving artificial general intelligence.
-            Recent works on multi-modal large language models have demonstrated their effectiveness in handling visual
-            modalities. In this work, we extend the research of MLLMs to point clouds and present the LAMM-Dataset and
-            LAMM-Benchmark for 2D image and 3D point cloud understanding. We also establish an extensible framework to
-            facilitate the extension of MLLMs to additional modalities.
-            Our main contribution is three-fold: 1) We present the LAMM-Dataset and LAMM-Benchmark, which cover almost
-            all high-level vision tasks for 2D and 3D vision. Extensive experiments validate the effectiveness of our
-            dataset and benchmark. 2) We demonstrate the detailed methods of constructing instruction-tuning datasets
-            and benchmarks for MLLMs, which will enable future research on MLLMs to scale up and extend to other
-            domains, tasks, and modalities faster. 3) We provide a primary but potential MLLM training framework
-            optimized for modalities' extension. We also provide baseline models, comprehensive experimental
-            observations, and analysis to accelerate future research.
-          </p>-->
-          <div id="container">   
-
-    
-            <table class="lamm">
+            <table class="lamm" align="center">
             <caption><b>Comparison of Multimodal Large Language Models on 2D computer vision tasks</b></caption>
                 <thead>
                     <tr>
@@ -349,14 +330,25 @@
                     </tr>
                     <tr>
                         <td>VQA</td>
-                        <td>SQAimage<br>AI2D</td>
+                        <td>SQAimage</td>
                         <td>Acc ↑</td>
                         <td>92.53<br>N/A</td>
                         <td>40.5<br>18.13</td>
                         <td>43.43<br>Failed</td>
                         <td>36.39<br>19.31</td>
-                        <td><b><u>47.15<br>19.5</u></b></td>
-                    </tr><tr>
+                        <td><b><u>47.15</u></b></td>
+                    </tr>
+                    <tr>
+                        <td>VQA</td>
+                        <td>AI2D</td>
+                        <td>Acc ↑</td>
+                        <td>N/A</td>
+                        <td>18.13</td>
+                        <td>Failed</td>
+                        <td>19.31</td>
+                        <td>19.5</td>
+                    </tr>
+                    <tr>
                         <td>Image Caption</td>
                         <td>flickr30k</td>
                         <td>BLEU4 ↑</td>
@@ -398,13 +390,23 @@
                     </tr>
                     <tr>
                         <td>Facial Classification</td>
-                        <td>CelebA(Smile)<br>CelebA(Hair)</td>
+                        <td>CelebA(Smile)</td>
                         <td>Acc ↑</td>
-                        <td>N/A<br>N/A</td>
-                        <td>Failed<br><b><u>46.42</u></b></td>
-                        <td><b><u>66.36</u></b><br>43.47</td>
-                        <td>Failed<br>40.93</td>
-                        <td>51.3<br>30.48</td>
+                        <td>N/A</td>
+                        <td>Failed</td>
+                        <td><b><u>66.36</u></b></td>
+                        <td>Failed</td>
+                        <td>51.3</td>
+                    </tr>
+                    <tr>
+                        <td>Facial Classification</td>
+                        <td>CelebA(Hair)</td>
+                        <td>Acc ↑</td>
+                        <td>N/A</td>
+                        <td><b><u>46.42</u></b></td>
+                        <td>43.47</td>
+                        <td>40.93</td>
+                        <td>30.48</td>
                     </tr>
                     <tr>
                         <td>Keypoints Detection</td>
@@ -418,11 +420,11 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-        <div id="container">   
+ 
+         
 
             
-            <table class="lamm">
+            <table class="lamm" align="center">
             <caption><b>Results of LAMM model on selected 2D vision tasks</b></caption>
                 <thead>
                     <tr>
@@ -453,11 +455,11 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-        <div id="container">   
+
+     
 
             
-            <table class="lamm">
+            <table class="lamm" align="center">
             <caption><b>Results of 3D tasks by LAMM</b></caption>
                 <thead>
                     <tr>
@@ -492,11 +494,10 @@
                     </tr>
                 </tbody>
             </table>
-        </div>       
-        <div id="container">   
-
+      
+    
             
-            <table class="lamm">
+            <table class="lamm" align="center">
             <caption><b>Comparison of results of Binary Locating Metric and GPT Metric of existing MLLMs</b></caption>
                 <thead>
                     <tr>
@@ -525,9 +526,7 @@
                     
                 </tbody>
             </table>
-        </div> 
-
-        
+         
       </div>
     </div>
   </div>
