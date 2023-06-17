@@ -198,17 +198,45 @@
       <div class="container">
         <h2 class="title is-3">LAMM</h2>
         <div id="results-carousel" class="carousel results-carousel">
-          <div class="item">
-            <img src="static/images/benchmark.png" alt="MY ALT TEXT" />
+          <div class="item" style="text-align: center;">
+            <img src="static/images/benchmark.png" alt="MY ALT TEXT"/>
             <h2 class="subtitle has-text-centered">
               LAMM Benchmark
             </h2>
+            <p class="subtitle has-text-justified">
+              <strong> LAMM-Benchmark </strong> evaluates 9 common image tasks, using a total of 11 datasets with over <strong>62,439</strong>  samples, and 3 common point cloud tasks, by utilizing 3 datasets with over <strong>12,788</strong> data samples, while existing works only provide quantitative results on fine-tuning and evaluating specific datasets such as ScienceQA, and most works only conduct demonstration or user studies. 
+            </p>
+            <ul class="subtitle has-text-justified">
+              <li> 
+                We are the very first attempt to establish a benchmark for MLLMs. We conducted a comprehensive benchmark to quantify the zero-shot and fine-tuning performance of existing multi-modal language models on various computer vision tasks and compare them against state-of-the-art methods of these tasks, including classification, object detection, pose estimation, visual question answering, facial classification, optical character recognition, object counting. 
+              </li> 
+              <li> 
+                We also attempted two novel evaluation strategies designed explicitly for MLLMs. Specifically, as for text generation, we established a scoring logic based on the GPT API. As for tasks involving interactions between points and images, such as object detection and pose estimation, we proposed an object-locating evaluation method. 
+              </li>
+            </ul>
           </div>
-          <div class="item">
-            <img src="static/images/dataset.png" alt="MY ALT TEXT" />
+          <div class="item" style="text-align: center;">
+            <img src="static/images/dataset.png" alt="MY ALT TEXT"  width="900px" height="auto"/>
             <h2 class="subtitle has-text-centered">
               LAMM Dataset
             </h2>
+            <p class="subtitle has-text-justified">
+              <strong>LAMM-Dataset</strong> is a comprehensive multi-modal instruction tuning dataset, which contains 186K language-image instruction-response pairs, and 10K lanuage-3D instruction-response pairs.In LAMM-Dataset, the instruction-response pairs are gathered from 8 image datasets and 4 point cloud datasets. Here we design four type of multi-modal instruction-response pairs, 
+            </p>
+            <ul class="subtitle has-text-justified">
+              <li> 
+                C1: n-round daily dialogue focuses on multi-modal daily conversations. 
+              </li> 
+              <li> 
+                C2: n-round factual knowledge dialogue aims at factual knowledge reasoning. 
+              </li>
+              <li>
+                C3: 1-round detailed description aims to elaborate images and 3D scenes in texts. 
+              </li>
+              <li>
+                C4: 1-round visual task dialogue transfers various vision tasks into instruction-response pairs, aiming at enhancing generalizability towards domain tasks in other modalities.
+              </li>
+            </ul>
           </div>
           <!-- <div class="item">
             <img src="static/images/architecture.png" alt="MY ALT TEXT" />
@@ -257,7 +285,7 @@
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-centered has-text-centered">
         <h2 class="title is-3">Leaderboard</h2>
             <table class="lamm" style="text-align: center;">
             <caption><b>Comparison of Multimodal Large Language Models on 2D computer vision tasks</b></caption>
@@ -390,7 +418,7 @@
          
 
             
-            <table class="lamm" align="center">
+            <table class="lamm" style="text-align: center;">
             <caption><b>Results of LAMM model on selected 2D vision tasks</b></caption>
                 <thead>
                     <tr>
