@@ -21,7 +21,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'OpenLAMM', // Usually your GitHub org/user name.
   projectName: 'openlamm.github.io/', // Usually your repo name.
-  deploymentBranch: 'docusaurus',
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
