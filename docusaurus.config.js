@@ -20,8 +20,8 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'OpenLAMM', // Usually your GitHub org/user name.
-  projectName: 'openlamm.github.io/', // Usually your repo name.
-  deploymentBranch: 'docusaurus',
+  projectName: 'openlamm.github.io', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -80,11 +80,14 @@ const config = {
             label: 'Tutorial',
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
-          // {
-          //   href: 'https://github.com/OpenLAMM/LAMM',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
+          {
+            href: 'https://github.com/OpenLAMM/LAMM',
+            label: 'GitHub',
+            position: 'right',
+          },
+          {to: '/LAMM-Dataset', label: 'Dataset', position: 'left'},
+          {to: '/LAMM-Benchmark', label: 'Benchmark', position: 'left'},
+          {to: '/Leaderboard', label: 'Leaderboard', position: 'left'},
         ],
       },
       footer: {
