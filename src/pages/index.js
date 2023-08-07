@@ -18,25 +18,31 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="https://arxiv.org/pdf/2306.06687.pdf">
-            paper
+            📄Paper
           </Link>
           &nbsp;&nbsp;
           <Link
             className="button button--secondary button--lg"
             to="https://github.com/OpenLAMM/LAMM">
-            code
+            💻Code
           </Link>
           &nbsp;&nbsp;
           <Link
             className="button button--secondary button--lg"
             to="https://opendatalab.com/LAMM/download">
-            data
+            📀Data
           </Link>
           &nbsp;&nbsp;
           <Link
             className="button button--secondary button--lg"
             to="https://huggingface.co/openlamm">
-            Models
+            📦Models
+          </Link>
+          &nbsp;&nbsp;
+          <Link
+            className="button button--secondary button--lg"
+            to="https://huggingface.co/spaces/openlamm/LAMM">
+            🤗Demo
           </Link>
         </div>
       </div>
