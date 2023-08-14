@@ -12,7 +12,7 @@ hide_table_of_contents: false
 | --------------------- | ------------- | --------- | ---- | ----- | -------- | --------- | ----- |
 | Classification        | CIFAR10       | Acc ↑     | 99.5 | **60.83** | 46.22    | 42.5      | 34.5  |
 | Detection             | VOC2012       | mAP ↑     | 97.2 | 1.42  | 0.92     | 0.158     | **4.82**  |
-| VQA                   | SQAimage      | Acc ↑     | 92.53  N/A | 40.5  18.13 | 43.43  Failed | 36.39  19.31 | **47.15** |
+| VQA                   | SQAimage      | Acc ↑     | 92.53  N/A | 40.5 | 43.43 | 36.39 | **47.15** |
 | VQA                   | AI2D          | Acc ↑     | N/A  | 18.13 | Failed   | 19.31     | **19.5**  |
 | Image Caption         | flickr30k     | BLEU4 ↑   | 30.1 | **6.65**  | 5.1      | 2.74      | 0.70  |
 | F-g classification    | UCMerced      | Acc ↑     | 100  | **47**    | 33.6     | 32.5      | 13    |
