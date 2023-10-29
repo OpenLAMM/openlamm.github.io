@@ -401,40 +401,56 @@ const config = {
         },
         items: [
           {
-            label: 'Guides',
+            label: 'tutorial',
             to: 'guides',
             className: 'guides-top-header',
           },
+          // {
+          //   label: 'SDKs',
+          //   type: 'dropdown',
+          //   className: 'dyte-dropdown',
+          //   items: [
+          //     {
+          //       type: 'html',
+          //       value: sdksHTML,
+          //       className: 'dyte-dropdown',
+          //     },
+          //   ],
+          // },
           {
-            label: 'SDKs',
-            type: 'dropdown',
-            className: 'dyte-dropdown',
-            items: [
-              {
-                type: 'html',
-                value: sdksHTML,
-                className: 'dyte-dropdown',
-              },
-            ],
-          },
-          {
-            label: 'REST API',
+            label: 'Updates',
             to: '/api/',
           },
-          {
-            label: 'Resources',
-            type: 'dropdown',
-            className: 'dyte-dropdown resources-dropdown',
-            items: [
-              {
-                type: 'html',
-                value: resourcesHTML,
-                className: 'dyte-dropdown',
-              },
-            ],
-          },
+          // {
+          //   label: 'Resources',
+          //   type: 'dropdown',
+          //   className: 'dyte-dropdown resources-dropdown',
+          //   items: [
+          //     {
+          //       type: 'html',
+          //       value: resourcesHTML,
+          //       className: 'dyte-dropdown',
+          //     },
+          //   ],
+          // },
           {
             label: 'Support',
+            to: 'https://dyte.io/contact',
+          },
+          {
+            label: 'dataset',
+            to: 'https://dyte.io/contact',
+          },
+          {
+            label: 'leaderboard',
+            to: 'https://dyte.io/contact',
+          },
+          {
+            label: 'model system card',
+            to: 'https://dyte.io/contact',
+          },
+          {
+            label: 'group&ak',
             to: 'https://dyte.io/contact',
           },
 
@@ -442,18 +458,18 @@ const config = {
             type: 'search',
             position: 'right',
           },
-          {
-            label: 'Book a demo',
-            href: 'https://dyte.io/schedule-demo',
-            position: 'right',
-            className: 'navbar-book-demo',
-          },
-          {
-            label: 'Sign Up',
-            href: 'https://dev.dyte.io/register',
-            position: 'right',
-            className: 'dev-portal-signup dev-portal-link',
-          },
+          // {
+          //   label: 'Book a demo',
+          //   href: 'https://dyte.io/schedule-demo',
+          //   position: 'right',
+          //   className: 'navbar-book-demo',
+          // },
+          // {
+          //   label: 'Sign Up',
+          //   href: 'https://dev.dyte.io/register',
+          //   position: 'right',
+          //   className: 'dev-portal-signup dev-portal-link',
+          // },
         ],
       },
       footer: {

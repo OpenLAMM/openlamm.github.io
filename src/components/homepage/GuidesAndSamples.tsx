@@ -152,7 +152,7 @@ export default function GuidesAndSamples() {
         )}
       />
 
-      <div className="w-full md:max-w-sm">
+      {/* <div className="w-full md:max-w-sm">
         <div className="mb-8 flex items-center justify-between">
           <h3 className="m-0">Popular sample apps</h3>
 
@@ -169,7 +169,7 @@ export default function GuidesAndSamples() {
             <Sample {...sample} key={sample.title} />
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

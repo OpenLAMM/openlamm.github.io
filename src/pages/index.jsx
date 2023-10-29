@@ -10,6 +10,7 @@ import HelpSection from '../components/homepage/HelpSection';
 import Head from '@docusaurus/Head';
 import GuidesAndSamples from '../components/homepage/GuidesAndSamples';
 import SDKs from '../components/homepage/SDKs';
+import VideoSection from '../components/homepage/VideoSection';
 
 export default function Homepage() {
   return (
@@ -27,8 +28,9 @@ export default function Homepage() {
       <GuidesAndSamples />
 
       <SDKs />
-
-      <APIReferenceSection />
+      
+      {/* <APIReferenceSection /> */}
+      <VideoSection />
 
       <div className="z-0">
         <ResourcesSection />
