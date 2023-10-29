@@ -27,17 +27,17 @@ export default function Homepage() {
 
       <GuidesAndSamples />
 
-      <SDKs />
+      {/* <SDKs /> */}
       
       {/* <APIReferenceSection /> */}
-      <VideoSection />
+      {/* <VideoSection /> */}
 
-      <div className="z-0">
+      {/* <div className="z-0">
         <ResourcesSection />
         <HelpSection className="-mb-48" />
-      </div>
+      </div> */}
 
-      <CommunitySection />
+      {/* <CommunitySection /> */}
 
       <HomeFooter />
     </Layout>

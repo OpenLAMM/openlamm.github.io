@@ -419,7 +419,8 @@ const config = {
           // },
           {
             label: 'Updates',
-            to: '/api/',
+            // to: '/api/',
+            to: '/helloMarkdown',
           },
           // {
           //   label: 'Resources',
