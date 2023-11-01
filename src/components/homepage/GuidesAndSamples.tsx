@@ -20,19 +20,19 @@ interface Guide {
 
 const guides: Guide[] = [
   {
-    title: 'Start Recording a Meeting',
+    title: 'LAMM',
     icon: RecordRegular,
     text: 'Check out an example of this integration of recording a meeting.',
     link: '/guides/capabilities/recording',
   },
   {
-    title: 'Migrate from Twilio',
+    title: 'ChEF',
     icon: VideoRegular,
     text: 'Migration simplified. Refer the guide.',
     link: '/guides/migration/twilio/concepts-twilio-vs-dyte',
   },
   {
-    title: 'Create a Breakout Room',
+    title: 'Octavius',
     icon: AppsAddInRegular,
     text: 'Easily split a meeting in separate sessions.',
     link: '/guides/capabilities/breakoutroom/create-breakout-rooms',
@@ -131,11 +131,11 @@ export default function GuidesAndSamples() {
     <section className="no-underline-links my-40 mx-auto flex w-full max-w-5xl flex-col gap-10 p-4 py-0 md:flex-row md:gap-0">
       <div className="flex-1">
         <div className="mb-8 flex items-center justify-between">
-          <h3 className="m-0">Popular how to guides</h3>
+          <h3 className="m-0">PAPER LIST</h3>
 
-          <Link to="/guides" className="font-jakarta text-sm font-semibold">
+          {/* <Link to="/guides" className="font-jakarta text-sm font-semibold">
             View more guides <ArrowRightFilled className="ml-1" />
-          </Link>
+          </Link> */}
         </div>
 
         <div className="flex flex-col gap-4">

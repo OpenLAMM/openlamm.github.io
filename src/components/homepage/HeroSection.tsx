@@ -96,7 +96,7 @@ export default function HeroSection() {
             LAMM
           </h2>
           <p className="max-w-xl text-center text-text-400">
-          Language-Assisted Multi-Modal Instruction-Tuning Dataset, Framework, and Benchmark.
+          abstract_here 
           </p>
         </div>
       </section>

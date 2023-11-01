@@ -18,170 +18,16 @@ const meta = {
 
 /** @type {import('@docusaurus/plugin-content-docs').Options[]} */
 const docs = [
-  {
-    id: 'cli',
-    path: 'docs/cli',
-    routeBasePath: '/cli',
-  },
-  {
-    id: 'plugin-sdk',
-    path: 'docs/plugin-sdk',
-    routeBasePath: '/plugin-sdk',
-    versions: {
-      current: {
-        label: '1.x.x',
-      },
-    },
-  },
-
-  // Web UI Kits
-  {
-    id: 'ui-kit',
-    path: 'docs/ui-kit',
-    routeBasePath: '/ui-kit',
-    versions: {
-      current: {
-        label: '1.x.x',
-      },
-    },
-  },
-  {
-    id: 'react-ui-kit',
-    path: 'docs/react-ui-kit',
-    routeBasePath: '/react-ui-kit',
-    versions: {
-      current: {
-        label: '1.x.x',
-      },
-    },
-  },
-  {
-    id: 'angular-ui-kit',
-    path: 'docs/angular-ui-kit',
-    routeBasePath: '/angular-ui-kit',
-    versions: {
-      current: {
-        label: '1.x.x',
-      },
-    },
-  },
-
-  // Web Core
-  {
-    id: 'web-core',
-    path: 'docs/web-core',
-    routeBasePath: '/web-core',
-    versions: {
-      current: {
-        label: '1.x.x',
-      },
-    },
-  },
-  // React Web Core
-  {
-    id: 'react-web-core',
-    path: 'docs/react-web-core',
-    routeBasePath: '/react-web-core',
-    versions: {
-      current: {
-        label: '1.x.x',
-      },
-    },
-  },
-
-  // Mobile Core
-  {
-    id: 'android-core',
-    path: 'docs/android-core',
-    routeBasePath: '/android-core',
-    versions: {
-      current: {
-        label: '1.x.x',
-      },
-    },
-  },
-  {
-    id: 'flutter-core',
-    path: 'docs/flutter-core',
-    routeBasePath: '/flutter-core',
-    versions: {
-      current: {
-        label: '1.x.x',
-      },
-    },
-  },
-  {
-    id: 'ios-core',
-    path: 'docs/ios-core',
-    routeBasePath: '/ios-core',
-    versions: {
-      current: {
-        label: '1.x.x',
-      },
-    },
-  },
-  {
-    id: 'rn-core',
-    path: 'docs/rn-core',
-    routeBasePath: '/rn-core',
-    versions: {
-      current: {
-        label: '0.5.x',
-      },
-    },
-  },
-
-  // Mobile UI Kits
-  {
-    id: 'android',
-    path: 'docs/android',
-    routeBasePath: '/android',
-    versions: {
-      current: {
-        label: '0.14.x',
-      },
-    },
-  },
-  {
-    id: 'flutter',
-    path: 'docs/flutter',
-    routeBasePath: '/flutter',
-    versions: {
-      current: {
-        label: '0.7.x',
-      },
-    },
-  },
-  {
-    id: 'ios',
-    path: 'docs/ios',
-    routeBasePath: '/ios',
-    versions: {
-      current: {
-        label: '1.33.x',
-      },
-    },
-  },
-  {
-    id: 'react-native',
-    path: 'docs/rn-ui-kit',
-    routeBasePath: '/react-native',
-    versions: {
-      current: {
-        label: '1.4.x',
-      },
-    },
-  },
 ];
 
 /** @type {import('@docusaurus/plugin-content-docs').Options} */
 const defaultSettings = {
   breadcrumbs: true,
-  editUrl: 'https://github.com/dyte-in/docs/tree/main/',
+  // editUrl: 'https://github.com/dyte-in/docs/tree/main/',
   showLastUpdateTime: true,
-  remarkPlugins: [
-    [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
-  ],
+  // remarkPlugins: [
+  //   [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
+  // ],
   sidebarPath: require.resolve('./sidebars-default.js'),
 };
 
@@ -212,133 +58,9 @@ const plugins = [
   tailwindPlugin,
   ...docs_plugins,
   webpackPlugin,
-  [
-    '@docusaurus/plugin-client-redirects',
-    {
-      createRedirects(path) {
-        if (path.startsWith('/guides/capabilities/webhooks')) {
-          return [
-            path.replace('/guides/capabilities/webhooks', '/guides/webhooks'),
-            path.replace(
-              '/guides/capabilities/webhooks',
-              '/guides/features/webhooks'
-            ),
-          ];
-        }
-        if (path.startsWith('/guides/capabilities/recording')) {
-          return [
-            path.replace('/guides/capabilities/recording', '/guides/recording'),
-            path.replace(
-              '/guides/capabilities/recording',
-              '/guides/features/recording'
-            ),
-          ];
-        }
-        if (path.startsWith('/guides/capabilities/recording')) {
-          return [
-            path.replace('/guides/capabilities/recording', '/guides/recording'),
-            path.replace(
-              '/guides/capabilities/recording',
-              '/guides/features/recording'
-            ),
-          ];
-        }
-        if (path.startsWith('/guides/capabilities/embed')) {
-          return [
-            path.replace('/guides/capabilities/embed', '/guides/embed'),
-            path.replace(
-              '/guides/capabilities/embed',
-              '/guides/features/embed'
-            ),
-          ];
-        }
-        if (path.startsWith('/guides/capabilities/export-chat-dump')) {
-          return [
-            path.replace(
-              '/guides/capabilities/export-chat-dump',
-              '/guides/export-chat-dump'
-            ),
-            path.replace(
-              '/guides/capabilities/export-chat-dump',
-              '/guides/features/export-chat-dump'
-            ),
-          ];
-        }
-        if (path.startsWith('/guides/capabilities/breakoutroom')) {
-          return [
-            path.replace(
-              '/guides/capabilities/breakoutroom',
-              '/guides/breakoutroom'
-            ),
-            path.replace(
-              '/guides/capabilities/breakoutroom',
-              '/guides/features/breakoutroom'
-            ),
-          ];
-        }
-        /* for everything else */
-        if (path.startsWith('/guides/capabilities')) {
-          return [path.replace('/guides/capabilities', '/guides/features')];
-        }
-        if (path === '/ui-kit') {
-          return [
-            '/javascript/advanced-usage',
-            '/javascript/customize-meeting-ui',
-            '/javascript/events',
-            '/javascript/installation',
-            '/javascript/quickstart',
-            '/javascript/reference/chat-message',
-            '/javascript/reference/connection-config',
-            '/javascript/reference/dyte-client',
-            '/javascript/reference/dyte-control-bar',
-            '/javascript/reference/dyte-errors',
-            '/javascript/reference/dyte-grid',
-            '/javascript/reference/dyte-meeting-events',
-            '/javascript/reference/dyte-plugin',
-            '/javascript/reference/dyte-ui-config',
-            '/javascript/reference/meeting',
-            '/javascript/reference/participant',
-            '/javascript/reference/self-participant',
-            '/javascript/sample-app',
-            '/javascript/usage',
-            '/javascript/virtual-background',
-            '/javascript/',
-          ];
-        }
-        if (path === '/react-ui-kit') {
-          return [
-            '/react/advanced-usage',
-            '/react/customize-meeting-ui',
-            '/react/events',
-            '/react/installation',
-            '/react/quickstart',
-            '/react/reference/chat-message',
-            '/react/reference/connection-config',
-            '/react/reference/dyte-client',
-            '/react/reference/dyte-control-bar',
-            '/react/reference/dyte-errors',
-            '/react/reference/dyte-grid',
-            '/react/reference/dyte-meeting-events',
-            '/react/reference/dyte-plugin',
-            '/react/reference/dyte-ui-config',
-            '/react/reference/meeting',
-            '/react/reference/participant',
-            '/react/reference/self-participant',
-            '/react/sample-app',
-            '/react/usage',
-            '/react/virtual-background',
-            '/react/',
-          ];
-        }
-        return undefined; // Return a falsy value: no redirect created
-      },
-    },
-  ],
 ];
 
 const fs = require('fs');
-const sdksHTML = fs.readFileSync('./src/snippets/sdks.html', 'utf-8');
-const resourcesHTML = fs.readFileSync('./src/snippets/resources.html', 'utf-8');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -356,9 +78,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          path: 'docs/guides',
-          id: 'guides',
-          routeBasePath: '/guides',
+          path: 'docs/tutorial',
+          id: 'tutorial',
+          routeBasePath: '/tutorial',
           ...defaultSettings,
         },
         blog: false,
@@ -401,76 +123,33 @@ const config = {
         },
         items: [
           {
-            label: 'tutorial',
-            to: 'guides',
-            className: 'guides-top-header',
+            label: 'Tutorial',
+            to: 'tutorial',
           },
-          // {
-          //   label: 'SDKs',
-          //   type: 'dropdown',
-          //   className: 'dyte-dropdown',
-          //   items: [
-          //     {
-          //       type: 'html',
-          //       value: sdksHTML,
-          //       className: 'dyte-dropdown',
-          //     },
-          //   ],
-          // },
           {
             label: 'Updates',
-            // to: '/api/',
-            to: '/helloMarkdown',
-          },
-          // {
-          //   label: 'Resources',
-          //   type: 'dropdown',
-          //   className: 'dyte-dropdown resources-dropdown',
-          //   items: [
-          //     {
-          //       type: 'html',
-          //       value: resourcesHTML,
-          //       className: 'dyte-dropdown',
-          //     },
-          //   ],
-          // },
-          {
-            label: 'Support',
-            to: 'https://dyte.io/contact',
+            to: '/Updates',
           },
           {
-            label: 'dataset',
-            to: 'https://dyte.io/contact',
+            label: 'Dataset',
+            to: '/Dataset',
           },
           {
-            label: 'leaderboard',
-            to: 'https://dyte.io/contact',
+            label: 'Leaderboard',
+            to: '/Leaderboard',
           },
           {
-            label: 'model system card',
-            to: 'https://dyte.io/contact',
+            label: 'Model System Card',
+            to: 'Model_system_card',
           },
           {
-            label: 'group&ak',
-            to: 'https://dyte.io/contact',
+            label: 'Group&Ak',
+            to: 'Group_ak',
           },
-
           {
             type: 'search',
             position: 'right',
           },
-          // {
-          //   label: 'Book a demo',
-          //   href: 'https://dyte.io/schedule-demo',
-          //   position: 'right',
-          //   className: 'navbar-book-demo',
-          // },
-          // {
-          //   label: 'Sign Up',
-          //   href: 'https://dev.dyte.io/register',
-          //   position: 'right',
-          //   className: 'dev-portal-signup dev-portal-link',
-          // },
         ],
       },
       footer: {
