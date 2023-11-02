@@ -5,11 +5,11 @@ const code_themes = {
 
 /** @type {import('@docusaurus/types').Config} */
 const meta = {
-  title: 'Dyte Docs',
-  tagline: 'Real-time audio & video SDKs, ready to launch 🚀',
-  url: 'https://docs.dyte.io',
+  title: 'LAMM',
+  tagline: 'MLLM Ecology',
+  url: 'https://openlamm.github.io/',
   baseUrl: '/',
-  favicon: '/favicon.ico',
+  favicon: '/img/LAMM.png',
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
