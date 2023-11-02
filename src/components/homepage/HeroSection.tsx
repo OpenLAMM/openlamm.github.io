@@ -2,46 +2,48 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import {
   ChatMultipleRegular,
-  LiveRegular,
-  MicRegular,
+  BookInformation20Regular,
+  EmojiSmileSlight20Regular,
   VideoRegular,
+  Database24Regular,
+  List24Regular
 } from '@fluentui/react-icons';
 import ThemedImage from '@theme/ThemedImage';
 import clsx from 'clsx';
 
 const PRODUCTS = [
   {
-    title: 'Project',
-    link: '/guides/live-video/intro-video-conf',
-    icon: VideoRegular,
+    title: 'Tutorial',
+    link: '/Tutorial',
+    icon: BookInformation20Regular,
     lightImage: '/static/landing-page/hero/video-graphic.png',
     darkImage: '/static/landing-page/hero/video-graphic-dark.png',
-    text: 'Enable live video communication within your application. Perfect for education, telemedicine, social networks and gaming',
+    text: 'Learn how to prepare the dataset, model, environment, and start training and evaluation!',
   },
   {
     title: 'Dataset',
-    link: '/guides/voice-conf/intro-voice-conf',
-    icon: MicRegular,
+    link: '/Dataset',
+    icon: Database24Regular,
     lightImage: '/static/landing-page/hero/voice-graphic.png',
     darkImage: '/static/landing-page/hero/voice-graphic-dark.png',
-    text: 'Incorporate high-quality real-time audio into your application. Build voice calls, audio conferences, voice chats in games and more',
+    text: 'Download the dataset!',
   },
   {
     title: 'Demo',
-    link: '/guides/livestream/livestream-overview',
-    icon: LiveRegular,
+    link: 'https://huggingface.co/spaces/openlamm/LAMM',
+    icon: EmojiSmileSlight20Regular,
     lightImage: '/static/landing-page/hero/livestream-graphic.png',
     darkImage: '/static/landing-page/hero/livestream-graphic-dark.png',
-    text: 'Integrate highly scalable live video broadcasting capabilities into your app, ideal for apps that involve streaming webinars, sports or live events',
+    text: 'Try LAMM Demo!',
   },
   {
     title: 'Leaderboard',
     beta: false,
-    link: '/guides/realtime-chat/intro-chat',
-    icon: ChatMultipleRegular,
+    link: '/Leaderboard',
+    icon: List24Regular,
     lightImage: '/static/landing-page/hero/chat-graphic.png',
     darkImage: '/static/landing-page/hero/chat-graphic-dark.png',
-    text: 'Add real-time chat functionalities to your application. Be it customer support, social networks or any other colloboration use case, we got you covered',
+    text: 'View the leaderboard of multimodal large language models!',
   },
 ];
 
@@ -75,14 +77,15 @@ function HeroProduct({
         </h3>
         <p className="mb-0 text-sm text-zinc-400">{text}</p>
       </div>
-      <ThemedImage
+      <div className="p-6 !pb-0"></div>
+      {/* <ThemedImage
         sources={{
           light: lightImage,
           dark: darkImage,
         }}
         alt={title}
         className="mt-1 w-full transition-transform group-hover:scale-110"
-      />
+      /> */}
     </Link>
   );
 }

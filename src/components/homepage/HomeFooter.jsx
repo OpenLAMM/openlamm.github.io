@@ -126,7 +126,7 @@ function Status({ className }) {
 
   return (
     <Link
-      href="https://status.dyte.io"
+      // href="https://status.dyte.io"
       className={clsx(
         'flex items-center gap-2 rounded-lg border border-transparent p-1 px-2 font-jakarta font-semibold text-gray-500 transition-colors hover:border-gray-400 hover:bg-white hover:no-underline',
         className
@@ -169,7 +169,7 @@ export default function Footer() {
     <footer className="bg-zinc-100">
       <div className="mx-auto flex w-full max-w-[1080px] flex-col px-6 py-12">
         <div className="mb-12 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-          <img src="/logo/dyte.svg" alt="Dyte" className="h-9 w-fit lg:h-12" />
+          <img src="/logo/LAMM-logo-light.png" alt="LAMM" className="h-20 w-fit lg:h-12" />
 
           <Safety className="hidden lg:flex" />
           <BrowserOnly>
@@ -179,15 +179,15 @@ export default function Footer() {
           </BrowserOnly>
         </div>
 
-        <div className="grid grid-cols-2 gap-6 gap-y-12 md:justify-between lg:flex lg:flex-wrap">
-          {/* <Links name="Product" links={products} />
+        {/* <div className="grid grid-cols-2 gap-6 gap-y-12 md:justify-between lg:flex lg:flex-wrap">
+          <Links name="Product" links={products} />
           <Links name="Developers" links={developers} />
           <Links name="Usecases" links={usecases} />
           <Links name="Company" links={company} />
-          <Links name="Compare" links={comparisons} /> */}
-        </div>
+          <Links name="Compare" links={comparisons} />
+        </div> */}
 
-        <hr className="my-12 !bg-gray-300" />
+        <hr className="my-2 !bg-gray-300" />
 
         <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between lg:gap-0">
           <BrowserOnly>
@@ -199,23 +199,23 @@ export default function Footer() {
 
           <div className="flex items-center gap-4">
             <Link
-              href="https://github.com/dyte-io"
-              aria-label="Dyte's GitHub Organization"
+              href="https://github.com/OpenLAMM/LAMM"
+              aria-label="LAMM GitHub Organization"
             >
               <Github className="h-7 w-7 text-zinc-400 hover:text-primary" />
             </Link>
-            <Link
+            {/* <Link
               href="https://linkedin.com/company/dyteio"
               aria-label="LinkedIn"
             >
               <Linkedin className="h-7 w-7 text-zinc-400 hover:text-primary" />
-            </Link>
+            </Link> */}
             <Link href="https://twitter.com/dyte_io" aria-label="Twitter">
               <Twitter className="h-7 w-7 text-zinc-400 hover:text-primary" />
             </Link>
             <Link
-              href="https://youtube.com/company/dyteio"
-              aria-label="Dyte YouTube Channel"
+              href="https://www.youtube.com/watch?v=M7XlIe8hhPk"
+              aria-label="LAMM YouTube Channel"
             >
               <Youtube className="h-7 w-7 text-zinc-400 hover:text-primary" />
             </Link>
@@ -244,7 +244,7 @@ export default function Footer() {
             </Link>
             &bull;
             <span className="text-inherit">
-              &copy; {new Date().getFullYear()} Dyte Inc.
+              &copy; {new Date().getFullYear()} LAMM. Built with Dyte.
             </span>
           </div>
         </div>

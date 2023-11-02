@@ -103,7 +103,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: '/img/dyte-docs-card.png',
+      image: '/img/LAMM.png',
       colorMode: {
         defaultMode: 'light',
       },
@@ -115,11 +115,11 @@ const config = {
       navbar: {
         logo: {
           href: '/',
-          src: '/logo/light.svg',
-          srcDark: '/logo/dark.svg',
-          alt: 'Dyte Docs',
-          height: '40px',
-          width: '101px',
+          src: '/logo/LAMM-logo-light.png',
+          srcDark: '/logo/LAMM-logo-dark.png',
+          alt: 'LAMM',
+          height: '60px',
+          // width: '40px',
         },
         items: [
           {
@@ -155,9 +155,9 @@ const config = {
       footer: {
         logo: {
           href: '/',
-          src: '/logo/light.svg',
-          srcDark: '/logo/dark.svg',
-          alt: 'Dyte Docs',
+          src: '/logo/LAMM-logo-light.svg',
+          srcDark: '/logo/LAMM-logo-dark.svg',
+          alt: 'LAMM',
           height: '36px',
         },
         links: [
