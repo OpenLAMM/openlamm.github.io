@@ -1,38 +1,39 @@
 import {
   ChatMultipleRegular,
   LiveRegular,
-  MicRegular,
-  VideoRegular,
+  Database24Regular,
+  Settings24Regular,
 } from '@fluentui/react-icons';
+import {TestBeakerIcon, MachineLearningIcon, TrainingIcon} from '../../src/icons/index';
 
 <CardSection
   id="Quickstart"
   title="Quickstart"
-  description="Learn how to integrate live video and voice, live stream, and chat experiences into your product."
+  description="Learn how to prepare the dataset, model, environment, and start training and evaluation."
 >
    <Card
     title="Datasets"
-    icon={<MicRegular />}
+    icon={<Database24Regular />}
     to="/toturial/Datasets"
-    description="Integrate reliable voice calling experiences into your product."
+    description="Prepare dataset for instruction tuning and benchmark. "
   />
   <Card
     title="Models"
-    icon={<VideoRegular />}
+    icon={<MachineLearningIcon />}
     to="/toturial/Models"
-    description="LAMM Models"
+    description="Download pretrained weights of visual encoder and LLM and several pretrained models for evalution."
   />
  
   <Card
     title="Training"
-    icon={<LiveRegular />}
+    icon={<TrainingIcon />}
     to="/toturial/Training"
-    description="Get started with interactive livestreaming and broadcast to a large audience"
+    description="Train MLLMs with provided scripts."
   />
   <Card
     title="Benchmark"
-    icon={<ChatMultipleRegular />}
+    icon={<TestBeakerIcon />}
     to="/toturial/Benchmark"
-    description="Create interactive and collaborative in-app chat experiences."
+    description="Evaluate MLLMs with LAMM-Benchmark or ChEF."
   />
 </CardSection>

@@ -24,7 +24,7 @@ const docs = [
 const defaultSettings = {
   breadcrumbs: true,
   // editUrl: 'https://github.com/dyte-in/docs/tree/main/',
-  showLastUpdateTime: true,
+  showLastUpdateTime: false,
   // remarkPlugins: [
   //   [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
   // ],
@@ -132,7 +132,7 @@ const config = {
           },
           {
             label: 'Dataset',
-            to: '/Dataset',
+            to: '/tutorial/Datasets',
           },
           {
             label: 'Leaderboard',
