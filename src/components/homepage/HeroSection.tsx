@@ -18,7 +18,7 @@ const PRODUCTS = [
     icon: BookInformation20Regular,
     lightImage: '',
     darkImage: '',
-    text: 'Learn how to prepare the dataset, model, environment, and start training and evaluation!',
+    text: 'Learn how to prepare the dataset, model, environment, and start training and evaluation.',
   },
   {
     title: 'Dataset',
@@ -26,15 +26,15 @@ const PRODUCTS = [
     icon: Database24Regular,
     lightImage: '',
     darkImage: '',
-    text: 'Download the dataset!',
+    text: 'Download the dataset.',
   },
   {
-    title: 'Demo',
-    link: 'https://huggingface.co/spaces/openlamm/LAMM',
+    title: 'Models',
+    link: '/Model_system_card',
     icon: EmojiSmileSlight20Regular,
     lightImage: '',
     darkImage: '',
-    text: 'Try LAMM Demo!',
+    text: 'Use LAMM Models.',
   },
   {
     title: 'Leaderboard',
@@ -43,7 +43,7 @@ const PRODUCTS = [
     icon: List24Regular,
     lightImage: '',
     darkImage: '',
-    text: 'View the leaderboard of multimodal large language models!',
+    text: 'View the leaderboard of multimodal large language models.',
   },
 ];
 

@@ -1,5 +1,4 @@
 import React , { useState }from 'react';
-import clsx from 'clsx';
 const githubUsernames = [
   'wangjiongw',
   'Coach257',
@@ -13,31 +12,6 @@ const githubUsernames = [
   'Zhoues',
   'yinzhenfei',
 ];
-
-function Status({ className }) {
-  const [status, setStatus] = useState({
-    indicator: 'none',
-    description: 'All Systems Operational',
-  });
-  return (
-    <div
-      className={clsx(
-        'flex items-center gap-2 rounded-lg border border-transparent p-1 px-2 font-jakarta font-semibold text-gray-500 transition-colors',
-        className
-      )}
-      target="_blank"
-    >
-      <div
-        className={clsx(
-          'h-4 w-4 rounded-full bg-[#2DB002]',
-          status.indicator === 'none' ? 'bg-[#2DB002]' : 'bg-yellow-500'
-        )}
-      ></div>
-      <div>{status.description}</div>
-    </div>
-  );
-}
-
 
 export default function CommunitySection() {
   const [hoveredItem, setHoveredItem] = useState(null);
