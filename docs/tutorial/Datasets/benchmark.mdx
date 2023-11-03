@@ -1,0 +1,157 @@
+---
+title: 'Benchmark'
+sidebar_position: 4
+---
+
+We provide 2D/3D/ChEF benchmark datasets for downstream evaluation.
+
+## 2D Benchmark Datasets
+
+2D Benchmark datasets are build on [Flickr30k](https://shannon.cs.illinois.edu/DenotationGraph/), [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html), [FSC147](https://github.com/cvlab-stonybrook/LearningToCountEverything), [CelebA](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html), [UCMerced](http://weegee.vision.ucmerced.edu/datasets/landuse.html), [LSP](https://dbcollection.readthedocs.io/en/latest/datasets/leeds_sports_pose_extended.html), [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/), [SVT](https://paperswithcode.com/dataset/svt), [AI2D](https://github.com/allenai/dqa-net) and [ScienceQA](https://scienceqa.github.io/) datasets. You can download them from [here](https://opendatalab.com/LAMM/LAMM/tree/main/raw/2D_Benchmark).
+
+Corresponding meta file is here:
+
+|  Meta file name  | size  |  Image file name | size |  
+|  ----  | ----  |  ----  | ----  |  
+| [Caption_flickr30k.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/Caption_flickr30k.json)  | 598K | flickr30k_images.zip | 559M |     
+| [Classification_CIFAR10.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/Classification_CIFAR10.json)  | 2.6M | cifar10_images.zip  | 8.9M  |  
+| [Counting_FSC147.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/Counting_FSC147.json) | 7.3M | fsc147_images.zip   |  44M |  
+| [Detection_VOC2012.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/Detection_VOC2012.json) | 6.4M | voc2012_images.zip  | 196M  |  
+| [Facial_Classification_CelebA(Hair).json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/Facial_Classification_CelebA(Hair).json) | 2.4M | celeba_images.zip  |  566M |  
+| [Facial_Classification_CelebA(Smile).json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/Facial_Classification_CelebA(Smile).json) | 3.7M |  celeba_images.zip  |  566M |  
+| [Fine-grained_Classification_UCMerced.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/Fine-grained_Classification_UCMerced.json) | 676K | ucmerced_images.zip  | 317M  |  
+| [Keypoints_Dectection_LSP.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/Keypoints_Detection_LSP.json) | 3.9M |  fsc147_images.zip   |  44M |   
+| [Locating_FSC147.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/Locating_FSC147.json) | 7.5M | fsc147_images.zip   |  44M |  
+| [Locating_LSP.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/Locating_LSP.json) | 3.9M | lsp_images.zip  |  9.9M |  
+| [Locating_VOC2012.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/Locating_VOC2012.json) | 6.0M | voc2012_images.zip  | 196M  |  
+| [OCR_SVT.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/OCR_SVT.json) | 68K |  svt_images.zip  | 82M  |  
+| [VQA_AI2D.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/VQA_AI2D.json) | 2.1M | ai2d_images.zip  | 559M  |  
+| [VQA_SQAimage.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/VQA_SQAimage.json) | 3.6M |  sqaimage_images.zip  | 127M  |
+
+## 3D Benchmark Datasets
+
+We provide two 3D benchmark datasets, "Scan2Inst-benchmark" and "LAMM3D-Dataset-benchmark".
+
+#### Scan2Inst-benchmark
+
+If your MLLMs are trained with "Scan2Inst", you should use "Scan2Inst-benchmark" for evaluation.
+
+We provide [NR3D](https://referit3d.github.io/) and [ShapeNet](https://shapenet.org/) for zero-shot evaluation, and ScanNet for finetuning evaluation. You can download processed pickle file from [here](https://opendatalab.com/LAMM/OctaviusDataset/tree/main/OctaviusDataset_3D/3D_Benchmark/meta_file).
+
+Corresponding meta file is here:
+
+...
+
+#### LAMM3D-Dataset-benchmark
+
+If your MLLMs are trained with "LAMM3D-Dataset", you should use "LAMM3D-Dataset-benchmark" for evalution.
+
+LAMM3D-Dataset-benchmark is build on [ScanNet](http://www.scan-net.org/). You can download them from [here](https://opendatalab.com/LAMM/LAMM/tree/main/raw/3D_Instruct).
+
+Corresponding meta file is here:
+
+|  Meta file name  | size  |  Image file name  | size  |  
+|  ----  | ----  |  ----  | ----  |   
+|  [Detection_ScanNet.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/3D_Benchmark/meta_file/Detection_ScanNet.json)  | 1.7M  | scannet_pcls.zip  | 246M  | 
+|  [VG_ScanRefer.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/3D_Benchmark/meta_file/VG_ScanRefer.json)  | 3.7M  | scannet_pcls.zip  | 246M  | 
+|  [VQA_ScanQA_multiplechoice.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/3D_Benchmark/meta_file/VQA_ScanQA_multiplechoice.json)  | 859K  | scannet_pcls.zip  | 246M  |
+
+## ChEF Benchmark Dataset
+
+**Omnibenchmark**
+
+Download [Omnibenchmark](https://entuedu-my.sharepoint.com/:f:/g/personal/yuanhan002_e_ntu_edu_sg/El2wmbzutJBOlu8Tz9HyDJABMmFtsG_8mq7uGh4Q7F1QSQ?e=NyroDS) for fine-grained classification dataset and [Bamboo Label System](https://github.com/ZhangYuanhan-AI/Bamboo) for hierarchical catergory labels. 
+
+We sampled and labeled Omnibenchmark meticulously by using a hierarchical chain of categories, facilitated by the Bamboo label system. 
+
+```shell
+python ChEF/data_process/Omnibenchmark.py
+```
+
+You can also directly download the labeled Omnibenchmark dataset from [OpenXLab](https://openxlab.org.cn/datasets/LAMM/ChEF).
+
+Finally, the dataset should have this structure:
+
+**MMBench, MME and SEEDBench**
+
+Refer to [MMBench](https://github.com/open-compass/MMBench), [MME](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models) and [SEEDBench](https://github.com/AILab-CVC/SEED-Bench) for dataset and more details.
+
+**POPE**
+
+POPE is a special labeled COCO dataset for hallucination evaluation based on the validation set of COCO 2014. Download [COCO](https://cocodataset.org/#download)  and [POPE](https://github.com/RUCAIBox/POPE).
+
+**MMBench_C and ScienceQA_C**
+
+MMBench_C and ScienceQA_C are datasets with image and text corruptions fot robustness evaluation. You can also directly download the MMBench_C and ScienceQA_C dataset from [OpenXLab](https://openxlab.org.cn/datasets/LAMM/ChEF).
+
+## Data Structure
+
+```text
+ChEF
+├── configs
+└── data
+    ├── checkpoints
+    └── datasets
+        ├── Omnibenchmark_raw
+        └── Bamboo
+            └── sensexo_visual_add_academic_add_state_V4.visual.json
+```
+
+```text
+ChEF
+├── configs
+└── data
+    ├── checkpoints
+    └── datasets
+        ├── ChEF
+        |   └── Omnibenchmark_Bamboo
+        |       ├── meta_file
+        |       └── omnibenchmark_images
+        └── Bamboo
+            └── sensexo_visual_add_academic_add_state_V4.visual.json
+```
+
+```text
+ChEF
+├── configs
+└── data
+    ├── checkpoints
+    └── datasets
+        ├── MMBench
+        |   ├── mmbench_dev_20230712.tsv
+        |   └── mmbench_test_20230712.tsv
+        ├── MME_Benchmark_release_version
+        └── SEED-Bench
+```
+
+```text
+ChEF
+├── configs
+└── data
+    ├── checkpoints
+    └── datasets
+        └── coco_pope
+            ├── val2014
+            ├── coco_pope_adversarial.json
+            ├── coco_pope_popular.json
+            └── coco_pope_random.json
+```
+
+```text
+ChEF
+├── configs
+└── data
+    ├── checkpoints
+    └── datasets
+        └── ChEF
+            ├── MMBench_C
+            |   ├── images
+            |   ├── Image_Corruptions_info.json
+            |   ├── Text_Corruptions_info.json
+            |   └── MMBench_C.json
+            └── ScienceQA_C
+                ├── sqaimage_images
+                ├── Image_Corruptions_info.json
+                ├── Text_Corruptions_info.json
+                └── VQA_ScienceQA_C.json
+```

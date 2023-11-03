@@ -140,7 +140,7 @@ const config = {
           },
           {
             label: 'Model System Card',
-            to: 'Model_system_card',
+            to: '/model_system_card',
           },
           {
             label: 'Group&Ak',
