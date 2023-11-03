@@ -1,3 +1,5 @@
+# Updates
+
 📆 [2023-09-20]
 
 - LAMM is accepted by NeurIPS2023 Datasets & Benchmark Track! See you in December!
@@ -5,7 +7,7 @@
 📆 [2023-09-02]
 
 - Training LAMM on V100 or RTX3090 is available! Finetuning LLaMA2 is online.
-- Our demo moved to OpenXLab.
+- Our demo moved to [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://openxlab.org.cn/apps/detail/LAMM/LAMM)
 
 📆 [2023-07-28]
 
