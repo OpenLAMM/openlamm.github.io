@@ -10,40 +10,40 @@ import {
 } from '@fluentui/react-icons';
 import ThemedImage from '@theme/ThemedImage';
 import clsx from 'clsx';
-
+import VideoSection from './VideoSection';
 const PRODUCTS = [
   {
     title: 'Tutorial',
-    link: '/Tutorial',
+    link: '/tutorial',
     icon: BookInformation20Regular,
-    lightImage: '/static/landing-page/hero/video-graphic.png',
-    darkImage: '/static/landing-page/hero/video-graphic-dark.png',
-    text: 'Learn how to prepare the dataset, model, environment, and start training and evaluation!',
+    lightImage: '',
+    darkImage: '',
+    text: 'Learn how to prepare the dataset, model, environment, and start training and evaluation.',
   },
   {
     title: 'Dataset',
     link: '/tutorial/Datasets',
     icon: Database24Regular,
-    lightImage: '/static/landing-page/hero/voice-graphic.png',
-    darkImage: '/static/landing-page/hero/voice-graphic-dark.png',
-    text: 'Download the dataset!',
+    lightImage: '',
+    darkImage: '',
+    text: 'Download the dataset.',
   },
   {
-    title: 'Demo',
-    link: 'https://huggingface.co/spaces/openlamm/LAMM',
+    title: 'Models',
+    link: '/Model_system_card',
     icon: EmojiSmileSlight20Regular,
-    lightImage: '/static/landing-page/hero/livestream-graphic.png',
-    darkImage: '/static/landing-page/hero/livestream-graphic-dark.png',
-    text: 'Try LAMM Demo!',
+    lightImage: '',
+    darkImage: '',
+    text: 'Use LAMM Models.',
   },
   {
     title: 'Leaderboard',
     beta: false,
     link: '/Leaderboard',
     icon: List24Regular,
-    lightImage: '/static/landing-page/hero/chat-graphic.png',
-    darkImage: '/static/landing-page/hero/chat-graphic-dark.png',
-    text: 'View the leaderboard of multimodal large language models!',
+    lightImage: '',
+    darkImage: '',
+    text: 'View the leaderboard of multimodal large language models.',
   },
 ];
 
@@ -103,6 +103,11 @@ export default function HeroSection() {
           </p>
         </div>
       </section>
+      <VideoSection/>
+
+      <div className="pt-20">
+           
+      </div>
 
       <section className="mx-auto grid w-full max-w-5xl grid-cols-1 grid-rows-2 gap-6 px-4 md:grid-cols-2">
         {PRODUCTS.map((product) => (

@@ -9,7 +9,7 @@ const meta = {
   tagline: 'MLLM Ecology',
   url: 'https://openlamm.github.io/',
   baseUrl: '/',
-  favicon: '/img/LAMM.png',
+  favicon: '/logo/LAMM-logo.png',
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -103,7 +103,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: '/img/LAMM.png',
+      image: '/logo/LAMM-logo.png',
       colorMode: {
         defaultMode: 'light',
       },
@@ -140,115 +140,13 @@ const config = {
           },
           {
             label: 'Model System Card',
-            to: 'Model_system_card',
+            to: '/model_system_card',
           },
           {
             label: 'Group&Ak',
             to: 'Group_ak',
           },
-          {
-            type: 'search',
-            position: 'right',
-          },
         ],
-      },
-      footer: {
-        logo: {
-          href: '/',
-          src: '/logo/LAMM-logo-light.svg',
-          srcDark: '/logo/LAMM-logo-dark.svg',
-          alt: 'LAMM',
-          height: '36px',
-        },
-        links: [
-          {
-            title: 'Product',
-            items: [
-              {
-                label: 'Demo',
-                href: 'https://app.dyte.io',
-              },
-              {
-                label: 'Developer Portal',
-                href: 'https://dev.dyte.io',
-              },
-              {
-                label: 'Pricing',
-                href: 'https://dyte.io/#pricing',
-              },
-            ],
-          },
-          {
-            title: 'Company',
-            items: [
-              {
-                label: 'About Us',
-                href: 'https://dyte.io',
-              },
-              {
-                label: 'Join Us',
-                href: 'https://dyte.freshteam.com/jobs',
-              },
-              {
-                label: 'Privacy Policy',
-                href: 'https://dyte.io/privacy-policy',
-              },
-              {
-                label: 'Contact Us',
-                href: 'https://dyte.io/contact',
-              },
-            ],
-          },
-          {
-            title: 'Resources',
-            items: [
-              {
-                label: 'Documentation',
-                href: '/',
-              },
-              {
-                label: 'Blog',
-                href: 'https://dyte.io/blog',
-              },
-              {
-                label: 'Community',
-                href: 'https://community.dyte.io',
-              },
-            ],
-          },
-        ],
-        copyright: 'Copyright © Dyte since 2023. All rights reserved.',
-      },
-      prism: {
-        theme: code_themes.light,
-        darkTheme: code_themes.dark,
-        additionalLanguages: [
-          'dart',
-          'ruby',
-          'groovy',
-          'kotlin',
-          'java',
-          'swift',
-          'objectivec',
-        ],
-        magicComments: [
-          {
-            className: 'theme-code-block-highlighted-line',
-            line: 'highlight-next-line',
-            block: { start: 'highlight-start', end: 'highlight-end' },
-          },
-          {
-            className: 'code-block-error-line',
-            line: 'highlight-next-line-error',
-          },
-        ],
-      },
-      algolia: {
-        appId: 'HL0HSV62RK',
-        apiKey: '72ebf02146698733b7114c7b36da0945',
-        indexName: 'docs',
-        contextualSearch: true,
-        searchParameters: {},
       },
     }),
 
