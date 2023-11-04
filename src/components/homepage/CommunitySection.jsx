@@ -60,3 +60,8 @@ export default function CommunitySection() {
     
   );
 }
+
+
+export const Contributors = () => {
+  return githubUsernames;
+}
