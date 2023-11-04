@@ -20,7 +20,7 @@ import {
 import Translate from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { createPortal } from 'react-dom';
-import translations from '@theme/SearchTranslations';
+// import translations from '@theme/SearchTranslations';
 import { Tab } from '@headlessui/react';
 import clsx from 'clsx';
 import { ChatBot } from '@dytesdk/docs-ai-react';
