@@ -14,7 +14,8 @@ Once you have successfully configured the environment, the entire directory stru
 
 ```
 LAMM
-├── ckpt 
+├── ckpt
+│   ├── epcl_vit-L_256tokens  # EPCL pretraining checkpoints (Optional)
 │   ├── lamm_2d               # saved checkpoints in training
 │   └── ...
 ├── data                      # dataset folder, see `Dataset Preparation` section for detail
@@ -25,8 +26,7 @@ LAMM
 ├── docs                      # document
 ├── images                    # readme assets
 ├── model_zoo                 # see `Model Preparation for Training` for detail 
-│   ├── vicuna_ckpt           # Vicuna-7B/13B
-│   ├── epcl_vit-L_256tokens  # EPCL pretraining checkpoints (Optional)
+│   ├── vicuna_ckpt
 │   └── ...
 ├── requirements              # python environment requirements 
 ├── src

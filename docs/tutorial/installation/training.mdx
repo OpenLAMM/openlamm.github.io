@@ -1,0 +1,63 @@
+---
+title: 'Training'
+sidebar_position: 1
+---
+
+Pre-requist Packages: `gcc <= 7.5.0; nvcc >= 11.1`
+
+## Python & Pytorch Environment
+
+    ```bash
+    conda create -n lamm python=3.10 -y
+    conda activate lamm
+    # Choose different version of torch according to your 
+    conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
+    ```
+
+## Install Required Dependencies
+
+    ```bash
+    conda install timm==0.6.7 deepspeed==0.9.3 transformers==4.31.0 -c conda-forge
+    pip install peft==0.3.0 --no-dependencies
+    pip install -r requirements/default.txt
+
+    ```
+    Install Faiss 
+    ```bash
+    # if cuda is available
+    conda install -c conda-forge faiss-gpu
+    # otherwise
+    conda install -c conda-forge faiss-cpu
+    ```
+    Download required NLTK data
+
+    ```python
+    import nltk
+    nltk.download('stopwords')
+    nltk.download('punkt')
+    nltk.download('wordnet')
+    ```
+
+## Optional Dependencies
+
+    * LAMM-3D Environments
+
+        ```bash
+        cd src/model/EPCL/third_party/pointnet2/
+        python setup.py install
+        cd ../../utils/
+        pip install cython
+        python cython_compile.py build_ext --inplace
+        ```
+
+    * Reducing Memory in Training
+
+        - flash attention (v2)   
+            
+            Install flash attention (v2) if you are tight in GPU memory. Please refer to [flash attention's installation](https://github.com/Dao-AILab/flash-attention/tree/main#installation-and-features)
+            
+            > FlashAttention-2 currently supports Ampere, Ada, or Hopper GPUs (e.g., A100, RTX 3090, RTX 4090, H100).
+
+        - xformers   
+    
+            Install xformers if you are tight in GPU memory and cannot use flash attention (e.g., using Nvidia v100). Please refer to [xformers's installation](https://github.com/facebookresearch/xformers#installing-xformers)

@@ -22,7 +22,7 @@ const PRODUCTS = [
   },
   {
     title: 'Dataset',
-    link: '/tutorial/Datasets',
+    link: '/tutorial/datasets',
     icon: Database24Regular,
     lightImage: '',
     darkImage: '',

@@ -1,9 +1,7 @@
 ---
-title: 'Custom Benchmark'
-sidebar_position: 2
+title: 'Custom ChEF Benchmark'
+sidebar_position: 5
 ---
-
-You can customize the behavior of Evaluator in ChEF for your requirements.
 
 ## Evaluator
 
@@ -55,19 +53,7 @@ In ChEF, you can employ your own custom models by following these steps. This gu
 
 3.1. Add your model in `src/ChEF/models/__init__.py`
 
-3.2 Prepare your model configuration in `src/config/ChEF/models/`. For example, the config for `KOSMOS-2`(src/config/ChEF/models/kosmos2.yaml):
-
-```yaml
-model_name: Kosmos2
-model_path: ../model_zoo/kosmos/kosmos-2.pt
-if_grounding: False # set True for detection and grounding evaluation
-``` 
-The config for KOSMOS-2 on detection tasks evaluation:
-```yaml
-model_name: Kosmos2
-model_path: ../model_zoo/kosmos/kosmos-2.pt
-if_grounding: True
-``` 
+3.2 Prepare your model configuration in `src/config/ChEF/models/`
 
 3.3 Use the provided recipes for evaluation. 
 

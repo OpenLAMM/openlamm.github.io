@@ -3,7 +3,25 @@ title: 'Training'
 sidebar_position: 4
 ---
 
-# Training
+## Prepare Required Checkpoints
+
+We provide pretrained weights of visual encoder and LLM, you can download them from the Table and put them in `model_zoo` directory.
+
+|  Model Name  | Link  |  
+|  ----------  | ----  |   
+|  Vicuna      | [Link](https://github.com/lm-sys/FastChat/tree/main#vicuna-weights)  | 
+| clip-vit-large-patch14-336  | [Link](https://huggingface.co/openai/clip-vit-large-patch14-336) | 
+| epcl_vit-L_256tokens        | [Link](https://huggingface.co/openlamm/epcl_vit-L_256tokens)     |
+
+Organize the pretrained weights as below:
+
+```
+model_zoo
+├── vicuna_ckpt
+│   ├── 13b_v0          
+│   └── 7b_v0
+└── epcl_vit-L_256tokens
+```
 
 ## LAMM
 
@@ -59,3 +77,26 @@ For your reference, GPU memory consumption for different models are shown as fol
     sh tools/Octavius/train_octavius_slurm.sh <YOUR_PARTITION> <NUM_GPU> \
         config/Octavius/octavius_2d+3d_e6_bs64.yaml octavius_2d+3d_e6_bs64
     ```
+
+## Model Zoo
+
+We provide several pretrained LAMM/Octavius checkpoints here:
+
+**LAMM**
+
+| # Training Samples  | Vision Encoder | LLM | Training Data | Lora Rank | Link |
+| -------------------------- | :--------: | :--------: | -------- | :----: | :---------------: |
+| 98K  | CLIP-ViT-L | Vicuna_v0_7B            | LAMM-2D daily dialogue & desctiption | 32 | [Checkpoints](https://huggingface.co/openlamm/lamm_7b_lora32_98k) |
+| 186K  | CLIP-ViT-L | Vicuna_v0_7B            | LAMM-2D Instruction Data | 32 | [Checkpoints](https://huggingface.co/openlamm/lamm_7b_lora32_186k) |
+| 186K | CLIP-ViT-L |  LLaMA2_chat_7B           | LAMM-2D Instruction Data | 32 | [Checkpoints](https://huggingface.co/openlamm/lamm186k_llama2chat7b_lora32) |
+| 98K | CLIP-ViT-L | Vicuna_v0_13B           | LAMM-2D daily dialogue & desctiption | 32 | [Checkpoints](https://huggingface.co/openlamm/lamm_13b_lora32_98k) |
+| 186K | CLIP-ViT-L |  Vicuna_v0_13B           | LAMM-2D Instruction Data | 32 | [Checkpoints](https://huggingface.co/openlamm/lamm_13b_lora_186k) |
+| 10K | EPCL-ViT-L |  Vicuna_v0_13B           | LAMM-3D Instruction Data | 32 | [Checkpoints](https://huggingface.co/openlamm/lamm3d_13b_lora32_10k) |
+
+**Octavius**
+
+|  Model Name  | Link  |  
+|  ----------  | ----  |   
+|  Octavius_2d-3d_e6_bs64      | [Checkpoints](https://huggingface.co/openlamm/Octavius_2d-3d_e6_bs64)  | 
+
+You can download them and put them into `ckpt` directory for fast evaluation.
