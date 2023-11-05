@@ -1,11 +1,13 @@
 ---
-title: 'Training'
-sidebar_position: 1
+title: 'Installation'
+sidebar_position: 3
 ---
+
+## Training
 
 Pre-requist Packages: `gcc <= 7.5.0; nvcc >= 11.1`
 
-## Python & Pytorch Environment
+#### Python & Pytorch Environment
 
     ```bash
     conda create -n lamm python=3.10 -y
@@ -14,7 +16,7 @@ Pre-requist Packages: `gcc <= 7.5.0; nvcc >= 11.1`
     conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
     ```
 
-## Install Required Dependencies
+#### Install Required Dependencies
 
     ```bash
     conda install timm==0.6.7 deepspeed==0.9.3 transformers==4.31.0 -c conda-forge
@@ -38,7 +40,7 @@ Pre-requist Packages: `gcc <= 7.5.0; nvcc >= 11.1`
     nltk.download('wordnet')
     ```
 
-## Optional Dependencies
+#### Optional Dependencies
 
     * LAMM-3D Environments
 
@@ -61,3 +63,27 @@ Pre-requist Packages: `gcc <= 7.5.0; nvcc >= 11.1`
         - xformers   
     
             Install xformers if you are tight in GPU memory and cannot use flash attention (e.g., using Nvidia v100). Please refer to [xformers's installation](https://github.com/facebookresearch/xformers#installing-xformers)
+
+## Benchmarking
+We use ChEF for benchmarking.
+
+```shell
+conda create -n ChEF python=3.10
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia
+pip install -r requirements/default.txt
+pip install -r requirements/ChEF.txt
+```
+
+#### Optional Dependencies
+
+* Efficient Inference
+
+    - lightllm   
+        
+        Install lightllm to speed up inference and decrease the GPU memery usage to enable large batchsize.
+    
+        ```bash
+        git clone -b multimodal  https://github.com/ModelTC/lightllm.git
+        cd lightllm
+        python setup.py install
+        ```

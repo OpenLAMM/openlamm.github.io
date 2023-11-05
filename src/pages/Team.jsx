@@ -8,11 +8,11 @@ import {
   Home24Regular
 } from '@fluentui/react-icons';
 import {Contributors} from '../components/homepage/CommunitySection';
-
+import {Twitter} from '@styled-icons/boxicons-logos';
 
 const githubUsernames = Contributors();
 
-const Item = ({ image, name, organization, organizationb, githubLink, homepageLink }) => {
+const Item = ({ image, name, organization, organizationb, githubLink, homepageLink, twitterLink }) => {
   return (
     <div className="team-item">
       <img src={image} alt={name} className="team-item-image" />
@@ -24,6 +24,7 @@ const Item = ({ image, name, organization, organizationb, githubLink, homepageLi
         </div>
         <p></p>
         <div className="text-center padding-top:10px;">
+          {twitterLink && <a href={twitterLink} target="_blank" rel="noopener noreferrer" className='margin-right: 15px;'><Twitter className="h-10 w-10 text-zinc-400 hover:text-primary"/></a>}
           {githubLink && <a href={githubLink} target="_blank" rel="noopener noreferrer" className='margin-right: 15px;'><Github className="h-10 w-10 text-zinc-400 hover:text-primary"/></a>}
           {homepageLink && <a href={homepageLink} target="_blank" rel="noopener noreferrer" className='margin-right: 15px;'><Home24Regular className="h-10 w-10 text-zinc-400 hover:text-primary"/></a>}
         </div>
@@ -44,6 +45,7 @@ const ItemList = ({ items }) => {
           organizationb={item.organizationb}
           githubLink={item.githubLink}
           homepageLink={item.homepageLink}
+          twitterLink={item.twitter}
         />
       ))}
     </div>
@@ -57,6 +59,7 @@ const items = [
     organization: 'University of Sydney',
     organizationb: 'Shanghai AI Lab', 
     githubLink: 'https://github.com/yinzhenfei', 
+    twitter: 'https://x.com/9ldrohjze56jsh9?s=21',
     homepageLink: 'https://scholar.google.com/citations?hl=zh-CN&user=ngPR1dIAAAAJ',
   },
   {
@@ -90,6 +93,7 @@ const advisor = [
     image: '/img/group/sj.jpg', 
     name: 'Jing Shao', 
     organization: 'Shanghai AI Lab', 
+    twitter: 'https://twitter.com/Amanda_JShao',
     githubLink: '', 
     homepageLink: 'https://amandajshao.github.io/',
   },
@@ -98,6 +102,7 @@ const advisor = [
     name: 'Lu Sheng', 
     organization: 'Beihang University', 
     githubLink: '', 
+    twitter: 'https://twitter.com/SHENGLui1989',
     homepageLink: 'https://scholar.google.com.hk/citations?user=_8lB7xcAAAAJ',
   },
   {
@@ -111,6 +116,7 @@ const advisor = [
     image: '/img/group/oywl.jpg', 
     name: 'Wanli Ouyang', 
     organization: 'Shanghai AI Lab', 
+    twitter: 'https://twitter.com/ouyang_wanli',
     githubLink: '', 
     homepageLink: 'https://wlouyang.github.io/',
   },

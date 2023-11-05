@@ -37,13 +37,15 @@ We employ specialized *Recipes* to assess the six dimensions of desiderata. All 
 
 *ICL denotes In-context learning, Ins. Follow. denotes Instruction Following, and Lang. Perf. denotes Language Performance.
 
-## Comparison between GPT-4V and Bard
-We evaluate GPT-4V(ision) and Bard on MMBench and ScienceQA scenarios, as well as the desiderata including in-context learning, instruction following, hallucination, and robustness. 
+## Evaluation on GPT-4V and Bard
+We evaluate GPT-4V(ision) and Bard on MMBench and ScienceQA scenarios, as well as the desiderata including in-context learning, instruction following, hallucination, and robustness. We extract 30 data samples from ScienceQA and MMBench respectively for both scenario evaluations and each of the desideratum evaluation. We compare these two api-only models with three open-source MLLMs (LLaVA, Otter, and MiniGPT4) on the same data samples.
 
 
 | **MLLM**       | **ScienceQA** | **MMBench** | **ICL**    | **Ins. Follow.** | **Robustness** | **Hallucination** |
 |-------------|-----------|---------|--------|--------------|------------|---------------|
-| **GPT-4V**  | **96.67** | **93.80**|**43.98**| **97.69**    | **82.16**  | **96.00**        |
+| **GPT-4V**  | **96.67** | **93.80**| 43.98| **97.69**    | **82.16**  | **96.00**        |
 | **Bard**    | 90.00     | 71.43    | 39.61  | 71.41        | 71.05       | 88.88           |
-
+| **LLaVA**   | 50.00     | 43.33    |**47.99**| 36.67      |  34.18       | 36.67 |
+| **Otter**    |  63.33       | 50.00|  47.91   |    44.44         |  37.35        | 80.00 |
+| **mPLUG-Owl** |  53.33       |  46.67       |   42.14  |     41.67        |  63.46        | 36.67
 *ICL denotes In-context learning, and Ins. Follow. denotes Instruction Following.

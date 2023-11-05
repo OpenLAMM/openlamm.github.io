@@ -1,13 +1,13 @@
 ---
-title: 'Benchmark'
+title: 'Benchmarking'
 sidebar_position: 2
 ---
 
-We provide 2D/3D/ChEF benchmark datasets for downstream evaluation.
+We provide 2D/3D/ChEF benchmarking datasets for downstream evaluation.
 
-## 2D Benchmark Datasets
+## 2D Benchmarking Datasets
 
-2D Benchmark datasets are build on [Flickr30k](https://shannon.cs.illinois.edu/DenotationGraph/), [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html), [FSC147](https://github.com/cvlab-stonybrook/LearningToCountEverything), [CelebA](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html), [UCMerced](http://weegee.vision.ucmerced.edu/datasets/landuse.html), [LSP](https://dbcollection.readthedocs.io/en/latest/datasets/leeds_sports_pose_extended.html), [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/), [SVT](https://paperswithcode.com/dataset/svt), [AI2D](https://github.com/allenai/dqa-net) and [ScienceQA](https://scienceqa.github.io/) datasets. You can download them from [here](https://opendatalab.com/LAMM/LAMM/tree/main/raw/2D_Benchmark).
+2D Benchmarking datasets are build on [Flickr30k](https://shannon.cs.illinois.edu/DenotationGraph/), [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html), [FSC147](https://github.com/cvlab-stonybrook/LearningToCountEverything), [CelebA](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html), [UCMerced](http://weegee.vision.ucmerced.edu/datasets/landuse.html), [LSP](https://dbcollection.readthedocs.io/en/latest/datasets/leeds_sports_pose_extended.html), [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/), [SVT](https://paperswithcode.com/dataset/svt), [AI2D](https://github.com/allenai/dqa-net) and [ScienceQA](https://scienceqa.github.io/) datasets. You can download them from [here](https://opendatalab.com/LAMM/LAMM/tree/main/raw/2D_Benchmark).
 
 Corresponding meta file is here:
 
@@ -20,7 +20,7 @@ Corresponding meta file is here:
 | [Facial_Classification_CelebA(Hair).json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/Facial_Classification_CelebA(Hair).json) | 2.4M | celeba_images.zip  |  566M |  
 | [Facial_Classification_CelebA(Smile).json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/Facial_Classification_CelebA(Smile).json) | 3.7M |  celeba_images.zip  |  566M |  
 | [Fine-grained_Classification_UCMerced.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/Fine-grained_Classification_UCMerced.json) | 676K | ucmerced_images.zip  | 317M  |  
-| [Keypoints_Dectection_LSP.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/Keypoints_Detection_LSP.json) | 3.9M |  fsc147_images.zip   |  44M |   
+| [Keypoints_Dectection_LSP.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/Keypoints_Detection_LSP.json) | 3.9M |  lsp_images.zip   |  44M |   
 | [Locating_FSC147.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/Locating_FSC147.json) | 7.5M | fsc147_images.zip   |  44M |  
 | [Locating_LSP.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/Locating_LSP.json) | 3.9M | lsp_images.zip  |  9.9M |  
 | [Locating_VOC2012.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/Locating_VOC2012.json) | 6.0M | voc2012_images.zip  | 196M  |  
@@ -28,15 +28,15 @@ Corresponding meta file is here:
 | [VQA_AI2D.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/VQA_AI2D.json) | 2.1M | ai2d_images.zip  | 559M  |  
 | [VQA_SQAimage.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/2D_Benchmark/meta_file/VQA_SQAimage.json) | 3.6M |  sqaimage_images.zip  | 127M  |
 
-## 3D Benchmark Datasets
+## 3D Benchmarking Datasets
 
-We provide two 3D benchmark datasets, "Scan2Inst-benchmark" and "LAMM3D-Dataset-benchmark".
+We provide two 3D benchmarking datasets, "Scan2Inst-benchmark" and "LAMM3D-Dataset-benchmark".
 
 #### Scan2Inst-benchmark
 
 If your MLLMs are trained with "Scan2Inst", you should use "Scan2Inst-benchmark" for evaluation.
 
-We provide [NR3D](https://referit3d.github.io/) and [ShapeNet](https://shapenet.org/) for zero-shot evaluation, and ScanNet for finetuning evaluation. You can download processed pickle file from [here](https://opendatalab.com/LAMM/OctaviusDataset/tree/main/OctaviusDataset_3D/3D_Benchmark/meta_file).
+We provide [NR3D](https://referit3d.github.io/) and [ShapeNet](https://shapenet.org/) for zero-shot evaluation, and [ScanNet](http://www.scan-net.org) for finetuning evaluation. You can download processed pickle file from [here](https://opendatalab.com/LAMM/OctaviusDataset/tree/main/OctaviusDataset_3D/3D_Benchmark/meta_file).
 
 Corresponding meta file is here:
 
@@ -62,7 +62,7 @@ Corresponding meta file is here:
 |  [VG_ScanRefer.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/3D_Benchmark/meta_file/VG_ScanRefer.json)  | 3.7M  | scannet_pcls.zip  | 246M  | 
 |  [VQA_ScanQA_multiplechoice.json](https://huggingface.co/datasets/openlamm/LAMM_Dataset/blob/main/3D_Benchmark/meta_file/VQA_ScanQA_multiplechoice.json)  | 859K  | scannet_pcls.zip  | 246M  |
 
-## ChEF Benchmark Dataset
+## ChEF Benchmarking Dataset
 
 #### Omnibenchmark
 

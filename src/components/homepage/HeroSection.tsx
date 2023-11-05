@@ -95,8 +95,9 @@ export default function HeroSection() {
     <>
       <section className="noise-bg no-underline-links px-4 pt-16 lg:py-0">
         <div className="flex flex-col items-center justify-between py-14">
-          <h2 className="mb-4 font-jakarta text-5xl font-bold">LAMM</h2>
-          <p className="max-w-xl text-center text-text-400">abstract_here</p>
+          <h2 className="mb-8 max-w-5xl text-center font-jakarta text-5xl font-bold">LAMM: Language Assisted Multimodal Models and their Application</h2>
+          <p className="max-w-5xl font-jakarta text-xl">LAMM (pronounced as /læm/, means cute lamb to show appreciation
+ to LLaMA), is a growing open-source community aimed at helping researchers and developers quickly train and evaluate Multi-modal Large Language Models (MLLM), and futher build multi-modal AI agents capable of bridging the gap between ideas and execution, enabling seamless interaction between humans and AI machines.</p>
         </div>
       </section>
       <VideoSection />

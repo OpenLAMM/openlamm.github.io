@@ -95,8 +95,10 @@ We provide several pretrained LAMM/Octavius checkpoints here:
 
 ### Octavius Model Zoo
 
-|  Model Name  | Link  |  
-|  ----------  | ----  |   
-|  Octavius_2d-3d_e6_bs64      | [Checkpoints](https://huggingface.co/openlamm/Octavius_2d-3d_e6_bs64)  | 
+| #Samples |                                Vision Encoder                                |      LLM       |            Training Data             |                                    Link                                     |
+| :------: | :-------------------------------------------------------------------------- | :------------ | :--------------------------------- | :-------------------------------------------------------------------------: |
+|   286k    |                                  CLIP-ViT-L                                  |  Vicuna_v0_13B  | LAMM-2D Instruction Data & COCO-Detection |  [ckpt](https://huggingface.co/openlamm/octavius/blob/main/octavius_2d_e4_bs64.pt)      |
+|   90k   |                                 Obj-As-Scene                                 |  Vicuna_v0_13B  |       Scan2Inst       |  [ckpt](https://huggingface.co/openlamm/octavius/blob/main/octavius_3d_e3_bs64.pt)      |
+|   376K   |                                  CLIP-ViT-L & <br/> Obj-As-Scene                   | LLaMA2_chat_13B |       LAMM-2D Instruction Data & COCO-Detection & <br/> Scan2Inst       |  [ckpt](https://huggingface.co/openlamm/octavius/blob/main/octavius_2d%2B3d_e6_bs64.pt) |
 
 You can download them and put them into `ckpt` directory for fast evaluation.

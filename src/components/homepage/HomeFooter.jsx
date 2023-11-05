@@ -35,7 +35,7 @@ function Status({ className }) {
 
 export default function Footer() {
   return (
-      <div className="mx-auto flex w-full max-w-[1080px] flex-col px-6 py-12">
+      <div className="mx-auto flex items-center w-full max-w-[1080px] flex-col px-6 py-12">
         {/* <div className="mb-12 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <img src="/logo/LAMM-logo-light.png" alt="LAMM" className="h-20 w-fit lg:h-12" />
 
@@ -58,20 +58,15 @@ export default function Footer() {
         {/* <hr className="my-2 !bg-gray-300" /> */}
 
         <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between lg:gap-0">
-          <BrowserOnly>
+          {/* <BrowserOnly>
             {() => {
               return <Status className="hidden lg:flex" />;
             }}
-          </BrowserOnly>
+          </BrowserOnly> */}
           {/* <Safety className="flex w-full max-w-full lg:hidden" /> */}
 
           <div className="flex items-center gap-4">
-            <Link
-              href="https://github.com/OpenLAMM/LAMM"
-              aria-label="LAMM GitHub Organization"
-            >
-              <Github className="h-7 w-7 text-zinc-400 hover:text-primary" />
-            </Link>
+            
             {/* <Link
               href="https://linkedin.com/company/dyteio"
               aria-label="LinkedIn"
@@ -87,7 +82,7 @@ export default function Footer() {
             >
               <Youtube className="h-7 w-7 text-zinc-400 hover:text-primary" />
             </Link> */}
-          </div>
+          
 
           <div className="flex flex-wrap gap-2 text-sm text-gray-500">
             {/* <Link
@@ -110,10 +105,18 @@ export default function Footer() {
             >
               Website Terms of Use
             </Link> */}
-            &bull;
+            
             <span className="text-inherit">
               &copy; {new Date().getFullYear()} LAMM. Built with Dyte.
+              <Link
+              href="https://github.com/OpenLAMM/LAMM"
+              aria-label="LAMM GitHub Organization"
+            >
+              <Github className="h-7 w-7 text-zinc-400 hover:text-primary pl-1"/>
+            </Link>
             </span>
+            
+          </div>
           </div>
         </div>
       </div>

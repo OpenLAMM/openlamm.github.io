@@ -1,13 +1,13 @@
 ---
-title: 'Instruction'
+title: 'Instruction Tuning'
 sidebar_position: 1
 ---
 
-We construct instruction dataset for 2D/3D modality instruction tuning via GPT API.
+We construct instruction tuning dataset for 2D/3D modality instruction tuning via GPT API.
 
-## 2D Instruction Datasets
+## 2D Instruction Tuning Datasets
 
-2D instruction datasets are build on [MS-COCO](https://cocodataset.org), [Bamboo](https://github.com/ZhangYuanhan-AI/Bamboo), [Locount](https://isrc.iscas.ac.cn/gitlab/research/locount-dataset) and [TextVQA](https://textvqa.org) dataset. You can download them from [here](https://opendatalab.com/LAMM/LAMM/tree/main/raw/2D_Instruct).
+2D instruction tuning datasets are build on [MS-COCO](https://cocodataset.org), [Bamboo](https://github.com/ZhangYuanhan-AI/Bamboo), [Locount](https://isrc.iscas.ac.cn/gitlab/research/locount-dataset) and [TextVQA](https://textvqa.org) dataset. You can download them from [here](https://opendatalab.com/LAMM/LAMM/tree/main/raw/2D_Instruct).
 
 The generated instruction-following dialogues are organized into the following meta files. We provide a table to illustrate the correspondence between each meta file and data collection:
 
@@ -32,9 +32,9 @@ The lack of sufficient detection instructions results in poor performance on dow
 
 Note that we provide a `octavius_2d_train_293k.json` meta file to merge all the dataset across different tasks. You can just use this file for training.
 
-## 3D Instruction Datasets
+## 3D Instruction Tuning Datasets
 
-We provide two 3D instruction datasets, "Scan2Inst" and "LAMM3D-Dataset", for 3D instruction tuning.
+We provide two 3D instruction tuning datasets, "Scan2Inst" and "LAMM3D-Dataset", for 3D instruction tuning.
 
 #### Scan2Inst
 
@@ -101,7 +101,7 @@ data
 
 ## Meta File Format 
 
-**2D instruction data**
+**2D instruction tuning data**
 
 ```json
 [
@@ -127,7 +127,7 @@ data
 ]
 ```
 
-**3D instruction data**
+**3D instruction instruction data**
 
 ```json
 [

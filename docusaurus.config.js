@@ -143,8 +143,8 @@ const config = {
             to: '/Leaderboard',
           },
           {
-            label: 'Group&Ak',
-            to: 'Group_ak',
+            label: 'Team',
+            to: 'Team',
           },
         ],
       },

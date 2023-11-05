@@ -1290,3 +1290,11 @@ html[data-theme='dark'] .video_sidebar_header > div > a::before {
     margin-right: 0.5rem;
     /* margin-top: 0.1rem; */
 }
+
+.data-overview-instruction th:first-of-type {
+  width: 13%;
+}
+
+.data-overview-instruction th:nth-of-type(2) {
+  width: 26%;
+}
