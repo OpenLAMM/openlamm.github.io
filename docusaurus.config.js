@@ -126,21 +126,21 @@ const config = {
             label: 'Tutorial',
             to: 'tutorial',
           },
+          // {
+          //   label: 'Updates',
+          //   to: '/Updates',
+          // },
           {
-            label: 'Updates',
-            to: '/Updates',
+            label: 'Datasets',
+            to: '/tutorial/Datasets',
           },
           {
-            label: 'Dataset',
-            to: '/tutorial/Datasets',
+            label: 'Models',
+            to: '/model_system_card',
           },
           {
             label: 'Leaderboard',
             to: '/Leaderboard',
-          },
-          {
-            label: 'Model System Card',
-            to: '/model_system_card',
           },
           {
             label: 'Group&Ak',
