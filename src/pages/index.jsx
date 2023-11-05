@@ -9,6 +9,7 @@ import {
   PublicationList,
   PreprintList,
 } from '../components/homepage/GuidesAndSamples';
+import { UpdatesList } from '../components/homepage/update';
 
 export default function Homepage() {
   return (
@@ -22,7 +23,7 @@ export default function Homepage() {
       </Head>
 
       <HeroSection />
-
+      <UpdatesList />
       <PublicationList />
       <PreprintList />
 
