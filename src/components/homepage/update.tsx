@@ -23,6 +23,8 @@ const updates: New[] = [
     month: '2023-09',
     content: [
       '1. LAMM is accepted by NeurIPS2023 Datasets & Benchmark Track! See you in December!',
+      '2. Training LAMM on V100 or RTX3090 is available! Finetuning LLaMA2 is online.',
+      '3. Our demo moved to <a href="https://openxlab.org.cn/apps/detail/LAMM/LAMM" target="_blank">OpenXLab</a>.',
     ],
   },
   {
@@ -37,7 +39,7 @@ const updates: New[] = [
     month: '2023-06',
     content: [
       '1. Watch demo video for LAMM at <a href="https://www.youtube.com/watch?v=M7XlIe8hhPk" target="_blank">YouTube</a> or <a href="https://www.bilibili.com/video/BV1kN411D7kt/" target="_blank">Bilibili</a>!',
-      '2. Full paper with Appendix is available on <a href="https://arxiv.org/abs/2306.06687" target="_blank">Arxiv]</a>.',
+      '2. Full paper with Appendix is available on <a href="https://arxiv.org/abs/2306.06687" target="_blank">Arxiv</a>.',
       '3. LAMM dataset released on <a href="https://huggingface.co/datasets/openlamm/LAMM_Dataset" target="_blank">Huggingface</a> & <a href="https://opendatalab.com/LAMM/LAMM" target="_blank">OpenDataLab</a> for Research community!',
       '4. LAMM code is available for Research community!',
     ],
