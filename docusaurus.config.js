@@ -132,7 +132,7 @@ const config = {
           // },
           {
             label: 'Datasets',
-            to: '/tutorial/Datasets',
+            to: '/datasets',
           },
           {
             label: 'Models',

@@ -2,7 +2,7 @@
 
 ## LAMM-Models
 
-| #Samples |                                Vision Encoder                                |      LLM       |            Training Data             | Lora Rank |                                    Link                                     |
+| Samples |                                Vision Encoder                                |      LLM       |            Training Data             | Lora Rank |                                    Link                                     |
 | :------: | :--------------------------------------------------------------------------: | :------------: | :----------------------------------: | :-------: | :-------------------------------------------------------------------------: |
 |   98K    |                                  CLIP-ViT-L                                  |  Vicuna_v0_7B  | LAMM-2D daily dialogue & desctiption |    32     |      [Huggingface](https://huggingface.co/openlamm/lamm_7b_lora32_98k)      |
 |   186K   |                                  CLIP-ViT-L                                  |  Vicuna_v0_7B  |       LAMM-2D Instruction Data       |    32     |     [Huggingface](https://huggingface.co/openlamm/lamm_7b_lora32_186k)      |

@@ -32,22 +32,24 @@
       <sup>*</sup> Equal Contribution&emsp;
       <sup>†</sup> Corresponding Authors
   </div>
-  <p align="center">
+
+  <p align="center" style={{paddingTop: '0.75rem'}}>
       <font size='4'>
-      <a href="https://openlamm.github.io/" target="_blank">🌏 Project Page</a> • <a href="https://openxlab.org.cn/apps/detail/LAMM/LAMM" target="_blank">𝕏 Demo</a> • <a href="https://www.youtube.com/watch?v=M7XlIe8hhPk" target="_blank">▶️ YouTube </a> • <a href="https://www.bilibili.com/video/BV1kN411D7kt/?share_source=copy_web&vd_source=ab4c734425ed0114898300f2c037ac0b" target="_blank"> 📺 Bilibili </a> • <a href="https://opendatalab.com/LAMM" target="_blank">📀 Data</a> • <a href="https://github.com/OpenLAMM/LAMM#lamm-benchmark" target="_blank">📊 Benchmark</a> • <a href="https://huggingface.co/openlamm" target="_blank">📦 LAMM Models</a>
+      <a href="https://arxiv.org/pdf/2306.06687.pdf" target="_blank">📄 Paper</a> • <a href="https://openxlab.org.cn/apps/detail/LAMM/LAMM" target="_blank">𝕏 Demo</a> • <a href="https://www.youtube.com/watch?v=M7XlIe8hhPk" target="_blank">▶️ YouTube </a> • <a href="https://www.bilibili.com/video/BV1kN411D7kt/?share_source=copy_web&vd_source=ab4c734425ed0114898300f2c037ac0b" target="_blank"> 📺 Bilibili </a> • <a href="https://huggingface.co/openlamm" target="_blank">📦 LAMM Models</a>
       </font>
   </p>
 
 <!--
-### Official Repository of [LAMM: Language-Assisted Multi-Modal Instruction-Tuning Dataset, Framework, and Benchmark](https://arxiv.org/abs/2306.06687)
+#### Official Repository of [LAMM: Language-Assisted Multi-Modal Instruction-Tuning Dataset, Framework, and Benchmark](https://arxiv.org/abs/2306.06687)
 -->
-
+<!-- <a href="https://github.com/OpenLAMM/LAMM#lamm-benchmark" target="_blank">📊 Benchmark</a>  -->
+<!-- <a href="https://opendatalab.com/LAMM" target="_blank">📀 Data</a> •  -->
 <!--
 [![](./images/lamm-video.png)](https://www.youtube.com/watch?v=M7XlIe8hhPk) -->
 
-# Demos
+## Demos
 
-## Online Demo
+### Online Demo
 
 For cases of 2D images, we provide an [online demo](https://huggingface.co/spaces/openlamm/LAMM) deployed on huggingface spaces.
 
@@ -58,7 +60,7 @@ Due to limitation of hardware capacity, online version only supports LLM of 7B p
 <!--
 [![](./images/LAMM_2d_demo.png)](https://huggingface.co/spaces/openlamm/LAMM) -->
 
-## CLI Demo
+### CLI Demo
 
 We also provide a CLI demo for local test.
 Point cloud data are required to be in format of `npy`, we suggest to use data from LAMM-Benchmark-3D.
@@ -74,12 +76,12 @@ Point cloud data are required to be in format of `npy`, we suggest to use data f
         --delta_ckpt_path $LAMM_CKPT_PATH
 ```
 
-# Overview
+## Overview
 
 Large language models have become a potential pathway toward achieving artificial general intelligence. Recent works on multi-modal large language models have demonstrated their effectiveness in handling visual modalities. In this work, we extend the research of MLLMs to point clouds and present the LAMM-Dataset and LAMM-Benchmark for 2D image and 3D point cloud understanding. We also establish an extensible framework to facilitate the extension of MLLMs to additional modalities.
 Our main contribution is three-fold: 1) We present the LAMM-Dataset and LAMM-Benchmark, which cover almost all high-level vision tasks for 2D and 3D vision. Extensive experiments validate the effectiveness of our dataset and benchmark. 2) We demonstrate the detailed methods of constructing instruction-tuning datasets and benchmarks for MLLMs, which will enable future research on MLLMs to scale up and extend to other domains, tasks, and modalities faster. 3) We provide a primary but potential MLLM training framework optimized for modalities' extension. We also provide baseline models, comprehensive experimental observations, and analysis to accelerate future research.
 
-# LAMM-Dataset
+## LAMM-Dataset
 
 LAMM-Dataset is a comprehensive multi-modal instruction tuning dataset, which contains 186K language-image instruction-response pairs, and 10K lanuage-3D instruction-response pairs.In LAMM-Dataset, the instruction-response pairs are gathered from 8 image datasets and 4 point cloud datasets. Here we design four type of multi-modal instruction-response pairs,
 
@@ -88,7 +90,7 @@ LAMM-Dataset is a comprehensive multi-modal instruction tuning dataset, which co
 - C3: 1-round detailed description aims to elaborate images and 3D scenes in texts.
 - C4: 1-round visual task dialogue transfers various vision tasks into instruction-response pairs, aiming at enhancing generalizability towards domain tasks in other modalities.
 
-# Download
+## Download
 
 Download LAMM-Dataset from [here](https://opendatalab.com/LAMM/download).
 
@@ -141,20 +143,20 @@ If you would like to download the entire LAMM Dataset and LAMM Benchmark, you ca
 ```json
 [
     {
-    "id": "000000019028",  # image id
-    "image": "coco_images/000000019028.jpg", # image path
+    "id": "000000019028",  ## image id
+    "image": "coco_images/000000019028.jpg", ## image path
     "conversations": [
         {
-            "from": "human",  # instruction
+            "from": "human",  ## instruction
             "value": "How is the kitchen in the image furnished?"
         },
         {
-            "from": "gpt",  # response
+            "from": "gpt",  ## response
             "value": "The kitchen in the image is furnished with white cabinets and white appliances. There is a dishwasher, a stove, and a sink. On the stove, a blue towel hangs on the handle. A cutting board is placed on the dishwasher. There are also additional elements like a bowl of apples on the counter and a beige rug on the floor."
         }
     ],
-    "task_type": "conversation",  # task type
-    "src_image": "coco2017" # original dataset
+    "task_type": "conversation",  ## task type
+    "src_image": "coco2017" ## original dataset
     },
     {
         ...
@@ -195,18 +197,18 @@ If you would like to download the entire LAMM Dataset and LAMM Benchmark, you ca
 1.  If you want to work with a specific subset of the LAMM dataset, you will need to download both the corresponding meta file and the image collection.
 2.  if you prefer to download the data from the official website yourself, you can still organize it in the same way as we have and run it successfully. For example, during the 2D instruction tuning stage, if you only want to run the daily_dialogue_49k.json file, you can download the [COCO2017](http://images.cocodataset.org/zips/train2017.zip) dataset and organize it accordingly.
 
-# LAMM-Framework
+## LAMM-Framework
 
 <!-- ![](./images/LAMM-Framework.png) -->
 
-## Installation
+### Installation
 
 Pre-requist Packages: `gcc <= 7.5.0; nvcc >= 11.1`
 
 ```bash
     conda create -n lamm python=3.10 -y
     conda activate lamm
-    # Choose different version of torch according to your
+    ## Choose different version of torch according to your
     conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
 ```
 
@@ -215,7 +217,7 @@ Install required packages
 ```bash
     pip install -r requirements.txt
 
-    # Optional; For 3D experiments ONLY
+    ## Optional; For 3D experiments ONLY
     cd src/model/EPCL/third_party/pointnet2/
     python setup.py install
     cd ../../utils/
@@ -250,7 +252,7 @@ Optional:
 cd lightllm
 python setup.py install`
 
-## Data & Model Preparation for Training
+### Data & Model Preparation for Training
 
 - Data
 
@@ -270,21 +272,21 @@ python setup.py install`
 
   Download Pre-trained EPCL model to tokenize point cloud from [Here](https://huggingface.co/openlamm/epcl_vit-L_256tokens/tree/main). Put the downloaded models in the `./ckpt` folder.
 
-## Training
+### Training
 
 - 2D Models Training
   ```Bash
   cd src
   sh scripts/train_lamm2d.sh
   or
-  sh scripts/train_lamm2d_slurm.sh       # for slurm
+  sh scripts/train_lamm2d_slurm.sh       ## for slurm
   ```
 - 3D Models Training
   `Bash
 cd src
 sh scripts/train_lamm3d.sh
 or
-sh scripts/train_lamm3d_slurm.sh       # for slurm
+sh scripts/train_lamm3d_slurm.sh       ## for slurm
 `
   You need to dive into scripts to change data path and other hyper-parameters.
 
@@ -297,14 +299,14 @@ For your reference, GPU memory consumption for different models are shown as fol
 | Vicuna_v0_13B |       1        |   ~53GB    |
 | Vicuna_v0_13B |       2        |   ~70GB    |
 
-# LAMM-Benchmark
+## LAMM-Benchmark
 
 **LAMM-Benchmark** evaluates 9 common image tasks, using a total of 11 datasets with over **62,439** samples, and 3 common point cloud tasks, by utilizing 3 datasets with over **12,788** data samples, while existing works only provide quantitative results on fine-tuning and evaluating specific datasets such as ScienceQA, and most works only conduct demonstration or user studies.
 
 - We are the very first attempt to establish a benchmark for MLLMs. We conducted a comprehensive benchmark to quantify the zero-shot and fine-tuning performance of existing multi-modal language models on various computer vision tasks and compare them against state-of-the-art methods of these tasks, including classification, object detection, pose estimation, visual question answering, facial classification, optical character recognition, object counting.
 - We also attempted two novel evaluation strategies designed explicitly for MLLMs. Specifically, as for text generation, we established a scoring logic based on the GPT API. As for tasks involving interactions between points and images, such as object detection and pose estimation, we proposed an object-locating evaluation method.
 
-## Data & Model Preparation for LAMM-Benchmark
+### Data & Model Preparation for LAMM-Benchmark
 
 <details><summary> Benchmark Data For Evaluation</summary>
 
@@ -396,7 +398,7 @@ To prepare the pre-trained Vicuna model, please follow the instructions provided
 
 </details>
 
-## Evaluation
+### Evaluation
 
 <details><summary>Inference trained models on 2D tasks</summary>
 
@@ -408,7 +410,7 @@ sh scripts/inference_2D.sh
 or
 
 ```Bash
-sh scripts/inference_2D_slurm.sh       # for slurm
+sh scripts/inference_2D_slurm.sh       ## for slurm
 ```
 
   </details>
@@ -422,7 +424,7 @@ sh scripts/LAMM_2D_Evaluation.sh
 or
 
 ```Bash
-sh scripts/LAMM_2D_Evaluation_slurm.sh  # for slurm
+sh scripts/LAMM_2D_Evaluation_slurm.sh  ## for slurm
 ```
 
   </details>
@@ -437,7 +439,7 @@ sh scripts/inference_3D.sh
 or
 
 ```Bash
-sh scripts/inference_3D_slurm.sh       # for slurm
+sh scripts/inference_3D_slurm.sh       ## for slurm
 ```
 
   </details>
@@ -451,7 +453,7 @@ sh scripts/LAMM_3D_Evaluation.sh
 or
 
 ```Bash
-sh scripts/LAMM_3D_Evaluation_slurm.sh  # for slurm
+sh scripts/LAMM_3D_Evaluation_slurm.sh  ## for slurm
 ```
 
   </details>
@@ -459,9 +461,9 @@ sh scripts/LAMM_3D_Evaluation_slurm.sh  # for slurm
 - You can also change options as following to decrease calculation consumption.
 
 ```
-    --cfg ./config/train_ds3.yaml   # enable Deepspeed ZeRO stage3
-    --use_flash_attn    # enable flash attention
-    --use_xformers      # enable xformers
+    --cfg ./config/train_ds3.yaml   ## enable Deepspeed ZeRO stage3
+    --use_flash_attn    ## enable flash attention
+    --use_xformers      ## enable xformers
 ```
 
 - Evaluation for other MLLM models.
@@ -485,7 +487,7 @@ sh scripts/LAMM_3D_Evaluation_slurm.sh  # for slurm
 
   You may need to dive into scripts to change datasets to evaluation & checkpoints folder to load.
 
-## Leaderboard
+### Leaderboard
 
 <details><summary> Results of LAMM model on selected 2D vision tasks </summary>
 <p>
@@ -541,9 +543,9 @@ sh scripts/LAMM_3D_Evaluation_slurm.sh  # for slurm
 </p>
 </details>
 
-# LAMM Model Zoo
+## LAMM Model Zoo
 
-| # Training Samples |                                Vision Encoder                                |      LLM       | Training Data                        | Lora Rank |                                    Link                                     |
+| ## Training Samples |                                Vision Encoder                                |      LLM       | Training Data                        | Lora Rank |                                    Link                                     |
 | ------------------ | :--------------------------------------------------------------------------: | :------------: | ------------------------------------ | :-------: | :-------------------------------------------------------------------------: |
 | 98K                |                                  CLIP-ViT-L                                  |  Vicuna_v0_7B  | LAMM-2D daily dialogue & desctiption |    32     |      [Checkpoints](https://huggingface.co/openlamm/lamm_7b_lora32_98k)      |
 | 186K               |                                  CLIP-ViT-L                                  |  Vicuna_v0_7B  | LAMM-2D Instruction Data             |    32     |     [Checkpoints](https://huggingface.co/openlamm/lamm_7b_lora32_186k)      |
@@ -554,7 +556,7 @@ sh scripts/LAMM_3D_Evaluation_slurm.sh  # for slurm
 
 ---
 
-## Citation
+### Citation
 
 ```
     @article{yin2023lamm,
@@ -568,13 +570,13 @@ sh scripts/LAMM_3D_Evaluation_slurm.sh  # for slurm
 
 ---
 
-## License
+### License
 
 The project is CC BY NC 4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of research purposes. The checkpoints are also CC BY NC 4.0 (allowing only non-commercial use).
 
 ---
 
-## Acknowledgement
+### Acknowledgement
 
 We thank [Hongxing Fan](https://scholar.google.com/citations?user=Wnk95ccAAAAJ), [Zeren Chen](https://github.com/Zx55), Zhen Wang for support of LAMM project.
 
