@@ -53,7 +53,7 @@ function Updates({ month, content }: (typeof updates)[0]) {
       {content.map((item, index) => (
         <p
           key={index}
-          className="mb-0 text-sm text-text-400"
+          className="mb-0 text-lg text-text-400"
           dangerouslySetInnerHTML={{ __html: item }}
         ></p>
       ))}
@@ -63,7 +63,7 @@ function Updates({ month, content }: (typeof updates)[0]) {
 
 export function UpdatesList() {
   return (
-    <section className="no-underline-links my-10 mx-auto flex w-full max-w-5xl flex-col gap-10 p-4 py-0 md:flex-row md:gap-0">
+    <section className="no-underline-links my-2 mt-5 mx-auto flex w-full max-w-5xl flex-col gap-10 p-4 py-0 md:flex-row md:gap-0">
       <div className="flex-1">
         <div className="mb-8 flex items-center justify-between">
           <h3 className="m-0">News</h3>

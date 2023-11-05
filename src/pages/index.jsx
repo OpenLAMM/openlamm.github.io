@@ -21,7 +21,7 @@ export default function Homepage() {
       <Head>
         <link rel="prefetch" href="/assets/css/elements.min.css" />
       </Head>
-
+      
       <HeroSection />
       <UpdatesList />
       <PublicationList />
