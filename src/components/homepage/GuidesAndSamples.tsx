@@ -22,10 +22,12 @@ interface PAPER {
 
 const publications: PAPER[] = [
   {
-    id:'LAMM',
-    title: 'LAMM: Language-Assisted Multi-Modal Instruction-Tuning Dataset, Framework, and Benchmark',
+    id: 'LAMM',
+    title:
+      'LAMM: Language-Assisted Multi-Modal Instruction-Tuning Dataset, Framework, and Benchmark',
     image: '/img/LAMM.png',
-    author: 'Zhenfei Yin*, Jiong Wang*, JianJian Cao*, Zhelun Shi*,  Dingning Liu, Mukai Li, Lu Sheng, Xiaoshui Huang, Lei Bai†, Zhiyong Wang, Wanli Ouyang, Jing Shao†',
+    author:
+      'Zhenfei Yin*, Jiong Wang*, JianJian Cao*, Zhelun Shi*,  Dingning Liu, Mukai Li, Lu Sheng, Xiaoshui Huang, Lei Bai†, Zhiyong Wang, Wanli Ouyang, Jing Shao†',
     pub: 'NIPS, 2023',
     link: 'https://arxiv.org/abs/2306.06687',
   },
@@ -33,28 +35,37 @@ const publications: PAPER[] = [
 
 const preprint: PAPER[] = [
   {
-    id:'ChEF',
-    title: 'ChEF: A Comprehensive Evaluation Framework for Standardized Assessment of Multimodal Large Language Models',
+    id: 'ChEF',
+    title:
+      'ChEF: A Comprehensive Evaluation Framework for Standardized Assessment of Multimodal Large Language Models',
     image: '/img/ChEF.png',
-    author: 'Zhelun Shi*, Zhipin Wang*, Hongxing Fan*, Zhenfei Yin, Lu Sheng†, Jing Shao, Yu Qiao',
+    author:
+      'Zhelun Shi*, Zhipin Wang*, Hongxing Fan*, Zhenfei Yin, Lu Sheng†, Jing Shao, Yu Qiao',
     pub: 'Arxiv, 2023',
     link: 'https://arxiv.org/abs/2306.06687',
   },
   {
-    id:'Octavius',
+    id: 'Octavius',
     title: 'Octavius: Mitigating Task Interference in MLLMs via MoE',
     image: '/logo/Octavius_arch.png',
-    author: 'Zeren Chen*, Ziqin Wang*, Zhen Wang*, Huayang Liu, Zhenfei Yin, Si Liu, Lu Sheng†, Wanli Ouyang, Jing Shao',
+    author:
+      'Zeren Chen*, Ziqin Wang*, Zhen Wang*, Huayang Liu, Zhenfei Yin, Si Liu, Lu Sheng†, Wanli Ouyang, Jing Shao',
     pub: 'Arxiv, 2023',
     link: 'https://arxiv.org/abs/2306.06687',
   },
 ];
 
-
-function Publish({id, title, image,  author, pub,  link }: (typeof publications)[0]) {
+function Publish({
+  id,
+  title,
+  image,
+  author,
+  pub,
+  link,
+}: (typeof publications)[0]) {
   return (
     <Link
-      to={'/paper_list/'+id}
+      to={'/paper_list/' + id}
       className="group flex cursor-pointer items-start gap-2 rounded-lg border-2 border-transparent p-3 text-inherit transition-colors hover:border-primary hover:text-primary"
     >
       <img src={image} className="paper_image" />
@@ -69,7 +80,6 @@ function Publish({id, title, image,  author, pub,  link }: (typeof publications)
     </Link>
   );
 }
-
 
 export function PublicationList() {
   return (

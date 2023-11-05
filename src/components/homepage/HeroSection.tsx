@@ -6,7 +6,7 @@ import {
   EmojiSmileSlight20Regular,
   VideoRegular,
   Database24Regular,
-  List24Regular
+  List24Regular,
 } from '@fluentui/react-icons';
 import ThemedImage from '@theme/ThemedImage';
 import clsx from 'clsx';
@@ -95,19 +95,13 @@ export default function HeroSection() {
     <>
       <section className="noise-bg no-underline-links px-4 pt-16 lg:py-0">
         <div className="flex flex-col items-center justify-between py-14">
-          <h2 className="mb-4 font-jakarta text-5xl font-bold">
-            LAMM
-          </h2>
-          <p className="max-w-xl text-center text-text-400">
-          abstract_here 
-          </p>
+          <h2 className="mb-4 font-jakarta text-5xl font-bold">LAMM</h2>
+          <p className="max-w-xl text-center text-text-400">abstract_here</p>
         </div>
       </section>
-      <VideoSection/>
+      <VideoSection />
 
-      <div className="pt-20">
-           
-      </div>
+      <div className="pt-20"></div>
 
       <section className="mx-auto grid w-full max-w-5xl grid-cols-1 grid-rows-2 gap-6 px-4 md:grid-cols-2">
         {PRODUCTS.map((product) => (

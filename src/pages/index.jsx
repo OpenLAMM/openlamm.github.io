@@ -5,7 +5,10 @@ import HeroSection from '../components/homepage/HeroSection';
 import CommunitySection from '../components/homepage/CommunitySection';
 import HomeFooter from '../components/homepage/HomeFooter';
 import Head from '@docusaurus/Head';
-import {PublicationList, PreprintList} from '../components/homepage/GuidesAndSamples';
+import {
+  PublicationList,
+  PreprintList,
+} from '../components/homepage/GuidesAndSamples';
 
 export default function Homepage() {
   return (
