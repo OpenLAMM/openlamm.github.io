@@ -43,7 +43,7 @@ const preprint: PAPER[] = [
   {
     id:'Octavius',
     title: 'Octavius: Mitigating Task Interference in MLLMs via MoE',
-    image: '/img/LAMM.png',
+    image: '/logo/Octavius_arch.png',
     author: 'Zeren Chen*, Ziqin Wang*, Zhen Wang*, Huayang Liu, Zhenfei Yin, Si Liu, Lu Sheng†, Wanli Ouyang, Jing Shao',
     pub: 'Arxiv, 2023',
     link: 'https://arxiv.org/abs/2306.06687',
@@ -63,7 +63,6 @@ function Publish({id, title, image,  author, pub,  link }: (typeof publications)
         <h4 className="mb-1 font-semibold">{title}</h4>
         <p className="mb-0 text-sm text-text-400">{author}</p>
         <i className="mb-0 text-sm text-text-400">{pub}</i>
-        <a className='mb-0 text-text-400' href={link}>Arxiv Link</a>
       </div>
 
       <ChevronRight className="ml-auto h-5 w-5 self-center opacity-0 transition-opacity group-hover:opacity-100" />

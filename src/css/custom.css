@@ -1256,3 +1256,37 @@ html[data-theme='dark'] .video_sidebar_header > div > a::before {
 .team-item-links a {
   margin-right: 8px; /* 链接之间的间隔 */
 }
+
+.paper_list_top_icon{
+  display: inline-flex;
+}
+
+.paper_list_top_icon{
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+  padding-top: calc(.5em - 1px);
+  padding-bottom: calc(.5em - 1px);
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  border-radius: 290486px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.paper_list_top_icon a {
+  display: inline-flex;
+  text-decoration: none;
+  color: white;
+}
+
+.paper_list_top_icon svg {
+    /* width: 1rem; */
+    height: 1.5rem;
+    width: auto;
+    color: white;
+    margin-right: 0.5rem;
+    /* margin-top: 0.1rem; */
+}

@@ -1,3 +1,4 @@
+import PaperListButton from '../../components/PaperListButton';
 
 <br/>
 
@@ -12,23 +13,31 @@
     Zhipin Wang<sup>*,1</sup>&emsp;
     Hongxing Fan<sup>*,1</sup>&emsp;
     Zhenfei Yin<sup>2</sup>&emsp;
-    Lu Sheng<sup>†,1</sup>&emsp;
     <br/>
-    Jing Shao<sup>2</sup>&emsp;
-    Yu Qiao<sup>2</sup>
+    Lu Sheng<sup>†,1</sup>&emsp;
+    Yu Qiao<sup>2</sup>&emsp;
+    Jing Shao<sup>2</sup>
 </div>
 
 
 <div align="center">
     <sup>1</sup>Beihang University&emsp;
-    <sup>2</sup>Shanghai AI Lab
+    <sup>2</sup>Shanghai AI Laboratory
     <br/>
     <sup>*</sup> Equal Contribution&emsp;
     <sup>†</sup> Corresponding Author
 </div>
 
+<PaperListButton 
+    arxiv_link="https://www.baidu.com"
+    code_link="https://www.google.com"
+/>
+
 ## Introduction
 ChEF is a Comprehensive Evaluation Framework for reliable and indicative assessment of MLLMs, which is highly scalable and can be flexibly modified to adapt to the evaluation of any new model or task.
+
+<img src="/docs/chef-benchmark.png"/>
+<br/>
 
 ChEF decouples the evaluation pipeline into four components: 
 
@@ -40,16 +49,9 @@ ChEF decouples the evaluation pipeline into four components:
 With a systematic selection of these four componets, ChEF facilitates
 versatile evaluations in a standardized framework. Users can easily build new evaluations according to new **Recipes** (i.e. specific choices of the four components). ChEF also sets up several new evaluations to quantify the **Desiderata** (desired capabilities) that a competent MLLM model should possess.
 
-## News
+## Supported Scenarios and MLLMs
 
-📆 [**2023-10-20**] ChEF code is available!
-
-## Scenarios and MLLMs
-
-Supported Scenarios:
-<details open>
-<summary>(click to collapse)</summary>
-
+**Scenarios:**
 - [x] [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html)
 - [x] [Flickr30k](http://shannon.cs.illinois.edu/DenotationGraph/data/index.html)
 - [x] [FSC147](https://github.com/cvlab-stonybrook/LearningToCountEverything)
@@ -60,14 +62,7 @@ Supported Scenarios:
 - [x] [SEEDBench](https://github.com/AILab-CVC/SEED-Bench)
 - [x] [VOC2012](http://host.robots.ox.ac.uk/pascal/VOC/)
 
-</details>
-
-
-Supported MLLMs:
-
-<details open>
-<summary>(click to collapse)</summary>
-
+**MLLMs:**
 - [x] [InstructBLIP](https://github.com/salesforce/LAVIS)
 - [x] [Kosmos2](https://github.com/microsoft/unilm/tree/master/kosmos-2)
 - [x] [LAMM](https://github.com/OpenLAMM/LAMM)
@@ -78,8 +73,19 @@ Supported MLLMs:
 - [x] [Otter](https://github.com/Luodian/Otter)
 - [x] [Shikra](https://github.com/shikras/shikra)
 
-</details>
 
+## Usage
+
+1. Environment [installation](/tutorial/installation/benchmark).
+
+2. Prepare the [benchmark](/tutorial/datasets/benchmark#chef-benchmark-dataset) dataset and [evalauted MLLMs](/tutorial/benchmark/default#download-evaluated-mllms).
+
+3. Evaluation
+    ChEF supports evaluation with several scenarios and recipes for MLLMs. See [here](/tutorial/benchmark/default#chef) for details.
+
+4. Custom Evaluation
+    You can customize the behavior of Evaluator in ChEF for your requirements. See [here](/tutorial/benchmark/custom) for details.
+    
 ## License 
 
 The project is CC BY NC 4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of research purposes. 
