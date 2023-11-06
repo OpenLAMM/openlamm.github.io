@@ -35,7 +35,7 @@
 
 <p align="center" style={{paddingTop: '0.75rem'}}>
     <font size='4'>
-    <a href="https://arxiv.org/pdf/2306.06687.pdf" target="_blank">📄 Paper</a> • <a href="https://openxlab.org.cn/apps/detail/LAMM/LAMM" target="_blank">𝕏 Demo</a> • <a href="https://www.youtube.com/watch?v=M7XlIe8hhPk" target="_blank">▶️ YouTube </a> • <a href="https://www.bilibili.com/video/BV1kN411D7kt/?share_source=copy_web&vd_source=ab4c734425ed0114898300f2c037ac0b" target="_blank"> 📺 Bilibili </a> • <a href="https://huggingface.co/openlamm" target="_blank">📦 LAMM Models</a>
+    <a href="https://arxiv.org/pdf/2306.06687.pdf" target="_blank">📄 Paper</a> • <a href="https://openxlab.org.cn/apps/detail/LAMM/LAMM" target="_blank">𝕏 Demo</a> • <a href="https://www.youtube.com/watch?v=M7XlIe8hhPk" target="_blank">▶️ YouTube </a> • <a href="https://www.bilibili.com/video/BV1kN411D7kt/?share_source=copy_web&vd_source=ab4c734425ed0114898300f2c037ac0b" target="_blank"> 📺 Bilibili </a> • <a href="/model_system_card#lamm-models" target="_blank">📦 LAMM Models</a>
     </font>
 </p>
 
