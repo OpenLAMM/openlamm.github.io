@@ -139,12 +139,16 @@ const config = {
             to: '/model_system_card',
           },
           {
-            label: 'Leaderboard',
-            to: '/Leaderboard',
+            label: 'Leaderboards',
+            to: '/Leaderboards',
           },
           {
             label: 'Team',
             to: 'Team',
+          },
+          {
+            label: 'Github',
+            to: 'https://github.com/OpenLAMM/LAMM',
           },
         ],
       },

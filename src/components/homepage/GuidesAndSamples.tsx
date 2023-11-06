@@ -28,7 +28,7 @@ const publications: PAPER[] = [
     image: '/img/LAMM.png',
     author:
       'Zhenfei Yin*, Jiong Wang*, JianJian Cao*, Zhelun Shi*,  Dingning Liu, Mukai Li, Lu Sheng, Xiaoshui Huang, Lei Bai†, Zhiyong Wang, Wanli Ouyang, Jing Shao†',
-    pub: 'NIPS, 2023',
+    pub: 'NIPS, 2023, Datasets and Benchmarks Track',
     link: 'https://arxiv.org/abs/2306.06687',
   },
 ];
@@ -40,7 +40,7 @@ const preprint: PAPER[] = [
       'ChEF: A Comprehensive Evaluation Framework for Standardized Assessment of Multimodal Large Language Models',
     image: '/img/ChEF.png',
     author:
-      'Zhelun Shi*, Zhipin Wang*, Hongxing Fan*, Zhenfei Yin, Lu Sheng†, Jing Shao, Yu Qiao',
+      'Zhelun Shi*, Zhipin Wang*, Hongxing Fan*, Zhenfei Yin, Lu Sheng†, Yu Qiao, Jing Shao†',
     pub: 'Arxiv, 2023',
     link: 'https://arxiv.org/abs/2306.06687',
   },
@@ -49,7 +49,7 @@ const preprint: PAPER[] = [
     title: 'Octavius: Mitigating Task Interference in MLLMs via MoE',
     image: '/logo/Octavius_arch.png',
     author:
-      'Zeren Chen*, Ziqin Wang*, Zhen Wang*, Huayang Liu, Zhenfei Yin, Si Liu, Lu Sheng†, Wanli Ouyang, Jing Shao',
+      'Zeren Chen*, Ziqin Wang*, Zhen Wang*, Huayang Liu, Zhenfei Yin, Si Liu, Lu Sheng†, Wanli Ouyang, Yu Qiao, Jing Shao†',
     pub: 'Arxiv, 2023',
     link: 'https://arxiv.org/abs/2306.06687',
   },

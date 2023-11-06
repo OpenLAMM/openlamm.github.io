@@ -1,4 +1,4 @@
-# Leaderboard
+# Leaderboards
 
 ## Visual performance of MLLMs on different Scenarios
 For each *Scenario*, we conduct various experiments with diverse *Recipes*, from which, the *Recipe* behaving most reliably (*i.e.* stable to *Instruction* variations) is selected as the default setting to evaluate the visual performance of all MLLMs.

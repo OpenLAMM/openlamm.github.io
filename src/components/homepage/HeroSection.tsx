@@ -10,6 +10,9 @@ import {
 } from '@fluentui/react-icons';
 import ThemedImage from '@theme/ThemedImage';
 import clsx from 'clsx';
+import {
+Github,
+} from '@styled-icons/boxicons-logos';
 import VideoSection from './VideoSection';
 const PRODUCTS = [
   {
@@ -21,12 +24,12 @@ const PRODUCTS = [
     text: 'Learn how to prepare the dataset, model, environment, and start training and evaluation.',
   },
   {
-    title: 'Dataset',
+    title: 'Datasets',
     link: '/datasets',
     icon: Database24Regular,
     lightImage: '',
     darkImage: '',
-    text: 'Download the dataset.',
+    text: 'Download the datasets.',
   },
   {
     title: 'Models',
@@ -37,13 +40,13 @@ const PRODUCTS = [
     text: 'Use LAMM Models.',
   },
   {
-    title: 'Leaderboard',
+    title: 'Leaderboards',
     beta: false,
-    link: '/Leaderboard',
+    link: '/Leaderboards',
     icon: List24Regular,
     lightImage: '',
     darkImage: '',
-    text: 'View the leaderboard of multimodal large language models.',
+    text: 'View the leaderboards of multimodal large language models.',
   },
 ];
 
@@ -95,7 +98,7 @@ export default function HeroSection() {
     <>
       <section className="noise-bg no-underline-links px-4 pt-16 lg:py-0">
         <div className="flex flex-col items-center justify-between py-14">
-          <h2 className="mb-8 max-w-5xl text-center font-jakarta text-5xl font-bold">LAMM: Language Assisted Multimodal Models and their Application</h2>
+          <h2 className="mb-8 max-w-5xl text-center font-jakarta text-5xl font-bold">LAMM: Language Assisted Multimodal Models and their Applications</h2>
           <p className="max-w-5xl font-jakarta text-xl">LAMM (pronounced as /læm/, means cute lamb to show appreciation
  to LLaMA), is a growing open-source community aimed at helping researchers and developers quickly train and evaluate Multi-modal Large Language Models (MLLM), and futher build multi-modal AI agents capable of bridging the gap between ideas and execution, enabling seamless interaction between humans and AI machines.</p>
         </div>
