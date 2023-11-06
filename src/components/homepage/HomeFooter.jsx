@@ -108,12 +108,12 @@ export default function Footer() {
             
             <span className="text-inherit">
               &copy; {new Date().getFullYear()} LAMM. Built with Dyte.
-              <Link
+              {/* <Link
               href="https://github.com/OpenLAMM/LAMM"
               aria-label="LAMM GitHub Organization"
             >
               <Github className="h-7 w-7 text-zinc-400 hover:text-primary pl-1"/>
-            </Link>
+            </Link> */}
             </span>
             
           </div>
