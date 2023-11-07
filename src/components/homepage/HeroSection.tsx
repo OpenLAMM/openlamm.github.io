@@ -10,9 +10,7 @@ import {
 } from '@fluentui/react-icons';
 import ThemedImage from '@theme/ThemedImage';
 import clsx from 'clsx';
-import {
-Github,
-} from '@styled-icons/boxicons-logos';
+import { Github } from '@styled-icons/boxicons-logos';
 import VideoSection from './VideoSection';
 const PRODUCTS = [
   {
@@ -98,12 +96,27 @@ export default function HeroSection() {
     <>
       <section className="noise-bg no-underline-links px-4 pt-16 lg:py-0">
         <div className="flex flex-col items-center justify-between py-14">
-          <h2 className="mb-8 max-w-5xl text-center font-jakarta text-5xl font-bold">LAMM: Multi-Modal Large Language Models and Applications as AI Agents</h2>
-          <p className="max-w-5xl font-jakarta text-xl"><span className='font-bold'>LAMM</span> (pronounced as /læm/, means cute lamb to show appreciation to LLaMA), is a growing open-source community aimed at helping researchers and developers quickly train and evaluate Multi-modal Large Language Models (MLLM), and futher build multi-modal AI agents capable of bridging the gap between ideas and execution, enabling seamless interaction between humans and AI machines.<br/>
-
-          As one of the very first open-source endeavors in the MLLM field, our goal is to create an ecosystem where every researcher and developer can apply, study, and even contribute. We work on various aspects including MLLM datasets, frameworks, benchmarks, optimizations, and applications as AI Agents. As a fully transparent open-source community, any form of collaboration is welcome! <br/>
-
-          Please feel free to contact [Zhenfei Yin](zyin7056@uni.sydney.edu.au) or [Jing Shao](shaojing@pjlab.org.cn)!</p>
+          <h2 className="mb-8 max-w-5xl text-center font-jakarta text-5xl font-bold">
+            LAMM: Multi-Modal Large Language Models and Applications as AI
+            Agents
+          </h2>
+          <p className="max-w-5xl font-jakarta text-xl">
+            <b>LAMM</b> (pronounced as /læm/, means cute lamb to show
+            appreciation to LLaMA), is a growing open-source community aimed at
+            helping researchers and developers quickly train and evaluate
+            Multi-modal Large Language Models (MLLM), and futher build
+            multi-modal AI agents capable of bridging the gap between ideas and
+            execution, enabling seamless interaction between humans and AI
+            machines. As one of the very first open-source endeavors in the MLLM
+            field, our goal is to create an ecosystem where every researcher and
+            developer can apply, study, and even contribute. We work on various
+            aspects including MLLM datasets, frameworks, benchmarks,
+            optimizations, and applications as AI Agents. As a fully transparent
+            open-source community, any form of collaboration is welcome! Please
+            feel free to contact{' '}
+            <a href="mailto: zyin7056@uni.sydney.edu.au">Zhenfei Yin</a> or{' '}
+            <a href="mailto: shaojing@pjlab.org.cn">Jing Shao</a>!
+          </p>
         </div>
       </section>
       <VideoSection />

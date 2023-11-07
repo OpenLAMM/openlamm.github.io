@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
 import Link from '@docusaurus/Link';
 import {
   AppsAddInRegular,
@@ -20,11 +19,23 @@ interface New {
 
 const updates: New[] = [
   {
-    month: '2023-09',
+    month: '2023-11',
+    content: [
+      '1. <a href="https://arxiv.org/abs/2311.02684" target="_blank">Octavius</a> & <a href="https://arxiv.org/abs/2311.02692" target="_blank">ChEF</a> released on Arxiv!',
+      '2. Camera ready version of LAMM is available on <a href="https://arxiv.org/abs/2306.06687" target="_blank">Arxiv</a>.',
+    ],
+  },
+  {
+    month: '2023-10',
     content: [
       '1. LAMM is accepted by NeurIPS2023 Datasets & Benchmark Track! See you in December!',
-      '2. Training LAMM on V100 or RTX3090 is available! Finetuning LLaMA2 is online.',
-      '3. Our demo moved to <a href="https://openxlab.org.cn/apps/detail/LAMM/LAMM" target="_blank">OpenXLab</a>.',
+    ],
+  },
+  {
+    month: '2023-09',
+    content: [
+      '1. Light training framework for V100 or RTX3090 is available! LLaMA2-based finetuning is also online.',
+      '2. Our demo moved to <a href="https://openxlab.org.cn/apps/detail/LAMM/LAMM" target="_blank">OpenXLab</a>.',
     ],
   },
   {
@@ -63,7 +74,7 @@ function Updates({ month, content }: (typeof updates)[0]) {
 
 export function UpdatesList() {
   return (
-    <section className="no-underline-links mt-14 mx-auto flex w-full max-w-5xl flex-col p-4 py-0 md:flex-row md:gap-0">
+    <section className="no-underline-links mx-auto mt-14 flex w-full max-w-5xl flex-col p-4 py-0 md:flex-row md:gap-0">
       <div className="flex-1">
         <div className="mb-8 flex items-center justify-between">
           <h3 className="m-0">News</h3>
