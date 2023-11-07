@@ -107,13 +107,14 @@ export default function HeroSection() {
             Multi-modal Large Language Models (MLLM), and futher build
             multi-modal AI agents capable of bridging the gap between ideas and
             execution, enabling seamless interaction between humans and AI
-            machines. As one of the very first open-source endeavors in the MLLM
+            machines. <br/> 
+            As one of the very first open-source endeavors in the MLLM
             field, our goal is to create an ecosystem where every researcher and
             developer can apply, study, and even contribute. We work on various
             aspects including MLLM datasets, frameworks, benchmarks,
             optimizations, and applications as AI Agents. As a fully transparent
-            open-source community, any form of collaboration is welcome! Please
-            feel free to contact{' '}
+            open-source community, any form of collaboration is welcome! <br/> 
+            Please feel free to contact{' '}
             <a href="mailto: zyin7056@uni.sydney.edu.au">Zhenfei Yin</a> or{' '}
             <a href="mailto: shaojing@pjlab.org.cn">Jing Shao</a>!
           </p>

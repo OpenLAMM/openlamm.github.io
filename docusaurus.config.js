@@ -148,7 +148,7 @@ const config = {
           },
           {
             label: 'Github',
-            to: 'https://github.com/OpenLAMM/LAMM',
+            to: 'https://github.com/OpenGVLab/LAMM',
           },
         ],
       },

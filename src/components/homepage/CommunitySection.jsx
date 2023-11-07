@@ -11,6 +11,7 @@ const githubUsernames = [
   'Puck-U',
   'Zhoues',
   'yinzhenfei',
+  'dhuip'
 ];
 
 export default function CommunitySection() {
