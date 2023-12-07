@@ -94,12 +94,12 @@ function HeroProduct({
 export default function HeroSection() {
   return (
     <>
-      <section className="noise-bg no-underline-links px-4 pt-16 lg:py-0">
+      <section className="no-underline-links lg:py-0" id="HeroSection">
         <div className="flex flex-col items-center justify-between py-14">
-          <h2 className="mb-8 max-w-5xl text-center font-jakarta text-5xl font-bold">
+          {/* <h2 className="mb-8 max-w-5xl text-center font-jakarta text-5xl font-bold">
             LAMM: Multi-Modal Large Language Models and Applications as AI
             Agents
-          </h2>
+          </h2> */}
           <p className="max-w-5xl font-jakarta text-xl">
             <b>LAMM</b> (pronounced as /læm/, means cute lamb to show
             appreciation to LLaMA), is a growing open-source community aimed at
@@ -107,13 +107,13 @@ export default function HeroSection() {
             Multi-modal Large Language Models (MLLM), and futher build
             multi-modal AI agents capable of bridging the gap between ideas and
             execution, enabling seamless interaction between humans and AI
-            machines. <br/> 
-            As one of the very first open-source endeavors in the MLLM
-            field, our goal is to create an ecosystem where every researcher and
+            machines. <br /> <br />
+            As one of the very first open-source endeavors in the MLLM field,
+            our goal is to create an ecosystem where every researcher and
             developer can apply, study, and even contribute. We work on various
             aspects including MLLM datasets, frameworks, benchmarks,
             optimizations, and applications as AI Agents. As a fully transparent
-            open-source community, any form of collaboration is welcome! <br/> 
+            open-source community, any form of collaboration is welcome! <br />
             Please feel free to contact{' '}
             <a href="mailto: zyin7056@uni.sydney.edu.au">Zhenfei Yin</a> or{' '}
             <a href="mailto: shaojing@pjlab.org.cn">Jing Shao</a>!

@@ -74,7 +74,7 @@ function Updates({ month, content }: (typeof updates)[0]) {
 
 export function UpdatesList() {
   return (
-    <section className="no-underline-links mx-auto mt-14 flex w-full max-w-5xl flex-col p-4 py-0 md:flex-row md:gap-0">
+    <section className="no-underline-links news-wrap mx-auto mt-14 flex w-full max-w-5xl flex-col p-4 py-0 md:flex-row md:gap-0">
       <div className="flex-1">
         <div className="mb-8 flex items-center justify-between">
           <h3 className="m-0">News</h3>

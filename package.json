@@ -44,7 +44,8 @@
     "raw-loader": "^4.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-feather": "^2.0.10"
+    "react-feather": "^2.0.10",
+    "swiper": "^6.8.4"
   },
   "devDependencies": {
     "@styled-icons/boxicons-logos": "^10.47.0",
