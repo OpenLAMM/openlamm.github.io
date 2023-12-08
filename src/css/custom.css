@@ -1345,7 +1345,8 @@ html[data-theme='dark'] .video_sidebar_header > div > a::before {
 }
 
 .img-swiper {
-  margin-top: 3rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
 .img-swiper.sm {
@@ -1360,6 +1361,12 @@ html[data-theme='dark'] .video_sidebar_header > div > a::before {
 }
 .img-swiper .swiper-wrapper {
   align-items: center;
+}
+.img-swiper .swiper-button-prev {
+  left: 2rem;
+}
+.img-swiper .swiper-button-next {
+  right: 2rem;
 }
 .img-swiper .swiper-button-prev,
 .img-swiper .swiper-button-next {
