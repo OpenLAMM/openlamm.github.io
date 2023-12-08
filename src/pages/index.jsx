@@ -2,7 +2,7 @@
  * @version: 1.0
  * @author: fengziwei
  * @creatTime: 2023-11-24
- * @updateTime: 2023-12-06
+ * @updateTime: 2023-12-08
  * @lastEditors: fengziwei
  * @Description :
  */
@@ -18,11 +18,8 @@ import {
   PreprintList,
 } from '../components/homepage/GuidesAndSamples';
 import { UpdatesList } from '../components/homepage/update';
-import useBreakpoint from '../lib/useBreakpoint';
-import ImgSwiper from '../components/homepage/ImgSwiper';
 
 export default function Homepage() {
-  const size = useBreakpoint();
   const [bgHeight, setBgHeight] = useState(0);
   useEffect(() => {
     setTimeout(() => {
@@ -45,7 +42,7 @@ export default function Homepage() {
         className="noise-bg homepage-bg"
         style={{ height: `${bgHeight}px` }}
       ></div>
-      <h2 className="homepage-title mb-8 max-w-5xl pt-16 text-center font-jakarta text-5xl font-bold">
+      <h2 className="homepage-title mb-8 max-w-5xl px-4 pt-16 text-center font-jakarta text-5xl font-bold">
         LAMM: Multi-Modal Large Language Models and Applications as AI Agents
       </h2>
       <div className="homepage-content">
@@ -53,7 +50,6 @@ export default function Homepage() {
           <link rel="prefetch" href="/assets/css/elements.min.css" />
         </Head>
         <HeroSection />
-        <ImgSwiper />
         <UpdatesList />
         <PublicationList />
         <PreprintList />

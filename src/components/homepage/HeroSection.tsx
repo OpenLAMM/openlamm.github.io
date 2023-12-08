@@ -12,6 +12,8 @@ import ThemedImage from '@theme/ThemedImage';
 import clsx from 'clsx';
 import { Github } from '@styled-icons/boxicons-logos';
 import VideoSection from './VideoSection';
+
+import ImgSwiper from '../../components/homepage/ImgSwiper';
 const PRODUCTS = [
   {
     title: 'Tutorial',
@@ -95,7 +97,7 @@ export default function HeroSection() {
   return (
     <>
       <section className="no-underline-links lg:py-0" id="HeroSection">
-        <div className="flex flex-col items-center justify-between py-14">
+        <div className="flex flex-col items-center justify-between py-14 px-4">
           {/* <h2 className="mb-8 max-w-5xl text-center font-jakarta text-5xl font-bold">
             LAMM: Multi-Modal Large Language Models and Applications as AI
             Agents
@@ -120,8 +122,9 @@ export default function HeroSection() {
           </p>
         </div>
       </section>
-      <VideoSection />
+      {/* <VideoSection /> */}
 
+      <ImgSwiper />
       <div className="pt-20"></div>
 
       <section className="mx-auto grid w-full max-w-5xl grid-cols-1 grid-rows-2 gap-6 px-4 md:grid-cols-2">
