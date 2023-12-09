@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Datasets/instruction",
+  "id": "Datasets/instruction",
+  "title": "Instruction Tuning",
+  "description": "We construct instruction tuning dataset for 2D/3D modality instruction tuning via GPT API.",
+  "source": "@site/docs/tutorial/Datasets/instruction.mdx",
+  "sourceDirName": "Datasets",
+  "slug": "/Datasets/instruction",
+  "permalink": "/tutorial/Datasets/instruction",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Instruction Tuning",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Datasets",
+    "permalink": "/tutorial/Datasets/"
+  },
+  "next": {
+    "title": "Benchmarking",
+    "permalink": "/tutorial/Datasets/benchmark"
+  }
+}

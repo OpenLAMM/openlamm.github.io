@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Datasets/benchmark",
+  "id": "Datasets/benchmark",
+  "title": "Benchmarking",
+  "description": "We provide 2D/3D/ChEF benchmarking datasets for downstream evaluation.",
+  "source": "@site/docs/tutorial/Datasets/benchmark.mdx",
+  "sourceDirName": "Datasets",
+  "slug": "/Datasets/benchmark",
+  "permalink": "/tutorial/Datasets/benchmark",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Benchmarking",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Instruction Tuning",
+    "permalink": "/tutorial/Datasets/instruction"
+  },
+  "next": {
+    "title": "Installation",
+    "permalink": "/tutorial/installation/"
+  }
+}

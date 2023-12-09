@@ -1,0 +1,7 @@
+{
+  "type": "mdx",
+  "permalink": "/paper_list/Octavius",
+  "source": "@site/src/pages/paper_list/Octavius.mdx",
+  "description": "Octavius: Mitigating Task Interference in MLLMs via MoE",
+  "frontMatter": {}
+}

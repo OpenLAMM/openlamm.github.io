@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Benchmark/custom",
+  "id": "Benchmark/custom",
+  "title": "Custom Benchmark",
+  "description": "You can customize the behavior of Evaluator in ChEF for your requirements.",
+  "source": "@site/docs/tutorial/Benchmark/custom.mdx",
+  "sourceDirName": "Benchmark",
+  "slug": "/Benchmark/custom",
+  "permalink": "/tutorial/Benchmark/custom",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Custom Benchmark",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Default Benchmark",
+    "permalink": "/tutorial/Benchmark/default"
+  },
+  "next": {
+    "title": "Citation",
+    "permalink": "/tutorial/citations/"
+  }
+}

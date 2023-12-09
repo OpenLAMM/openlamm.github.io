@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Training/training",
+  "id": "Training/training",
+  "title": "Training",
+  "description": "Prepare Required Checkpoints",
+  "source": "@site/docs/tutorial/Training/training.mdx",
+  "sourceDirName": "Training",
+  "slug": "/Training/",
+  "permalink": "/tutorial/Training/",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Training",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/tutorial/installation/"
+  },
+  "next": {
+    "title": "Default Benchmark",
+    "permalink": "/tutorial/Benchmark/default"
+  }
+}

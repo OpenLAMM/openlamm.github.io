@@ -1,0 +1,395 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "tutorial": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/tutorial",
+          "tagsPath": "/tutorial/tags",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "D:\\code\\openlamm.github.io\\sidebars-default.js",
+          "contentPath": "D:\\code\\openlamm.github.io\\docs\\tutorial",
+          "contentPathLocalized": "D:\\code\\openlamm.github.io\\i18n\\en\\docusaurus-plugin-content-docs-tutorial\\current",
+          "docs": [
+            {
+              "unversionedId": "Benchmark/custom",
+              "id": "Benchmark/custom",
+              "title": "Custom Benchmark",
+              "description": "You can customize the behavior of Evaluator in ChEF for your requirements.",
+              "source": "@site/docs/tutorial/Benchmark/custom.mdx",
+              "sourceDirName": "Benchmark",
+              "slug": "/Benchmark/custom",
+              "permalink": "/tutorial/Benchmark/custom",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Custom Benchmark",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Default Benchmark",
+                "permalink": "/tutorial/Benchmark/default"
+              },
+              "next": {
+                "title": "Citation",
+                "permalink": "/tutorial/citations/"
+              }
+            },
+            {
+              "unversionedId": "Benchmark/default",
+              "id": "Benchmark/default",
+              "title": "Default Benchmark",
+              "description": "LAMM-Benchmark",
+              "source": "@site/docs/tutorial/Benchmark/default.mdx",
+              "sourceDirName": "Benchmark",
+              "slug": "/Benchmark/default",
+              "permalink": "/tutorial/Benchmark/default",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Default Benchmark",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Training",
+                "permalink": "/tutorial/Training/"
+              },
+              "next": {
+                "title": "Custom Benchmark",
+                "permalink": "/tutorial/Benchmark/custom"
+              }
+            },
+            {
+              "unversionedId": "citations/citations",
+              "id": "citations/citations",
+              "title": "Citation",
+              "description": "LAMM",
+              "source": "@site/docs/tutorial/citations/citations.mdx",
+              "sourceDirName": "citations",
+              "slug": "/citations/",
+              "permalink": "/tutorial/citations/",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 7,
+              "frontMatter": {
+                "title": "Citation",
+                "sidebar_position": 7
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Custom Benchmark",
+                "permalink": "/tutorial/Benchmark/custom"
+              }
+            },
+            {
+              "unversionedId": "Datasets/benchmark",
+              "id": "Datasets/benchmark",
+              "title": "Benchmarking",
+              "description": "We provide 2D/3D/ChEF benchmarking datasets for downstream evaluation.",
+              "source": "@site/docs/tutorial/Datasets/benchmark.mdx",
+              "sourceDirName": "Datasets",
+              "slug": "/Datasets/benchmark",
+              "permalink": "/tutorial/Datasets/benchmark",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Benchmarking",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Instruction Tuning",
+                "permalink": "/tutorial/Datasets/instruction"
+              },
+              "next": {
+                "title": "Installation",
+                "permalink": "/tutorial/installation/"
+              }
+            },
+            {
+              "unversionedId": "Datasets/datasets",
+              "id": "Datasets/datasets",
+              "title": "Datasets",
+              "description": "We divide the dataset into two categories: the instruction dataset and the benchmark dataset.",
+              "source": "@site/docs/tutorial/Datasets/datasets.mdx",
+              "sourceDirName": "Datasets",
+              "slug": "/Datasets/",
+              "permalink": "/tutorial/Datasets/",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "Datasets",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Tutorial",
+                "permalink": "/tutorial/"
+              },
+              "next": {
+                "title": "Instruction Tuning",
+                "permalink": "/tutorial/Datasets/instruction"
+              }
+            },
+            {
+              "unversionedId": "Datasets/instruction",
+              "id": "Datasets/instruction",
+              "title": "Instruction Tuning",
+              "description": "We construct instruction tuning dataset for 2D/3D modality instruction tuning via GPT API.",
+              "source": "@site/docs/tutorial/Datasets/instruction.mdx",
+              "sourceDirName": "Datasets",
+              "slug": "/Datasets/instruction",
+              "permalink": "/tutorial/Datasets/instruction",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Instruction Tuning",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Datasets",
+                "permalink": "/tutorial/Datasets/"
+              },
+              "next": {
+                "title": "Benchmarking",
+                "permalink": "/tutorial/Datasets/benchmark"
+              }
+            },
+            {
+              "unversionedId": "installation/installation",
+              "id": "installation/installation",
+              "title": "Installation",
+              "description": "Training",
+              "source": "@site/docs/tutorial/installation/installation.mdx",
+              "sourceDirName": "installation",
+              "slug": "/installation/",
+              "permalink": "/tutorial/installation/",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Installation",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Benchmarking",
+                "permalink": "/tutorial/Datasets/benchmark"
+              },
+              "next": {
+                "title": "Training",
+                "permalink": "/tutorial/Training/"
+              }
+            },
+            {
+              "unversionedId": "Training/training",
+              "id": "Training/training",
+              "title": "Training",
+              "description": "Prepare Required Checkpoints",
+              "source": "@site/docs/tutorial/Training/training.mdx",
+              "sourceDirName": "Training",
+              "slug": "/Training/",
+              "permalink": "/tutorial/Training/",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "title": "Training",
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Installation",
+                "permalink": "/tutorial/installation/"
+              },
+              "next": {
+                "title": "Default Benchmark",
+                "permalink": "/tutorial/Benchmark/default"
+              }
+            },
+            {
+              "unversionedId": "tutorial",
+              "id": "tutorial",
+              "title": "Tutorial",
+              "description": "Our code is here.",
+              "source": "@site/docs/tutorial/tutorial.mdx",
+              "sourceDirName": ".",
+              "slug": "/",
+              "permalink": "/tutorial/",
+              "draft": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "slug": "/",
+                "sidebar_position": 1,
+                "sidebar_class_name": "guide_sidebar_index"
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "Datasets",
+                "permalink": "/tutorial/Datasets/"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "doc",
+                "id": "tutorial",
+                "className": "guide_sidebar_index"
+              },
+              {
+                "type": "category",
+                "label": "Datasets",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Datasets/instruction"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Datasets/benchmark"
+                  }
+                ],
+                "link": {
+                  "type": "doc",
+                  "id": "Datasets/datasets"
+                }
+              },
+              {
+                "type": "doc",
+                "label": "Installation",
+                "id": "installation/installation"
+              },
+              {
+                "type": "doc",
+                "label": "Training",
+                "id": "Training/training"
+              },
+              {
+                "type": "category",
+                "label": "Benchmark",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Benchmark/default"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Benchmark/custom"
+                  }
+                ]
+              },
+              {
+                "type": "doc",
+                "label": "Citation",
+                "id": "citations/citations"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "mdx",
+        "permalink": "/datasets",
+        "source": "@site/src/pages/datasets.md",
+        "description": "Datasets",
+        "frontMatter": {}
+      },
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.jsx"
+      },
+      {
+        "type": "mdx",
+        "permalink": "/Leaderboards",
+        "source": "@site/src/pages/Leaderboards.md",
+        "title": "Leaderboards",
+        "description": "Visual performance of MLLMs on different Scenarios",
+        "frontMatter": {}
+      },
+      {
+        "type": "mdx",
+        "permalink": "/Model_system_card",
+        "source": "@site/src/pages/Model_system_card.md",
+        "description": "LAMM-Models",
+        "frontMatter": {}
+      },
+      {
+        "type": "jsx",
+        "permalink": "/Team",
+        "source": "@site/src/pages/Team.jsx"
+      },
+      {
+        "type": "mdx",
+        "permalink": "/Updates",
+        "source": "@site/src/pages/Updates.md",
+        "title": "Updates",
+        "description": "📆 [2023-09]",
+        "frontMatter": {}
+      },
+      {
+        "type": "mdx",
+        "permalink": "/paper_list/ChEF",
+        "source": "@site/src/pages/paper_list/ChEF.mdx",
+        "description": "Zhelun Shi*,1,2&emsp;",
+        "frontMatter": {}
+      },
+      {
+        "type": "mdx",
+        "permalink": "/paper_list/LAMM",
+        "source": "@site/src/pages/paper_list/LAMM.md",
+        "description": "LAMM",
+        "frontMatter": {}
+      },
+      {
+        "type": "mdx",
+        "permalink": "/paper_list/Octavius",
+        "source": "@site/src/pages/paper_list/Octavius.mdx",
+        "description": "Octavius: Mitigating Task Interference in MLLMs via MoE",
+        "frontMatter": {}
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-plugin-google-tag-manager": {},
+  "docusaurus-theme-classic": {},
+  "tailwind-plugin": {},
+  "webpack-plugin": {},
+  "docusaurus-theme-live-codeblock": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}

@@ -1,0 +1,23 @@
+{
+  "unversionedId": "citations/citations",
+  "id": "citations/citations",
+  "title": "Citation",
+  "description": "LAMM",
+  "source": "@site/docs/tutorial/citations/citations.mdx",
+  "sourceDirName": "citations",
+  "slug": "/citations/",
+  "permalink": "/tutorial/citations/",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "Citation",
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Custom Benchmark",
+    "permalink": "/tutorial/Benchmark/custom"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Datasets/datasets",
+  "id": "Datasets/datasets",
+  "title": "Datasets",
+  "description": "We divide the dataset into two categories: the instruction dataset and the benchmark dataset.",
+  "source": "@site/docs/tutorial/Datasets/datasets.mdx",
+  "sourceDirName": "Datasets",
+  "slug": "/Datasets/",
+  "permalink": "/tutorial/Datasets/",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Datasets",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tutorial",
+    "permalink": "/tutorial/"
+  },
+  "next": {
+    "title": "Instruction Tuning",
+    "permalink": "/tutorial/Datasets/instruction"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "tutorial",
+  "id": "tutorial",
+  "title": "Tutorial",
+  "description": "Our code is here.",
+  "source": "@site/docs/tutorial/tutorial.mdx",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/tutorial/",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "slug": "/",
+    "sidebar_position": 1,
+    "sidebar_class_name": "guide_sidebar_index"
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Datasets",
+    "permalink": "/tutorial/Datasets/"
+  }
+}

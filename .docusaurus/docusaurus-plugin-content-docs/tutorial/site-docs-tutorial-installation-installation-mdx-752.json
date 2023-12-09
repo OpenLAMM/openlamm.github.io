@@ -1,0 +1,27 @@
+{
+  "unversionedId": "installation/installation",
+  "id": "installation/installation",
+  "title": "Installation",
+  "description": "Training",
+  "source": "@site/docs/tutorial/installation/installation.mdx",
+  "sourceDirName": "installation",
+  "slug": "/installation/",
+  "permalink": "/tutorial/installation/",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Installation",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Benchmarking",
+    "permalink": "/tutorial/Datasets/benchmark"
+  },
+  "next": {
+    "title": "Training",
+    "permalink": "/tutorial/Training/"
+  }
+}

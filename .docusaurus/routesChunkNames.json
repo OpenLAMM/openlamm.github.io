@@ -1,0 +1,108 @@
+{
+  "/datasets-15e": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "5707bd81"
+    },
+    "content": "aef63979"
+  },
+  "/Leaderboards-e27": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "5707bd81"
+    },
+    "content": "ecda018a"
+  },
+  "/Model_system_card-d5b": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "5707bd81"
+    },
+    "content": "70cbb35b"
+  },
+  "/paper_list/ChEF-6c4": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "5707bd81"
+    },
+    "content": "d4485654"
+  },
+  "/paper_list/LAMM-55b": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "5707bd81"
+    },
+    "content": "7aa048a9"
+  },
+  "/paper_list/Octavius-8ef": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "5707bd81"
+    },
+    "content": "61444c35"
+  },
+  "/Team-b85": {
+    "__comp": "f2fbd8df",
+    "__context": {
+      "plugin": "5707bd81"
+    },
+    "config": "5e9f5e1a"
+  },
+  "/Updates-555": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "5707bd81"
+    },
+    "content": "0c986a19"
+  },
+  "/tutorial-73e": {
+    "__comp": "1be78505",
+    "__context": {
+      "plugin": "382c4924"
+    },
+    "versionMetadata": "f8907193"
+  },
+  "/tutorial-de1": {
+    "__comp": "17896441",
+    "content": "e5e1ff07"
+  },
+  "/tutorial/Benchmark/custom-c21": {
+    "__comp": "17896441",
+    "content": "09d00ff5"
+  },
+  "/tutorial/Benchmark/default-12d": {
+    "__comp": "17896441",
+    "content": "282944d0"
+  },
+  "/tutorial/citations-39f": {
+    "__comp": "17896441",
+    "content": "428c5ed2"
+  },
+  "/tutorial/Datasets-be8": {
+    "__comp": "17896441",
+    "content": "714542ba"
+  },
+  "/tutorial/Datasets/benchmark-323": {
+    "__comp": "17896441",
+    "content": "099e91f7"
+  },
+  "/tutorial/Datasets/instruction-834": {
+    "__comp": "17896441",
+    "content": "2a04c5e5"
+  },
+  "/tutorial/installation-ccd": {
+    "__comp": "17896441",
+    "content": "752a8c75"
+  },
+  "/tutorial/Training-df4": {
+    "__comp": "17896441",
+    "content": "d486f24d"
+  },
+  "/-b35": {
+    "__comp": "9dd8a0d2",
+    "__context": {
+      "plugin": "5707bd81"
+    },
+    "config": "5e9f5e1a"
+  }
+}

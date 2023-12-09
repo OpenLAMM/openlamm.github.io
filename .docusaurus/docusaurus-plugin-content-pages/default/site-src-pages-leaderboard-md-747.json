@@ -1,0 +1,8 @@
+{
+  "type": "mdx",
+  "permalink": "/Leaderboard",
+  "source": "@site/src/pages/Leaderboard.md",
+  "title": "Leaderboard",
+  "description": "Visual performance of MLLMs on different Scenarios",
+  "frontMatter": {}
+}

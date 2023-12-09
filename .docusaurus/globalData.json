@@ -1,0 +1,79 @@
+{
+  "docusaurus-plugin-google-tag-manager": {
+    "default": {
+      "containerId": "GTM-5FDFFSS",
+      "id": "default"
+    }
+  },
+  "docusaurus-plugin-content-docs": {
+    "tutorial": {
+      "path": "/tutorial",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/tutorial",
+          "mainDocId": "tutorial",
+          "docs": [
+            {
+              "id": "Benchmark/custom",
+              "path": "/tutorial/Benchmark/custom",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Benchmark/default",
+              "path": "/tutorial/Benchmark/default",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "citations/citations",
+              "path": "/tutorial/citations/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Datasets/benchmark",
+              "path": "/tutorial/Datasets/benchmark",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Datasets/datasets",
+              "path": "/tutorial/Datasets/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Datasets/instruction",
+              "path": "/tutorial/Datasets/instruction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "installation/installation",
+              "path": "/tutorial/installation/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Training/training",
+              "path": "/tutorial/Training/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial",
+              "path": "/tutorial/",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/tutorial/",
+                "label": "tutorial"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

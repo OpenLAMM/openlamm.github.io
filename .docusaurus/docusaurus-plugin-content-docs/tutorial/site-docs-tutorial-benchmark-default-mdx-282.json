@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Benchmark/default",
+  "id": "Benchmark/default",
+  "title": "Default Benchmark",
+  "description": "LAMM-Benchmark",
+  "source": "@site/docs/tutorial/Benchmark/default.mdx",
+  "sourceDirName": "Benchmark",
+  "slug": "/Benchmark/default",
+  "permalink": "/tutorial/Benchmark/default",
+  "draft": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Default Benchmark",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Training",
+    "permalink": "/tutorial/Training/"
+  },
+  "next": {
+    "title": "Custom Benchmark",
+    "permalink": "/tutorial/Benchmark/custom"
+  }
+}
