@@ -22,7 +22,7 @@ interface PAPER {
 
 const publications: PAPER[] = [
   {
-    id: 'LAMM',
+    id: '/paper_list/LAMM',
     title:
       'LAMM: Language-Assisted Multi-Modal Instruction-Tuning Dataset, Framework, and Benchmark',
     image: '/img/LAMM.png',
@@ -35,7 +35,7 @@ const publications: PAPER[] = [
 
 const preprint: PAPER[] = [
   {
-    id: 'ChEF',
+    id: '/paper_list/ChEF',
     title:
       'ChEF: A Comprehensive Evaluation Framework for Standardized Assessment of Multimodal Large Language Models',
     image: '/img/ChEF.png',
@@ -45,13 +45,22 @@ const preprint: PAPER[] = [
     link: 'https://arxiv.org/abs/2306.06687',
   },
   {
-    id: 'Octavius',
+    id: '/paper_list/Octavius',
     title: 'Octavius: Mitigating Task Interference in MLLMs via MoE',
     image: '/logo/Octavius_arch.png',
     author:
       'Zeren Chen*, Ziqin Wang*, Zhen Wang*, Huayang Liu, Zhenfei Yin, Si Liu, Lu Sheng†, Wanli Ouyang, Yu Qiao, Jing Shao†',
     pub: 'Arxiv, 2023',
     link: 'https://arxiv.org/abs/2306.06687',
+  },
+  {
+    id: 'https://iranqin.github.io/MP5.github.io/',
+    title: 'MP5: A Multi-modal Open-ended Embodied System in Minecraft via Active Perception',
+    image: '/img/MP5.png',
+    author:
+      'Yiran Qin*, Enshen Zhou*, Qichang Liu*, Zhenfei Yin, Lu Sheng†, Ruimao Zhang†, Yu Qiao, Jing Shao',
+    pub: 'Arxiv 2023',
+    link: 'https://iranqin.github.io/MP5.github.io/',
   },
 ];
 
@@ -65,7 +74,7 @@ function Publish({
 }: (typeof publications)[0]) {
   return (
     <Link
-      to={'/paper_list/' + id}
+      to={id}
       className="group flex cursor-pointer items-start gap-2 rounded-lg border-2 border-transparent p-3 text-inherit transition-colors hover:border-primary hover:text-primary"
     >
       <img src={image} className="paper_image" />

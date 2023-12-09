@@ -133,6 +133,26 @@ const items = [
     homepageLink:
       'https://scholar.google.com/citations?hl=zh-CN&user=fdDOA-0AAAAJ',
   },
+  {
+    image: '/img/group/qyr.png',
+    imgWidth: '110%',
+    name: 'Yiran Qin',
+    organization: 'The Chinese University of Hong Kong, Shenzhen',
+    organizationb: 'Shanghai AI Laboratory',
+    githubLink: 'https://github.com/IranQin',
+    homepageLink:
+      '',
+  },
+  {
+    image: '/img/group/zes.jpg',
+    imgWidth: '110%',
+    name: 'Enshen Zhou',
+    organization: 'Beihang University',
+    organizationb: 'Shanghai AI Laboratory',
+    githubLink: 'https://github.com/Zhoues',
+    homepageLink:
+      'https://scholar.google.com/citations?user=8Wd7-NAAAAAJ&hl=zh-CN',
+  },
 ];
 
 const advisor = [
@@ -152,6 +172,14 @@ const advisor = [
     githubLink: '',
     twitter: 'https://twitter.com/SHENGLui1989',
     homepageLink: 'https://scholar.google.com.hk/citations?user=_8lB7xcAAAAJ',
+  },
+  {
+    image: '/img/group/zrm.png',
+    name: 'Ruimao Zhang',
+    organization: 'The Chinese University of Hong Kong, Shenzhen',
+    twitter: '',
+    githubLink: '',
+    homepageLink: 'http://zhangruimao.site/',
   },
   {
     image: '/img/group/qy.jpg',
