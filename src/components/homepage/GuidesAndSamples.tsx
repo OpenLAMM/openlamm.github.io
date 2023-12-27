@@ -55,12 +55,23 @@ const preprint: PAPER[] = [
   },
   {
     id: 'https://iranqin.github.io/MP5.github.io/',
-    title: 'MP5: A Multi-modal Open-ended Embodied System in Minecraft via Active Perception',
+    title:
+      'MP5: A Multi-modal Open-ended Embodied System in Minecraft via Active Perception',
     image: '/img/MP5.png',
     author:
       'Yiran Qin*, Enshen Zhou*, Qichang Liu*, Zhenfei Yin, Lu Sheng†, Ruimao Zhang†, Yu Qiao, Jing Shao',
     pub: 'Arxiv 2023',
     link: 'https://iranqin.github.io/MP5.github.io/',
+  },
+  {
+    id: 'https://depictqa.github.io/',
+    title:
+      'DepictQA: Depicting Beyond Scores: Advancing Image Quality Assessment through Multi-modal Language Models',
+    image: '/img/DepictQA.png',
+    author:
+      'Zhiyuan You*, Zheyuan Li*, Jinjin Gu*, Zhenfei Yin, Tianfan Xue+, Chao Dong+',
+    pub: 'Arxiv, 2023',
+    link: 'https://depictqa.github.io/',
   },
 ];
 
@@ -110,7 +121,7 @@ export function PublicationList() {
 
 export function PreprintList() {
   return (
-    <section className="no-underline-links my-10 mt-2 mx-auto flex w-full max-w-5xl flex-col gap-10 p-4 py-0 md:flex-row md:gap-0">
+    <section className="no-underline-links my-10 mx-auto mt-2 flex w-full max-w-5xl flex-col gap-10 p-4 py-0 md:flex-row md:gap-0">
       <div className="flex-1">
         <div className="mb-8 flex items-center justify-between">
           <h3 className="m-0">Preprints</h3>

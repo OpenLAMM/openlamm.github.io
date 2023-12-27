@@ -103,5 +103,13 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
-  }
+  },
+  "description": "<!-- PROJECT LOGO -->\r ## Installation\r ```sh\r npm install\r npm start\r ```\r ## Writing Path\r - homepage : `src\\components\\homepage\\HeroSection.tsx`\r - paper list: `src\\components\\homepage\\GuidesAndSamples.tsx`\r - footer and navigation: `docusaurus.config.js`\r - Tutorial: `docs\\tutorial\\*`\r - Updates: `src\\pages\\Updates.md`\r - Dataset: `src\\pages\\Dataset.md`\r ...",
+  "main": "babel.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
