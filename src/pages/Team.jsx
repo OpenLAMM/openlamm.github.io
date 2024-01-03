@@ -140,8 +140,7 @@ const items = [
     organization: 'The Chinese University of Hong Kong, Shenzhen',
     organizationb: 'Shanghai AI Laboratory',
     githubLink: 'https://github.com/IranQin',
-    homepageLink:
-      '',
+    homepageLink: '',
   },
   {
     image: '/img/group/zes.jpg',
@@ -152,6 +151,25 @@ const items = [
     githubLink: 'https://github.com/Zhoues',
     homepageLink:
       'https://scholar.google.com/citations?user=8Wd7-NAAAAAJ&hl=zh-CN',
+  },
+  {
+    image: '/img/group/gjj.jpg',
+    imgWidth: '110%',
+    name: 'Jinjin Gu',
+    organization: 'University of Sydney',
+    organizationb: 'Shanghai AI Laboratory',
+    githubLink: '',
+    homepageLink: 'https://www.jasongt.com',
+  },
+  {
+    image: '/img/group/yzy.jpg',
+    imgWidth: '110%',
+    name: 'Zhiyuan You',
+    organization: 'The Chinese University of Hong Kong',
+    organizationb:
+      'Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences',
+    githubLink: '',
+    homepageLink: 'https://zhiyuanyou.github.io',
   },
 ];
 
@@ -181,6 +199,27 @@ const advisor = [
     githubLink: '',
     homepageLink: 'http://zhangruimao.site/',
   },
+
+  {
+    image: '/img/group/xtf.jpg',
+    name: 'Tianfan Xue',
+    organization: 'The Chinese University of Hong Kong',
+    organizationb: 'Shanghai AI Laboratory',
+    twitter: '',
+    githubLink: '',
+    homepageLink: 'https://tianfan.info',
+  },
+  {
+    image: '/img/group/dc.png',
+    name: 'Chao Dong',
+    organization:
+      'Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences',
+    organizationb: 'Shanghai AI Laboratory',
+    twitter: '',
+    githubLink: '',
+    homepageLink: 'https://xpixel.group/2010/01/20/chaodong.html',
+  },
+
   {
     image: '/img/group/qy.jpg',
     name: 'Yu Qiao',
