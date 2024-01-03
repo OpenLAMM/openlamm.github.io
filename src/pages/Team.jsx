@@ -31,7 +31,7 @@ const Item = ({
       </div>
       <div className="team-item-info">
         <h2 className="text-center">{name}</h2>
-        <div>
+        <div className="team-item-organization">
           <div className="text-center">{organization}</div>
           {organizationb && <div className="text-center">{organizationb}</div>}
         </div>
@@ -154,7 +154,7 @@ const items = [
   },
   {
     image: '/img/group/gjj.jpg',
-    imgWidth: '110%',
+    imgWidth: '100%',
     name: 'Jinjin Gu',
     organization: 'University of Sydney',
     organizationb: 'Shanghai AI Laboratory',
@@ -223,6 +223,7 @@ const advisor = [
   {
     image: '/img/group/qy.jpg',
     name: 'Yu Qiao',
+    imgWidth: '100%',
     organization: 'Shanghai AI Laboratory',
     githubLink: '',
     homepageLink:
@@ -230,6 +231,7 @@ const advisor = [
   },
   {
     image: '/img/group/oywl.jpg',
+    // imgWidth: '110%',
     name: 'Wanli Ouyang',
     organization: 'Shanghai AI Laboratory',
     twitter: 'https://twitter.com/ouyang_wanli',
@@ -260,7 +262,7 @@ export default function Homepage() {
         </div>
       </section>
 
-      <section className="no-underline-links my-2 mx-auto flex w-full max-w-5xl flex-col gap-10 p-4 py-0 md:flex-row md:gap-0">
+      <section className="no-underline-links p- my-2 mx-auto flex w-full max-w-5xl flex-col gap-10 py-0 md:flex-row md:gap-0">
         <div className="flex-1">
           <div className="mb-10 flex items-center justify-between">
             <h2 className="m-0">Advisor Committee</h2>
