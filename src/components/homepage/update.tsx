@@ -19,6 +19,13 @@ interface New {
 
 const updates: New[] = [
   {
+    month: '2023-12',
+    content: [
+      '1. <a href="https://arxiv.org/abs/2312.08962" target="_blank">DepictQA</a> released on Arxiv and <a href="https://depictqa.github.io/" target="_blank">here</a> is the project page.',
+      '2. <a href="https://arxiv.org/abs/2312.07472" target="_blank">MP5</a> released on Arxiv!',
+    ],
+  },
+  {
     month: '2023-11',
     content: [
       '1. <a href="https://arxiv.org/abs/2311.02684" target="_blank">Octavius</a> & <a href="https://arxiv.org/abs/2311.02692" target="_blank">ChEF</a> released on Arxiv!',

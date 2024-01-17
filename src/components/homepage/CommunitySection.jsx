@@ -37,10 +37,10 @@ export default function CommunitySection() {
           Engage with our ever-growing community to get the latest updates,
           product support, and more.
         </p>
-
         <div className="mx-auto mb-2 flex flex-wrap -space-x-1.5">
           {githubUsernames.map((username) => (
             <div
+              key={username}
               className="group relative"
               onMouseEnter={() => handleMouseEnter(username)}
               onMouseLeave={handleMouseLeave}
@@ -50,7 +50,6 @@ export default function CommunitySection() {
                   <div className="tooltip">{username}</div>
                 )}
                 <img
-                  key={username}
                   src={`https://github.com/${username}.png?size=60`}
                   alt={`User ${username}`}
                   loading="lazy"
@@ -59,6 +58,29 @@ export default function CommunitySection() {
               </a>
             </div>
           ))}
+        </div>
+        <p className="mb-10 text-zinc-500"></p>
+        <div className="relative flex items-center justify-between">
+          <span className="text-zinc-500">Connect US: &nbsp;&nbsp;</span>
+          <a
+            href={'https://discord.gg/YVdtC3Jm'}
+            className="mr-4 flex items-center"
+          >
+            <img
+              src={'/img/discord.PNG'}
+              alt={'discord'}
+              loading="lazy"
+              className="ml-2 h-6 w-6 rounded-full border-2 border-solid border-white transition group-hover:-translate-y-2 group-hover:scale-150 lg:h-12 lg:w-12"
+            />
+          </a>
+          <a href="mailto:yinzhenfei@pjlab.org.cn" className="ml-2">
+            <img
+              src={'/logo/email-icon.png'}
+              alt={'email-icon'}
+              loading="lazy"
+              className="ml-2 h-6 w-6 rounded-full border-2 border-solid border-white transition group-hover:-translate-y-2 group-hover:scale-150 lg:h-12 lg:w-16"
+            />
+          </a>
         </div>
       </div>
     </section>

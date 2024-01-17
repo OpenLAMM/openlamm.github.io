@@ -171,6 +171,20 @@ const items = [
     githubLink: '',
     homepageLink: 'https://zhiyuanyou.github.io',
   },
+  {
+    image: '/img/group/wzp.JPEG',
+    imgWidth: '100%',
+    name: 'Zhipin Wang',
+    organization: 'Beihang University',
+    githubLink: 'https://github.com/Puck-U',
+  },
+  {
+    image: '/img/group/fhx.PNG',
+    imgWidth: '100%',
+    name: 'Hongxing Fan',
+    organization: 'Beihang University',
+    githubLink: 'https://github.com/fanhongxing',
+  },
 ];
 
 const advisor = [
