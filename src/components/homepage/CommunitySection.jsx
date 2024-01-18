@@ -61,7 +61,7 @@ export default function CommunitySection() {
         </div>
         <p className="mb-10 text-zinc-500"></p>
         <div className="relative flex items-center justify-between">
-          <span className="text-zinc-500">Connect US: &nbsp;&nbsp;</span>
+          <span className="text-zinc-500">Connect Us: &nbsp;&nbsp;</span>
           <a
             href={'https://discord.gg/YVdtC3Jm'}
             className="mr-4 flex items-center"
@@ -78,7 +78,9 @@ export default function CommunitySection() {
               src={'/logo/email-icon.png'}
               alt={'email-icon'}
               loading="lazy"
-              className="ml-2 h-6 w-6 rounded-full border-2 border-solid border-white transition group-hover:-translate-y-2 group-hover:scale-150 lg:h-12 lg:w-16"
+              // style={{ height: '48px', width: '48px' }}
+              className="lg:h-13  lg:w-13 ml-2 border-2 border-solid border-white transition group-hover:-translate-y-2 group-hover:scale-150"
+              // className="ml-2 h-6 w-6 rounded-full border-2 border-solid border-white transition group-hover:-translate-y-2 group-hover:scale-150 lg:h-12 lg:w-16"
             />
           </a>
         </div>
