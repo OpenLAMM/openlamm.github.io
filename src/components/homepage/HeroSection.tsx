@@ -116,9 +116,6 @@ export default function HeroSection() {
             aspects including MLLM datasets, frameworks, benchmarks,
             optimizations, and applications as AI Agents. As a fully transparent
             open-source community, any form of collaboration is welcome! <br />
-            Please feel free to contact{' '}
-            <a href="mailto: zyin7056@uni.sydney.edu.au">Zhenfei Yin</a> or{' '}
-            <a href="mailto: shaojing@pjlab.org.cn">Jing Shao</a>!
           </p>
         </div>
       </section>

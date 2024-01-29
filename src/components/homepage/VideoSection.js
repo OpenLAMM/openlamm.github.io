@@ -13,9 +13,9 @@ function VideoSection() {
         height="602"
         src="https://www.youtube.com/embed/M7XlIe8hhPk"
         title="Introducing LAMM"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
     </div>
   );

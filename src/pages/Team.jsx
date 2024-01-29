@@ -93,7 +93,7 @@ const ItemList = ({ items }) => {
   );
 };
 
-const items = [
+const Team = [
   {
     image: '/img/group/yzf.png',
     imgWidth: '120%',
@@ -190,7 +190,7 @@ const items = [
 const advisor = [
   {
     image: '/img/group/sj.jpg',
-    imgWidth: '113%',
+    // imgWidth: '113%',
     name: 'Jing Shao',
     organization: 'Shanghai AI Laboratory',
     twitter: 'https://twitter.com/Amanda_JShao',
@@ -270,16 +270,17 @@ export default function Homepage() {
       <section className="no-underline-links p- my-2 mx-auto mt-5 flex w-full max-w-5xl flex-col gap-10 py-0 md:flex-row md:gap-0">
         <div className="flex-1">
           <div className="mb-10 flex items-center justify-between">
-            <h2 className="m-0">Organizer</h2>
+            <h2 className="m-0">Team</h2>
           </div>
-          <ItemList items={items} />
+          <ItemList items={Team} />
         </div>
       </section>
 
-      <section className="no-underline-links p- my-2 mx-auto flex w-full max-w-5xl flex-col gap-10 py-0 md:flex-row md:gap-0">
+      <section className="no-underline-links p- my-2 mx-auto mt-5 flex w-full max-w-5xl flex-col gap-10 py-0 md:flex-row md:gap-0">
+        {/* <section className="no-underline-links p- my-2 mx-auto flex w-full max-w-5xl flex-col gap-10 py-0 md:flex-row md:gap-0"> */}
         <div className="flex-1">
           <div className="mb-10 flex items-center justify-between">
-            <h2 className="m-0">Advisor Committee</h2>
+            <h2 className="m-0">Steering Committee</h2>
           </div>
           <ItemList items={advisor} />
         </div>
@@ -297,6 +298,7 @@ export default function Homepage() {
                 className="group relative"
                 onMouseEnter={() => handleMouseEnter(username)}
                 onMouseLeave={handleMouseLeave}
+                key={username}
               >
                 <a href={`https://github.com/${username}`}>
                   {hoveredItem === username && (

@@ -21,15 +21,16 @@ const updates: New[] = [
   {
     month: '2023-12',
     content: [
-      '1. <a href="https://arxiv.org/abs/2312.08962" target="_blank">DepictQA</a> released on Arxiv and <a href="https://depictqa.github.io/" target="_blank">here</a> is the project page.',
-      '2. <a href="https://arxiv.org/abs/2312.07472" target="_blank">MP5</a> released on Arxiv!',
+      '1. <a href="https://arxiv.org/abs/2312.08962" target="_blank">DepictQA</a>: Depicted Image Quality Assessment based on Multi-modal Language Models released on Arxiv!',
+      '2. <a href="https://arxiv.org/abs/2312.07472" target="_blank">MP5</a>: A Multi-modal LLM based Open-ended Embodied System in Minecraft released on Arxiv!',
     ],
   },
   {
     month: '2023-11',
     content: [
-      '1. <a href="https://arxiv.org/abs/2311.02684" target="_blank">Octavius</a> & <a href="https://arxiv.org/abs/2311.02692" target="_blank">ChEF</a> released on Arxiv!',
-      '2. Camera ready version of LAMM is available on <a href="https://arxiv.org/abs/2306.06687" target="_blank">Arxiv</a>.',
+      '1. <a href="https://openlamm.github.io/paper_list/ChEF" target="_blank">ChEF</a>: A comprehensive evaluation framework for MLLM released on Arxiv!',
+      '2. <a href="https://arxiv.org/abs/2311.02684" target="_blank">Octavius</a> Mitigating Task Interference in MLLMs by combining Mixture-of-Experts (MoEs) with LoRAs released on Arxiv!',
+      '3. Camera ready version of LAMM is available on <a href="https://arxiv.org/abs/2306.06687" target="_blank">Arxiv</a>.',
     ],
   },
   {
@@ -56,10 +57,11 @@ const updates: New[] = [
   {
     month: '2023-06',
     content: [
-      '1. Watch demo video for LAMM at <a href="https://www.youtube.com/watch?v=M7XlIe8hhPk" target="_blank">YouTube</a> or <a href="https://www.bilibili.com/video/BV1kN411D7kt/" target="_blank">Bilibili</a>!',
-      '2. Full paper with Appendix is available on <a href="https://arxiv.org/abs/2306.06687" target="_blank">Arxiv</a>.',
-      '3. LAMM dataset released on <a href="https://huggingface.co/datasets/openlamm/LAMM_Dataset" target="_blank">Huggingface</a> & <a href="https://opendatalab.com/LAMM/LAMM" target="_blank">OpenDataLab</a> for Research community!',
-      '4. LAMM code is available for Research community!',
+      '1. LAMM: 2D & 3D dataset & benchmark for MLLM',
+      '2. Watch demo video for LAMM at <a href="https://www.youtube.com/watch?v=M7XlIe8hhPk" target="_blank">YouTube</a> or <a href="https://www.bilibili.com/video/BV1kN411D7kt/" target="_blank">Bilibili</a>!',
+      '3. Full paper with Appendix is available on <a href="https://arxiv.org/abs/2306.06687" target="_blank">Arxiv</a>.',
+      '4. LAMM dataset released on <a href="https://huggingface.co/datasets/openlamm/LAMM_Dataset" target="_blank">Huggingface</a> & <a href="https://opendatalab.com/LAMM/LAMM" target="_blank">OpenDataLab</a> for Research community!',
+      '5. LAMM code is available for Research community!',
     ],
   },
 ];

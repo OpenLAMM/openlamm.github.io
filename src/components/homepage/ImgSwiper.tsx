@@ -41,9 +41,9 @@ export default function () {
           height={iframeHeight}
           src="https://www.youtube.com/embed/2kRsJYGFiEw?si=hXC1xpHi9GJHUsoX"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
         {/* <video muted autoPlay loop playsInline>
           <source src="/img/video.mp4" type="video/mp4" />
@@ -55,13 +55,24 @@ export default function () {
           height={iframeHeight}
           src="https://www.youtube.com/embed/M7XlIe8hhPk"
           title="Introducing LAMM"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </SwiperSlide>
       <SwiperSlide>
         <img src="/img/img.JPEG"></img>
+      </SwiperSlide>
+      <SwiperSlide>
+        <iframe
+          width={'100%'}
+          height={iframeHeight}
+          src="https://www.youtube.com/embed/AZeS3C_S_3M"
+          title="Introducing MP5"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
       </SwiperSlide>
     </Swiper>
   );
