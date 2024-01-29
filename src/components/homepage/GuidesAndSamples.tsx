@@ -37,7 +37,7 @@ const publications: PAPER[] = [
     image: '/logo/Octavius_arch.png',
     author:
       'Zeren Chen*, Ziqin Wang*, Zhen Wang*, Huayang Liu, Zhenfei Yin, Si Liu, Lu Sheng†, Wanli Ouyang, Yu Qiao, Jing Shao†',
-    pub: 'ICLR, 2023',
+    pub: 'ICLR, 2024',
     link: 'https://arxiv.org/abs/2306.06687',
   },
 ];
