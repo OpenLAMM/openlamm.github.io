@@ -21,8 +21,8 @@ const updates: New[] = [
   {
     month: '2024-01',
     content: [
-      '1. <a href="https://arxiv.org/abs/2311.02684" target="_blank">Octavius</a>is accepted by ICLR 2024!',
-      '2. <a href="#MLLMs">From GPT-4 to Gemini and Beyond: Assessing the Landscape of MLLMs on Generalizability, Trustworthiness and Causality through Four Modalities is released on Arxiv!</a>',
+      '1. <a href="https://arxiv.org/abs/2311.02684" target="_blank">Octavius</a> is accepted by ICLR 2024!',
+      '2. <a href="#MLLMs">From GPT-4 to Gemini and Beyond: Assessing the Landscape of MLLMs on Generalizability, Trustworthiness and Causality through Four Modalities</a> is released on Arxiv!',
     ],
   },
   {
