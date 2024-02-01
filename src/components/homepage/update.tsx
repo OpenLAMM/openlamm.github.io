@@ -19,6 +19,13 @@ interface New {
 
 const updates: New[] = [
   {
+    month: '2024-01',
+    content: [
+      '1. <a href="https://arxiv.org/abs/2311.02684" target="_blank">Octavius</a>is accepted by ICLR 2024!',
+      '2. <a href="#MLLMs">From GPT-4 to Gemini and Beyond: Assessing the Landscape of MLLMs on Generalizability, Trustworthiness and Causality through Four Modalities is released on Arxiv!</a>',
+    ],
+  },
+  {
     month: '2023-12',
     content: [
       '1. <a href="https://arxiv.org/abs/2312.08962" target="_blank">DepictQA</a>: Depicted Image Quality Assessment based on Multi-modal Language Models released on Arxiv!',
@@ -36,7 +43,7 @@ const updates: New[] = [
   {
     month: '2023-10',
     content: [
-      '1. LAMM is accepted by NeurIPS2023 Datasets & Benchmark Track! See you in December!',
+      '1. <a href="https://openlamm.github.io/paper_list/LAMM" target="_blank">LAMM</a> is accepted by NeurIPS2023 Datasets & Benchmark Track! See you in December!',
     ],
   },
   {

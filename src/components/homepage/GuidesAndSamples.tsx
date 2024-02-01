@@ -18,6 +18,7 @@ interface PAPER {
   author: string;
   pub: string;
   link: string;
+  containerId: string;
 }
 
 const publications: PAPER[] = [
@@ -30,6 +31,7 @@ const publications: PAPER[] = [
       'Zhenfei Yin*, Jiong Wang*, JianJian Cao*, Zhelun Shi*,  Dingning Liu, Mukai Li, Lu Sheng, Lei Bai†, Xiaoshui Huang, Zhiyong Wang, Jing Shao†, Wanli Ouyang',
     pub: 'NeurIPS, 2023, Datasets and Benchmarks Track',
     link: 'https://arxiv.org/abs/2306.06687',
+    containerId: 'LAMM',
   },
   {
     id: '/paper_list/Octavius',
@@ -39,6 +41,7 @@ const publications: PAPER[] = [
       'Zeren Chen*, Ziqin Wang*, Zhen Wang*, Huayang Liu, Zhenfei Yin, Si Liu, Lu Sheng†, Wanli Ouyang, Yu Qiao, Jing Shao†',
     pub: 'ICLR, 2024',
     link: 'https://arxiv.org/abs/2306.06687',
+    containerId: 'Octavius',
   },
 ];
 
@@ -52,6 +55,7 @@ const preprint: PAPER[] = [
       'Zhelun Shi*, Zhipin Wang*, Hongxing Fan*, Zhenfei Yin, Lu Sheng†, Yu Qiao, Jing Shao†',
     pub: 'Arxiv, 2023',
     link: 'https://arxiv.org/abs/2306.06687',
+    containerId: 'ChEF',
   },
   {
     id: 'https://iranqin.github.io/MP5.github.io/',
@@ -62,6 +66,7 @@ const preprint: PAPER[] = [
       'Yiran Qin*, Enshen Zhou*, Qichang Liu*, Zhenfei Yin, Lu Sheng†, Ruimao Zhang†, Yu Qiao, Jing Shao',
     pub: 'Arxiv 2023',
     link: 'https://iranqin.github.io/MP5.github.io/',
+    containerId: 'MP5',
   },
   {
     id: 'https://depictqa.github.io/',
@@ -72,6 +77,18 @@ const preprint: PAPER[] = [
       'Zhiyuan You*, Zheyuan Li*, Jinjin Gu*, Zhenfei Yin, Tianfan Xue+, Chao Dong+',
     pub: 'Arxiv, 2023',
     link: 'https://depictqa.github.io/',
+    containerId: 'DepictQA',
+  },
+  {
+    id: 'https://arxiv.org/abs/2401.15071',
+    title:
+      'From GPT-4 to Gemini and Beyond: Assessing the Landscape of MLLMs on Generalizability, Trustworthiness and Causality through Four Modalities',
+    image: '/img/MLLMs.png',
+    author:
+      'Chaochao Lu, Chen Qian, Guodong Zheng, Hongxing Fan, Hongzhi Gao, Jie Zhang, Jing Shao, Jingyi Deng, Jinlan Fu, Kexin Huang, Kunchang Li, Lijun Li, Limin Wang, Lu Sheng, Meiqi Chen, Ming Zhang, Qibing Ren, Sirui Chen, Tao Gui, Wanli Ouyang, Yali Wang, Yan Teng, Yaru Wang, Yi Wang, Yinan He, Yingchun Wang, Yixu Wang, Yongting Zhang, Yu Qiao, Yujiong Shen, Yurong Mou, Yuxi Chen, Zaibin Zhang, Zhelun Shi, Zhenfei Yin, Zhipin Wang',
+    pub: 'Arxiv, 2024',
+    link: 'https://arxiv.org/abs/2401.15071',
+    containerId: 'MLLMs',
   },
 ];
 
@@ -82,10 +99,12 @@ function Publish({
   author,
   pub,
   link,
+  containerId,
 }: (typeof publications)[0]) {
   return (
     <Link
       to={id}
+      id={containerId}
       className="group flex cursor-pointer items-start gap-2 rounded-lg border-2 border-transparent p-3 text-inherit transition-colors hover:border-primary hover:text-primary"
     >
       <img src={image} className="paper_image" />
