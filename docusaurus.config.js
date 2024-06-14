@@ -17,8 +17,7 @@ const meta = {
 };
 
 /** @type {import('@docusaurus/plugin-content-docs').Options[]} */
-const docs = [
-];
+const docs = [];
 
 /** @type {import('@docusaurus/plugin-content-docs').Options} */
 const defaultSettings = {
@@ -54,11 +53,7 @@ const { webpackPlugin } = require('./plugins/webpack-plugin.cjs');
 const tailwindPlugin = require('./plugins/tailwind-plugin.cjs');
 const docs_plugins = docs.map((doc) => create_doc_plugin(doc));
 
-const plugins = [
-  tailwindPlugin,
-  ...docs_plugins,
-  webpackPlugin,
-];
+const plugins = [tailwindPlugin, ...docs_plugins, webpackPlugin];
 
 const fs = require('fs');
 
@@ -122,32 +117,44 @@ const config = {
           // width: '40px',
         },
         items: [
-          {
-            label: 'Tutorial',
-            to: 'tutorial',
-          },
+          // {
+          //   label: 'Tutorial',
+          //   to: 'tutorial',
+          // },
           // {
           //   label: 'Updates',
           //   to: '/Updates',
           // },
+          // {
+          //   label: 'Datasets',
+          //   to: '/datasets',
+          // },
+          // {
+          //   label: 'Models',
+          //   to: '/model_system_card',
+          // },
+          // {
+          //   label: 'Leaderboards',
+          //   to: '/Leaderboards',
+          // },
           {
-            label: 'Datasets',
-            to: '/datasets',
+            label: 'People',
+            to: 'People',
           },
           {
-            label: 'Models',
-            to: '/model_system_card',
+            label: 'Research',
+            to: 'Research',
           },
           {
-            label: 'Leaderboards',
-            to: '/Leaderboards',
+            label: 'Events',
+            to: 'Events',
           },
           {
-            label: 'Team',
-            to: 'Team',
+            label: 'Blog',
+            to: 'Blog',
           },
           {
-            label: 'Github',
+            label: 'Code',
             to: 'https://github.com/OpenGVLab/LAMM',
           },
         ],

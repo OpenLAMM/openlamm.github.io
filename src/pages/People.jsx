@@ -26,11 +26,24 @@ const Item = ({
     : {};
   return (
     <div className="team-item">
-      <div className="team-item-image" style={{ backgroundImage: image }}>
+      <div
+        className="team-item-image"
+        style={{
+          backgroundImage: image,
+          borderRadius: '20px',
+          width: '180px',
+          margin: '0 auto',
+        }}
+      >
         <img src={image} alt={name} mode="aspectFit" style={style} />
       </div>
       <div className="team-item-info">
-        <h2 className="text-center">{name}</h2>
+        <h2
+          className="text-center"
+          style={{ fontSize: '20px', margin: '5px auto' }}
+        >
+          {name}
+        </h2>
         <div className="team-item-organization">
           <div className="text-center">{organization}</div>
           {organizationb && <div className="text-center">{organizationb}</div>}
@@ -134,6 +147,13 @@ const Team = [
       'https://scholar.google.com/citations?hl=zh-CN&user=fdDOA-0AAAAJ',
   },
   {
+    image: '/img/group/lxy.png',
+    imgWidth: '110%',
+    name: 'Xiaoya Lu',
+    organization: 'UESTC',
+    homepageLink: 'https://ursulalujun.github.io/about.html',
+  },
+  {
     image: '/img/group/qyr.png',
     imgWidth: '110%',
     name: 'Yiran Qin',
@@ -151,25 +171,6 @@ const Team = [
     githubLink: 'https://github.com/Zhoues',
     homepageLink:
       'https://scholar.google.com/citations?user=8Wd7-NAAAAAJ&hl=zh-CN',
-  },
-  {
-    image: '/img/group/gjj.jpg',
-    imgWidth: '100%',
-    name: 'Jinjin Gu',
-    organization: 'University of Sydney',
-    organizationb: 'Shanghai AI Laboratory',
-    githubLink: '',
-    homepageLink: 'https://www.jasongt.com',
-  },
-  {
-    image: '/img/group/yzy.jpg',
-    imgWidth: '110%',
-    name: 'Zhiyuan You',
-    organization: 'The Chinese University of Hong Kong',
-    organizationb:
-      'Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences',
-    githubLink: '',
-    homepageLink: 'https://zhiyuanyou.github.io',
   },
   {
     image: '/img/group/wzp.JPEG',
@@ -213,27 +214,6 @@ const advisor = [
     githubLink: '',
     homepageLink: 'http://zhangruimao.site/',
   },
-
-  {
-    image: '/img/group/xtf.jpg',
-    name: 'Tianfan Xue',
-    organization: 'The Chinese University of Hong Kong',
-    organizationb: 'Shanghai AI Laboratory',
-    twitter: '',
-    githubLink: '',
-    homepageLink: 'https://tianfan.info',
-  },
-  {
-    image: '/img/group/dc.png',
-    name: 'Chao Dong',
-    organization:
-      'Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences',
-    organizationb: 'Shanghai AI Laboratory',
-    twitter: '',
-    githubLink: '',
-    homepageLink: 'https://xpixel.group/2010/01/20/chaodong.html',
-  },
-
   {
     image: '/img/group/qy.jpg',
     name: 'Yu Qiao',
@@ -270,7 +250,7 @@ export default function Homepage() {
       <section className="no-underline-links p- my-2 mx-auto mt-5 flex w-full max-w-5xl flex-col gap-10 py-0 md:flex-row md:gap-0">
         <div className="flex-1">
           <div className="mb-10 flex items-center justify-between">
-            <h2 className="m-0">Team</h2>
+            <h2 className="m-0">People</h2>
           </div>
           <ItemList items={Team} />
         </div>

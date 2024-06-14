@@ -29,7 +29,12 @@ export default function CommunitySection() {
   return (
     <section className="no-underline-links join-lamm-wrap">
       <hr className="my-2 !bg-gray-300" />
-      <div className="mx-auto flex w-full flex-col items-center justify-center px-4 pt-4">
+      <div>
+        Sign up to get email updates on the LAMM or email us at&nbsp;
+        <a href="mailto:openlamm@gmail.com.">openlamm@gmail.com.</a>
+      </div>
+      <div>© 2024. LAMM</div>
+      {/* <div className="mx-auto flex w-full flex-col items-center justify-center px-4 pt-4">
         <h2 className="text-3xl">
           Join <span className="text-primary-100">LAMM</span>
         </h2>
@@ -81,7 +86,7 @@ export default function CommunitySection() {
             />
           </a>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

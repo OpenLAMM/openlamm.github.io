@@ -42,20 +42,20 @@ export default function Homepage() {
         className="noise-bg homepage-bg"
         style={{ height: `${bgHeight}px` }}
       ></div>
-      <h2 className="homepage-title mb-8 max-w-5xl px-4 pt-16 text-center font-jakarta text-5xl font-bold">
+      {/* <h2 className="homepage-title mb-8 max-w-5xl px-4 pt-16 text-center font-jakarta text-5xl font-bold">
         LAMM: Multi-Modal Large Language Models and Applications as AI Agents
-      </h2>
-      <div className="homepage-content">
+      </h2> */}
+      <div style={{ width: '80%', margin: '10px auto' }}>
         <Head>
           <link rel="prefetch" href="/assets/css/elements.min.css" />
         </Head>
         <HeroSection />
-        <UpdatesList />
+        {/* <UpdatesList />
         <PublicationList />
-        <PreprintList />
+        <PreprintList /> */}
       </div>
       <CommunitySection />
-      <HomeFooter />
+      {/* <HomeFooter /> */}
     </Layout>
   );
 }

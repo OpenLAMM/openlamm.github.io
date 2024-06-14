@@ -97,38 +97,63 @@ export default function HeroSection() {
   return (
     <>
       <section className="no-underline-links lg:py-0" id="HeroSection">
-        <div className="flex flex-col items-center justify-between py-14 px-4">
+        <div>
+          <img src="/img/bg.jpg"></img>
+        </div>
+        <div className="flex flex-row items-center justify-between py-14 px-4">
           {/* <h2 className="mb-8 max-w-5xl text-center font-jakarta text-5xl font-bold">
             LAMM: Multi-Modal Large Language Models and Applications as AI
             Agents
           </h2> */}
-          <p className="max-w-5xl font-jakarta text-xl">
-            <b>LAMM</b> (pronounced as /læm/, means cute lamb to show
-            appreciation to LLaMA), is a growing open-source community aimed at
-            helping researchers and developers quickly train and evaluate
-            Multi-modal Large Language Models (MLLM), and futher build
-            multi-modal AI agents capable of bridging the gap between ideas and
-            execution, enabling seamless interaction between humans and AI
-            machines. <br /> <br />
-            As one of the very first open-source endeavors in the MLLM field,
-            our goal is to create an ecosystem where every researcher and
-            developer can apply, study, and even contribute. We work on various
-            aspects including MLLM datasets, frameworks, benchmarks,
-            optimizations, and applications as AI Agents. As a fully transparent
-            open-source community, any form of collaboration is welcome! <br />
-          </p>
+          <div style={{ width: '35%', margin: '0 5% 0 0' }}>
+            <p style={{ fontWeight: 'bold', fontSize: '24px' }}>
+              -What is a foundation model?
+            </p>
+            <p>
+              In recent years, a new successful paradigm for building AI systems
+              has emerged: Train one model on a huge amount of data and adapt it
+              to many applications. We call such a model a foundation model.
+            </p>
+            <p style={{ fontWeight: 'bold', fontSize: '24px' }}>
+              -What is an embodied agent?
+            </p>
+            <p>
+              In recent years, a new successful paradigm for building AI systems
+              has emerged: Train one model on a huge amount of data and adapt it
+              to many applications. We call such a model a foundation model.
+            </p>
+          </div>
+          <div style={{ width: '60%' }}>
+            <p style={{ fontWeight: 'bold', fontSize: '30px' }}>Our Mission</p>
+            <p className=" font-jakarta text-xl" style={{ width: '100%' }}>
+              <b>LAMM</b> (pronounced as /læm/, means cute lamb to show
+              appreciation to LLaMA), is a growing open-source community aimed
+              at helping researchers and developers quickly train and evaluate
+              Multi-modal Large Language Models (MLLM), and futher build
+              multi-modal AI agents capable of bridging the gap between ideas
+              and execution, enabling seamless interaction between humans and AI
+              machines. <br /> <br />
+              As one of the very first open-source endeavors in the MLLM field,
+              our goal is to create an ecosystem where every researcher and
+              developer can apply, study, and even contribute. We work on
+              various aspects including MLLM datasets, frameworks, benchmarks,
+              optimizations, and applications as AI Agents. As a fully
+              transparent open-source community, any form of collaboration is
+              welcome! <br />
+            </p>
+          </div>
         </div>
       </section>
       {/* <VideoSection /> */}
 
-      <ImgSwiper />
+      {/* <ImgSwiper /> */}
       <div className="pt-20"></div>
 
-      <section className="mx-auto grid w-full max-w-5xl grid-cols-1 grid-rows-2 gap-6 px-4 md:grid-cols-2">
+      {/* <section className="mx-auto grid w-full max-w-5xl grid-cols-1 grid-rows-2 gap-6 px-4 md:grid-cols-2">
         {PRODUCTS.map((product) => (
           <HeroProduct {...product} key={product.title} />
         ))}
-      </section>
+      </section> */}
     </>
   );
 }
