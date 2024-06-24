@@ -146,6 +146,10 @@ const config = {
             to: 'Research',
           },
           {
+            label: 'Tutorial',
+            to: 'tutorial',
+          },
+          {
             label: 'Events',
             to: 'Events',
           },

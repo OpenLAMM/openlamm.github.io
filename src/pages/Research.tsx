@@ -47,7 +47,8 @@ const publications: PAPER[] = [
     id: 'https://arxiv.org/abs/2401.15071',
     // title:
     //   'From GPT-4 to Gemini and Beyond: Assessing the Landscape of MLLMs on Generalizability, Trustworthiness and Causality through Four Modalities',
-    title: 'Technical Report',
+    title:
+      'From GPT-4 to Gemini and Beyond: Assessing the Landscape of MLLMs on Generalizability, Trustworthiness and Causality through Four Modalities',
     image: '/img/MLLMs.png',
     author:
       'Chaochao Lu, Chen Qian, Guodong Zheng, Hongxing Fan, Hongzhi Gao, Jie Zhang, Jing Shao, Jingyi Deng, Jinlan Fu, Kexin Huang, Kunchang Li, Lijun Li, Limin Wang, Lu Sheng, Meiqi Chen, Ming Zhang, Qibing Ren, Sirui Chen, Tao Gui, Wanli Ouyang, Yali Wang, Yan Teng, Yaru Wang, Yi Wang, Yinan He, Yingchun Wang, Yixu Wang, Yongting Zhang, Yu Qiao, Yujiong Shen, Yurong Mou, Yuxi Chen, Zaibin Zhang, Zhelun Shi, Zhenfei Yin, Zhipin Wang',
@@ -80,7 +81,7 @@ const publications: PAPER[] = [
   {
     id: 'https://sites.google.com/view/minedreamer/main',
     title:
-      'Assessment of Multimodal Large Language Models in Alignment with Human Values',
+      'MineDreamer: Learning to Follow Instructions via Chain-of-Imagination for Simulated-World Control ',
     image: '/img/mineDreamer.png',
     author:
       'Enshen Zhou, Yiran Qin, Zhenfei Yin, Yuzhou Huang, Ruimao Zhang, Lu Sheng, Yu Qiao, Jing Shao',

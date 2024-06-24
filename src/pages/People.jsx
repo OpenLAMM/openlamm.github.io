@@ -35,7 +35,9 @@ const Item = ({
           margin: '0 auto',
         }}
       >
-        <img src={image} alt={name} mode="aspectFit" style={style} />
+        <a href={homepageLink}>
+          <img src={image} alt={name} mode="aspectFit" style={style} />
+        </a>
       </div>
       <div className="team-item-info">
         <h2
@@ -49,7 +51,7 @@ const Item = ({
           {organizationb && <div className="text-center">{organizationb}</div>}
         </div>
         <p></p>
-        <div className="padding-top:10px; text-center">
+        {/* <div className="padding-top:10px; text-center">
           {twitterLink && (
             <a
               href={twitterLink}
@@ -80,7 +82,7 @@ const Item = ({
               <Home24Regular className="h-10 w-10 text-zinc-400 hover:text-primary" />
             </a>
           )}
-        </div>
+        </div> */}
       </div>
     </div>
   );
@@ -250,7 +252,7 @@ export default function Homepage() {
       <section className="no-underline-links p- my-2 mx-auto mt-5 flex w-full max-w-5xl flex-col gap-10 py-0 md:flex-row md:gap-0">
         <div className="flex-1">
           <div className="mb-10 flex items-center justify-between">
-            <h2 className="m-0">People</h2>
+            <h2 className="m-0">Research Team</h2>
           </div>
           <ItemList items={Team} />
         </div>
@@ -260,13 +262,13 @@ export default function Homepage() {
         {/* <section className="no-underline-links p- my-2 mx-auto flex w-full max-w-5xl flex-col gap-10 py-0 md:flex-row md:gap-0"> */}
         <div className="flex-1">
           <div className="mb-10 flex items-center justify-between">
-            <h2 className="m-0">Steering Committee</h2>
+            <h2 className="m-0">Advisory Team</h2>
           </div>
           <ItemList items={advisor} />
         </div>
       </section>
 
-      <section className="no-underline-links my-2 mx-auto flex w-full max-w-5xl flex-col gap-10 p-4 py-0 md:flex-row md:gap-0">
+      {/* <section className="no-underline-links my-2 mx-auto flex w-full max-w-5xl flex-col gap-10 p-4 py-0 md:flex-row md:gap-0">
         <div className="flex-1">
           <div className="mb-10 flex items-center justify-between">
             <h2 className="m-0">Contributors</h2>
@@ -296,8 +298,8 @@ export default function Homepage() {
             ))}
           </div>
         </div>
-      </section>
-
+      </section> */}
+      {/* 
       <section className="no-underline-links my-10 mx-auto flex w-full max-w-5xl flex-col gap-10 p-4 py-0 md:flex-row md:gap-0">
         <div className="flex-1">
           <div className="mb-8 flex items-center justify-between">
@@ -317,7 +319,7 @@ export default function Homepage() {
             <a href="https://github.com/ModelTC/lightllm">lightllm</a>.
           </p>
         </div>
-      </section>
+      </section> */}
     </Layout>
   );
 }

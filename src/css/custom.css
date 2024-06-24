@@ -75,7 +75,7 @@
   }
 
   body {
-    @apply font-sans antialiased;
+    @apply font-jakarta antialiased;
   }
 
   .homepage a {
