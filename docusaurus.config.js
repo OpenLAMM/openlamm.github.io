@@ -153,10 +153,10 @@ const config = {
             label: 'Events',
             to: 'Events',
           },
-          {
-            label: 'Blog',
-            to: 'Blog',
-          },
+          // {
+          //   label: 'Blog',
+          //   to: 'Blog',
+          // },
           {
             label: 'Code',
             to: 'https://github.com/OpenGVLab/LAMM',

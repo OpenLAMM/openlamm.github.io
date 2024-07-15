@@ -51,7 +51,7 @@ function Event({
     <Link
       to={id}
       id={containerId}
-      className="group flex cursor-pointer items-start gap-2 rounded-lg border-2 border-transparent p-3 text-inherit transition-colors hover:border-primary hover:text-primary"
+      className="group flex cursor-pointer items-start gap-2 rounded-lg border-2 border-solid border-gray-500 border-transparent p-3 text-inherit transition-colors hover:border-primary hover:text-primary"
     >
       <img src={image} className="paper_image" />
 

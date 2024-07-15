@@ -149,6 +149,13 @@ const Team = [
       'https://scholar.google.com/citations?hl=zh-CN&user=fdDOA-0AAAAJ',
   },
   {
+    image: '/img/group/fhs.png',
+    imgWidth: '110%',
+    name: 'Haoshu Fang',
+    organization: 'MIT',
+    homepageLink: 'https://fang-haoshu.github.io/',
+  },
+  {
     image: '/img/group/lxy.png',
     imgWidth: '110%',
     name: 'Xiaoya Lu',
@@ -192,6 +199,14 @@ const Team = [
 
 const advisor = [
   {
+    image: '/img/group/sl.jpg',
+    name: 'Lu Sheng',
+    organization: 'Beihang University',
+    githubLink: '',
+    twitter: 'https://twitter.com/SHENGLui1989',
+    homepageLink: 'https://scholar.google.com.hk/citations?user=_8lB7xcAAAAJ',
+  },
+  {
     image: '/img/group/sj.jpg',
     // imgWidth: '113%',
     name: 'Jing Shao',
@@ -201,12 +216,12 @@ const advisor = [
     homepageLink: 'https://amandajshao.github.io/',
   },
   {
-    image: '/img/group/sl.jpg',
-    name: 'Lu Sheng',
-    organization: 'Beihang University',
+    image: '/img/group/lcw.png',
+    // imgWidth: '113%',
+    name: 'Cewu Lu',
+    organization: 'Shanghai Jiao Tong University',
     githubLink: '',
-    twitter: 'https://twitter.com/SHENGLui1989',
-    homepageLink: 'https://scholar.google.com.hk/citations?user=_8lB7xcAAAAJ',
+    homepageLink: 'https://www.mvig.org/',
   },
   {
     image: '/img/group/zrm.png',
@@ -217,15 +232,6 @@ const advisor = [
     homepageLink: 'http://zhangruimao.site/',
   },
   {
-    image: '/img/group/qy.jpg',
-    name: 'Yu Qiao',
-    imgWidth: '100%',
-    organization: 'Shanghai AI Laboratory',
-    githubLink: '',
-    homepageLink:
-      'https://scholar.google.com/citations?hl=zh-CN&user=gFtI-8QAAAAJ',
-  },
-  {
     image: '/img/group/oywl.jpg',
     // imgWidth: '110%',
     name: 'Wanli Ouyang',
@@ -233,6 +239,15 @@ const advisor = [
     twitter: 'https://twitter.com/ouyang_wanli',
     githubLink: '',
     homepageLink: 'https://wlouyang.github.io/',
+  },
+  {
+    image: '/img/group/qy.jpg',
+    name: 'Yu Qiao',
+    imgWidth: '100%',
+    organization: 'Shanghai AI Laboratory',
+    githubLink: '',
+    homepageLink:
+      'https://scholar.google.com/citations?hl=zh-CN&user=gFtI-8QAAAAJ',
   },
 ];
 

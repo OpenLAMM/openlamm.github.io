@@ -97,8 +97,13 @@ export default function HeroSection() {
   return (
     <>
       <section className="no-underline-links lg:py-0" id="HeroSection">
-        <div>
-          <img src="/img/bg.jpg"></img>
+        <div className="relative mx-auto">
+          <img src="/img/bg.jpg" className="h-100 w-full object-cover" />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <span className="text-6xl font-bold text-white">
+              Multi-Modal Founndation Models and Embodied Agents
+            </span>
+          </div>
         </div>
         <div className="flex flex-row items-center justify-between py-14 px-4">
           {/* <h2 className="mb-8 max-w-5xl text-center font-jakarta text-5xl font-bold">
