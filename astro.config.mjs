@@ -20,7 +20,7 @@ const whenExternalScripts = (items = []) =>
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://uishd666.github.io',
+  site: 'https://openlamm.github.io',
   base: '/',
   output: 'static',
   integrations: [
