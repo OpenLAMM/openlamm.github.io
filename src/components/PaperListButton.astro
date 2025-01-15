@@ -1,0 +1,81 @@
+---
+import MachineLearningIcon from '../icons/MachineLearningIcon.astro';
+import GitHubCode from '../icons/GitHubCode.astro';
+import ArxivPdf from '../icons/ArxivPdf.astro';
+
+// 接收外部传入的 props
+export interface PaperListButtonProps {
+  arxiv_link: string;
+  code_link: string;
+  model_zoo_link?: string;
+}
+
+// 解构 props
+const { arxiv_link, code_link, model_zoo_link } = Astro.props;
+---
+
+<div style="display: flex; justify-content: center; align-items: center; margin: 0.75rem 0;">
+  <div>
+    <span class="paper_list_top_icon">
+      <a href={arxiv_link} target="_blank" rel="noopener noreferrer">
+        <ArxivPdf />
+        ArXiv
+      </a>
+    </span>
+  </div>
+  <div style="padding-left: 0.8rem;">
+    <span class="paper_list_top_icon">
+      <a href={code_link} target="_blank" rel="noopener noreferrer">
+        <GitHubCode />
+        Code
+      </a>
+    </span>
+  </div>
+  {model_zoo_link && (
+    <div style="padding-left: 0.8rem;">
+      <span class="paper_list_top_icon">
+        <a href={model_zoo_link} target="_blank" rel="noopener noreferrer">
+          <MachineLearningIcon />
+          Model Zoo
+        </a>
+      </span>
+    </div>
+  )}
+</div>
+
+
+<style>
+  .paper_list_top_icon{
+  display: inline-flex;
+}
+
+.paper_list_top_icon{
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+  padding-top: calc(.5em - 1px);
+  padding-bottom: calc(.5em - 1px);
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  border-radius: 290486px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.paper_list_top_icon a {
+  display: inline-flex;
+  text-decoration: none;
+  color: white;
+}
+
+.paper_list_top_icon svg {
+    /* width: 1rem; */
+    height: 1.5rem;
+    width: auto;
+    color: white;
+    margin-right: 0.5rem;
+    /* margin-top: 0.1rem; */
+}
+</style>

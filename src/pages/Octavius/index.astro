@@ -1,0 +1,34 @@
+---
+import Header from '~/components/widgets/Header.astro';
+import Octavius from './Octavius.mdx';
+import Layout from '~/layouts/PageLayout.astro';
+import { headerData } from '~/navigation';
+const metadata = {
+  title: 'Octavius',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header {...headerData} isSticky showToggleTheme />
+  </Fragment>
+
+    <!-- Main Content -->
+    <div class="w-full flex justify-center">
+      <div class="w-4/5 p-8">
+        <div id="content-tutorial" class="content-section">
+          <Octavius />
+        </div>
+      </div>
+    </div>
+
+  <script>
+  
+  </script>
+
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</Layout>

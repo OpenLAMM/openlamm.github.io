@@ -36,42 +36,127 @@ const metadata = {
   <!-- FAQs Widget ******************* -->
 
   <!-- Steps2 Widget ****************** -->
-  <div class="relative mx-auto" style="width: 75%;">
+  <!-- <div class="relative mx-auto" style="width: 75%;">
     <img src="/images/bg.jpg" class="w-full h-100 object-cover" />
     <div class="absolute inset-0 flex items-center justify-center">
       <span class="text-white text-6xl font-bold">Multi-Modal Founndation Models and Embodied Agents</span>
     </div>
+  </div> -->
+  <div class="relative mx-auto bg-gradient" style="width:80%; height: 60vh; position: relative;">
+    <!-- 背景漂浮图标 -->
+    <!-- <div class="absolute top-10 left-10 animate-float">
+      <img src="/icons/robot.png" alt="Robot Icon" class="w-21 h-20" />
+    </div>
+    <div class="absolute bottom-20 right-20 animate-float-slow">
+      <img src="/icons/brain.png" alt="Brain Icon" class="w-21 h-20" />
+    </div> -->
+
+    <!-- 居中文字 -->
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center animate-fade-in">
+      <!-- 主标题 -->
+      <h1 class="text-5xl sm:text-7xl font-extrabold text-center">
+        Build Multi-Modal Systems<br />
+        for <span class="text-blue-600">Embodied Agents</span>
+      </h1>
+      <!-- 描述文字 -->
+      <p class="mt-6 text-lg sm:text-xl text-gray-700 font-medium">
+        LAMM is the 1st open-sourced framework focusing on MLLMs for embodied agents.
+      </p>
+      <!-- 按钮 -->
+      <div class="mt-8">
+        <a
+          href="tutorial"
+          class="px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-bold rounded-lg shadow-lg hover:from-blue-500 hover:to-purple-500 transition duration-300 ease-in-out"
+        >
+          Get Started
+        </a>
+        <!-- <a
+          href="team"
+          class="ml-4 px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-lg shadow-lg hover:bg-gray-300 transition duration-300 ease-in-out"
+        >
+          Join Community
+        </a> -->
+      </div>
+    </div>
   </div>
-  <div class="py-12">
+
+  <!-- 动画样式 -->
+  <style>
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes float {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .animate-fade-in {
+      animation: fade-in 1.5s ease-out forwards;
+    }
+
+    .animate-float {
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .animate-float-slow {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .bg-gradient {
+      background: linear-gradient(to bottom, #ffffff, #f8f9fc);
+    }
+  </style>
+
+  <!-- <div class="py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col lg:flex-row">
-        <!-- Left Section for 'Our Mission' -->
+
         <div class="lg:w-1/2 p-4">
           <h2 class="text-4xl font-bold text-gray-900">What is a foundation model?</h2>
           <p class="mt-4 text-lg text-gray-700">
-            In recent years, a new successful paradigm for building AI systems has emerged: Train one model on a huge amount of data and adapt it to many applications. We call such a model a foundation model.
+            In recent years, a new successful paradigm for building AI systems has emerged: Train one model on a huge
+            amount of data and adapt it to many applications. We call such a model a foundation model.
           </p>
           <h2 class="text-4xl font-bold text-gray-900 mt-8">What is an embodied agent?</h2>
           <p class="mt-4 text-lg text-gray-700">
-            In recent years, a new successful paradigm for building AI systems has emerged: Train one model on a huge amount of data and adapt it to many applications. We call such a model a foundation model.
+            In recent years, a new successful paradigm for building AI systems has emerged: Train one model on a huge
+            amount of data and adapt it to many applications. We call such a model a foundation model.
           </p>
         </div>
 
-        <!-- Right Section for Questions -->
         <div class="lg:w-1/2 p-4">
           <div class="mb-8">
             <h2 class="text-3xl font-bold text-gray-900">Our Mission</h2>
             <p class="mt-4 text-lg text-gray-700">
-              LAMM (pronounced as /læm/, means cute lamb to show appreciation to LLaMA), is a growing open-source community aimed at helping researchers and developers quickly train and evaluate Multi-modal Large Language Models (MLLM), and further build multi-modal AI agents capable of bridging the gap between ideas and execution, enabling seamless interaction between humans and AI machines.
+              LAMM (pronounced as /læm/, means cute lamb to show appreciation to LLaMA), is a growing open-source
+              community aimed at helping researchers and developers quickly train and evaluate Multi-modal Large
+              Language Models (MLLM), and further build multi-modal AI agents capable of bridging the gap between ideas
+              and execution, enabling seamless interaction between humans and AI machines.
             </p>
             <p class="mt-4 text-lg text-gray-700">
-              As one of the very first open-source endeavors in the MLLM field, our goal is to create an ecosystem where every researcher and developer can apply, study, and even contribute. We work on various aspects including MLLM datasets, frameworks, benchmarks, optimizations, and applications as AI Agents. As a fully transparent open-source community, any form of collaboration is welcome!
+              As one of the very first open-source endeavors in the MLLM field, our goal is to create an ecosystem where
+              every researcher and developer can apply, study, and even contribute. We work on various aspects including
+              MLLM datasets, frameworks, benchmarks, optimizations, and applications as AI Agents. As a fully
+              transparent open-source community, any form of collaboration is welcome!
             </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- BlogLatestPost Widget **************** -->
 

@@ -23,12 +23,18 @@ const metadata = {
 
   <div class="flex flex-row min-h-screen">
     <!-- Sidebar -->
-    <div class="w-1/6 dark:bg-gray-800 p-4 border-r border-gray-300 dark:border-gray-600 sticky top-[4rem] h-[calc(100vh-4rem)]">
+    <div
+      class="w-1/6 dark:bg-gray-800 p-4 border-r border-gray-300 dark:border-gray-600 sticky top-[4rem] h-[calc(100vh-4rem)]"
+    >
       <h2 class="block mb-4 text-gray-700 dark:text-gray-300">Tutorial</h2>
       <ul class="space-y-2">
         <!-- Tutorial Main -->
         <li>
-          <a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700" onClick="showContent('tutorial')">
+          <a
+            href="#"
+            class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700"
+            onClick="showContent('tutorial', event)"
+          >
             Tutorial Overview
           </a>
         </li>
@@ -36,18 +42,36 @@ const metadata = {
         <!-- Datasets -->
         <li>
           <input type="checkbox" id="datasets-toggle" class="hidden peer" />
-          <label for="datasets-toggle" class="block py-2 px-4 cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 flex items-center justify-between">
+          <label
+            for="datasets-toggle"
+            class="block py-2 px-4 cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 flex items-center justify-between"
+          >
             Datasets
-            <svg class="w-4 h-4 transition-transform transform peer-checked:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            <svg
+              class="w-4 h-4 transition-transform transform peer-checked:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg
+            >
           </label>
           <ul class="ml-4 hidden peer-checked:block border-l border-gray-300 dark:border-gray-600">
             <li>
-              <a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700" onClick="showContent('instruction')">
+              <a
+                href="#"
+                class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700"
+                onClick="showContent('instruction', event)"
+              >
                 Instruction Tuning
               </a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700" onClick="showContent('benchmarking')">
+              <a
+                href="#"
+                class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700"
+                onClick="showContent('benchmarking', event)"
+              >
                 Benchmarking
               </a>
             </li>
@@ -56,14 +80,22 @@ const metadata = {
 
         <!-- Installation -->
         <li>
-          <a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700" onClick="showContent('installation')">
+          <a
+            href="#"
+            class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700"
+            onClick="showContent('installation', event)"
+          >
             Installation
           </a>
         </li>
 
         <!-- Training -->
         <li>
-          <a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700" onClick="showContent('training')">
+          <a
+            href="#"
+            class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700"
+            onClick="showContent('training', event)"
+          >
             Training
           </a>
         </li>
@@ -71,18 +103,36 @@ const metadata = {
         <!-- Benchmark -->
         <li>
           <input type="checkbox" id="benchmark-toggle" class="hidden peer" />
-          <label for="benchmark-toggle" class="block py-2 px-4 cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 flex items-center justify-between">
+          <label
+            for="benchmark-toggle"
+            class="block py-2 px-4 cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 flex items-center justify-between"
+          >
             Benchmark
-            <svg class="w-4 h-4 transition-transform transform peer-checked:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            <svg
+              class="w-4 h-4 transition-transform transform peer-checked:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg
+            >
           </label>
           <ul class="ml-4 hidden peer-checked:block border-l border-gray-300 dark:border-gray-600">
             <li>
-              <a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700" onClick="showContent('defaultBenchmark')">
+              <a
+                href="#"
+                class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700"
+                onClick="showContent('defaultBenchmark', event)"
+              >
                 Default Benchmark
               </a>
             </li>
             <li>
-              <a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700" onClick="showContent('customBenchmark')">
+              <a
+                href="#"
+                class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700"
+                onClick="showContent('customBenchmark', event)"
+              >
                 Custom Benchmark
               </a>
             </li>
@@ -91,7 +141,11 @@ const metadata = {
 
         <!-- Citation -->
         <li>
-          <a href="#" class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700" onClick="showContent('citation')">
+          <a
+            href="#"
+            class="block py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700"
+            onClick="showContent('citation', event)"
+          >
             Citation
           </a>
         </li>
@@ -130,27 +184,50 @@ const metadata = {
   </div>
 
   <script>
+    // document.addEventListener('DOMContentLoaded', function () {
+    //   function showContent(section) {
+    //     // Prevent the default link action
+    //     event.preventDefault();
+
+    //     // Hide all content sections
+    //     const sections = document.querySelectorAll('.content-section');
+    //     sections.forEach((section) => section.classList.add('hidden'));
+
+    //     // Show the selected content section
+    //     document.getElementById(`content-${section}`).classList.remove('hidden');
+
+    //     // Remove the active class from all links
+    //     const links = document.querySelectorAll('a');
+    //     links.forEach((link) => link.classList.remove('bg-blue-100', 'text-blue-600'));
+
+    //     // Add the active class to the clicked link
+    //     event.target.classList.add('bg-blue-100', 'text-blue-600');
+    //   }
+
+    //   window.showContent = showContent;
+    // });
     document.addEventListener('DOMContentLoaded', function () {
-      function showContent(section) {
-        // Prevent the default link action
+      function showContent(section: string, event: Event) {
         event.preventDefault();
 
-        // Hide all content sections
         const sections = document.querySelectorAll('.content-section');
         sections.forEach((section) => section.classList.add('hidden'));
 
-        // Show the selected content section
-        document.getElementById(`content-${section}`).classList.remove('hidden');
+        const target = document.getElementById(`content-${section}`);
+        if (target) {
+          target.classList.remove('hidden');
+        }
 
-        // Remove the active class from all links
         const links = document.querySelectorAll('a');
         links.forEach((link) => link.classList.remove('bg-blue-100', 'text-blue-600'));
 
-        // Add the active class to the clicked link
-        event.target.classList.add('bg-blue-100', 'text-blue-600');
+        if (event.target instanceof HTMLElement) {
+          event.target.classList.add('bg-blue-100', 'text-blue-600');
+        }
       }
 
-      window.showContent = showContent;
+      // 通过类型断言赋值
+      (window as any).showContent = showContent;
     });
   </script>
 

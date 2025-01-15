@@ -1,5 +1,5 @@
 site:
-  name: OpenTrustLab
+  name: OpenLAMM
   site: 'https://OpenTrustlab.vercel.app'
   base: '/'
   trailingSlash: false
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: OpenTrustlab
-    template: '%s — OpenTrustlab'
+    default: OpenLAMM
+    template: '%s — OpenLAMM'
   description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: OpenTrustlab
+    site_name: OpenLAMM
     images:
       - url: '~/assets/images/default.png'
         width: 1200
