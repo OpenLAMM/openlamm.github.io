@@ -207,28 +207,28 @@ const metadata = {
     //   window.showContent = showContent;
     // });
     document.addEventListener('DOMContentLoaded', function () {
-      function showContent(section: string, event: Event) {
-        event.preventDefault();
+    function showContent(section, event) {
+      event.preventDefault();
 
-        const sections = document.querySelectorAll('.content-section');
-        sections.forEach((section) => section.classList.add('hidden'));
+      const sections = document.querySelectorAll('.content-section');
+      sections.forEach((section) => section.classList.add('hidden'));
 
-        const target = document.getElementById(`content-${section}`);
-        if (target) {
-          target.classList.remove('hidden');
-        }
-
-        const links = document.querySelectorAll('a');
-        links.forEach((link) => link.classList.remove('bg-blue-100', 'text-blue-600'));
-
-        if (event.target instanceof HTMLElement) {
-          event.target.classList.add('bg-blue-100', 'text-blue-600');
-        }
+      const target = document.getElementById(`content-${section}`);
+      if (target) {
+        target.classList.remove('hidden');
       }
 
-      // 通过类型断言赋值
-      (window as any).showContent = showContent;
-    });
+      const links = document.querySelectorAll('a');
+      links.forEach((link) => link.classList.remove('bg-blue-100', 'text-blue-600'));
+
+      if (event.target instanceof HTMLElement) {
+        event.target.classList.add('bg-blue-100', 'text-blue-600');
+      }
+    }
+
+    // 确保全局可访问
+    window.showContent = showContent;
+  });
   </script>
 
   <style>
