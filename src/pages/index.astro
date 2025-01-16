@@ -42,46 +42,32 @@ const metadata = {
       <span class="text-white text-6xl font-bold">Multi-Modal Founndation Models and Embodied Agents</span>
     </div>
   </div> -->
-  <div class="relative mx-auto bg-gradient" style="width:80%; height: 60vh; position: relative;">
-    <!-- 背景漂浮图标 -->
-    <!-- <div class="absolute top-10 left-10 animate-float">
-      <img src="/icons/robot.png" alt="Robot Icon" class="w-21 h-20" />
-    </div>
-    <div class="absolute bottom-20 right-20 animate-float-slow">
-      <img src="/icons/brain.png" alt="Brain Icon" class="w-21 h-20" />
-    </div> -->
-
+  <div class="relative mx-auto bg-gradient dark:bg-[#0c0d19]" style="width:80%; height: 60vh; position: relative;">
     <!-- 居中文字 -->
-    <div class="absolute inset-0 flex flex-col items-center justify-center text-center animate-fade-in">
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center animate-fade-in dark:bg-[#0c0d19]">
       <!-- 主标题 -->
-      <h1 class="text-5xl sm:text-7xl font-extrabold text-center">
+      <h1 class="text-5xl sm:text-7xl font-extrabold text-center text-gray-900 dark:text-gray-100">
         Build Multi-Modal Systems<br />
-        for <span class="text-blue-600">Embodied Agents</span>
+        for <span class="text-blue-600 dark:text-blue-400">Embodied Agents</span>
       </h1>
       <!-- 描述文字 -->
-      <p class="mt-6 text-lg sm:text-xl text-gray-700 font-medium">
+      <p class="mt-6 text-lg sm:text-xl text-gray-700 dark:text-gray-300 font-medium">
         LAMM is the 1st open-sourced framework focusing on MLLMs for embodied agents.
       </p>
       <!-- 按钮 -->
       <div class="mt-8">
         <a
           href="tutorial"
-          class="px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-bold rounded-lg shadow-lg hover:from-blue-500 hover:to-purple-500 transition duration-300 ease-in-out"
+          class="px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-bold rounded-lg shadow-lg hover:from-blue-500 hover:to-purple-500 transition duration-300 ease-in-out dark:bg-gradient-to-r dark:from-purple-600 dark:to-blue-600 dark:hover:from-blue-600 dark:hover:to-purple-600"
         >
           Get Started
         </a>
-        <!-- <a
-          href="team"
-          class="ml-4 px-6 py-3 bg-gray-200 text-gray-700 font-bold rounded-lg shadow-lg hover:bg-gray-300 transition duration-300 ease-in-out"
-        >
-          Join Community
-        </a> -->
       </div>
     </div>
   </div>
-
-  <!-- 动画样式 -->
+  
   <style>
+    /* 动画样式 */
     @keyframes fade-in {
       from {
         opacity: 0;
@@ -92,7 +78,7 @@ const metadata = {
         transform: translateY(0);
       }
     }
-
+  
     @keyframes float {
       0%,
       100% {
@@ -102,23 +88,30 @@ const metadata = {
         transform: translateY(-10px);
       }
     }
-
+  
     .animate-fade-in {
       animation: fade-in 1.5s ease-out forwards;
     }
-
+  
     .animate-float {
       animation: float 4s ease-in-out infinite;
     }
-
+  
     .animate-float-slow {
       animation: float 6s ease-in-out infinite;
     }
-
+  
+    /* 默认背景渐变 */
     .bg-gradient {
-      background: linear-gradient(to bottom, #ffffff, #f8f9fc);
+      background: linear-gradient(to bottom, #ffffff, #f8f9fc); /* 亮色模式 */
+    }
+  
+    /* 暗色模式背景渐变 */
+    .dark .bg-gradient {
+      background: linear-gradient(to bottom, #1f2937, #111827); /* 暗色模式 */
     }
   </style>
+  
 
   <!-- <div class="py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
